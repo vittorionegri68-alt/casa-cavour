@@ -326,6 +326,7 @@ function Location() {
           <div>
             <Reveal delay={100}>
               <h3 style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", letterSpacing: "0.2em", textTransform: "uppercase", color: C.textSoft, marginBottom: "1.1rem" }}>COSA FARE NEI DINTORNI</h3>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.6px", background: C.border }}>
               {[
                 { icon:"🍷", title:"Wine Tour in Romagna", desc:"Albana DOCG e Sangiovese — i vigneti sono a 10 minuti. Cantine storiche non su Google Maps." },
                 { icon:"🚴", title:"Ciclovia & Sentieri", desc:"Percorsi cicloturistici collinari tra borghi medievali, oliveti e panorami adriatici." },
@@ -334,7 +335,7 @@ function Location() {
                 { icon:"🏖️", title:"Riviera Adriatica", desc:"Cesenatico, Rimini e le spiagge a soli 30–40 min in auto." },
                 { icon:"🏰", title:"San Marino & Castelli", desc:"La Serenissima Repubblica a 35 min. Borghi medievali intatti nei dintorni." },
               ].map(({icon,title,desc}) => (
-                <div key={title} style={{ display: "flex", gap: "1rem", marginBottom: "1.3rem", alignItems: "flex-start" }}>
+                <div key={title} style={{ display: "flex", gap: "1rem", marginBottom: "0.6px", alignItems: "flex-start", background: C.cardBg, padding: "0.85rem 1rem", transition: "background 0.2s" }} onMouseEnter={e => e.currentTarget.style.background=C.bg2} onMouseLeave={e => e.currentTarget.style.background=C.cardBg}>
                   <span style={{ fontSize: "1.25rem", flexShrink: 0, marginTop: 2 }}>{icon}</span>
                   <div>
                     <div style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1rem", color: C.text, fontWeight: 600, marginBottom: "0.2rem" }}>{title}</div>
