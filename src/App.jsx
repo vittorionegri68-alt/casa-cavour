@@ -426,7 +426,7 @@ function HowItWorks() {
             { n:"01", t:"Cerca & Prenota", b:"Trovaci su Airbnb. Leggi le recensioni di chi ha già vissuto la Romagna da qui." },
             { n:"02", t:"Confermiamo", b:"Ricevi accesso completo, consigli locali e suggerimenti personalizzati per il tuo soggiorno." },
             { n:"03", t:"Check-in autonomo", b:"Arriva quando vuoi. Le chiavi ti aspettano." },
-            { n:"04", t:"Vivi da locale", b:"Mercato mattutino, aperitivo in collina, cantina senza insegna. Questa è la tua Bertinoro." },
+            { n:"04", t:"Vivi da locale", b:"Mercato mattutino, aperitivo in collina, cantina storica. Questa è la tua Bertinoro." },
           ].map(({n,t,b}) => (
             <Reveal key={n} delay={parseInt(n)*60}>
               <div style={{ padding: "2rem 1.5rem", textAlign: "center" }}>
@@ -515,7 +515,7 @@ function About() {
               Una gemma nascosta,<br /><span style={{ color: C.gold, fontStyle: "italic" }}>custodita con cura.</span>
             </h2>
             <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1rem" }}>
-              Casa Cavour si trova in Via Cavour, una delle vie più antiche di Bertinoro — borgo medievale collinare soprannominato il <em>"Balcone della Romagna"</em> per la sua vista panoramica fino all'Adriatico.
+              Casa Cavour si trova in Via Cavour, una delle vie più antiche di Bertinoro, borgo medievale collinare soprannominato il <em>"Balcone della Romagna"</em> per la sua vista panoramica fino all'Adriatico.
             </p>
             <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.75rem" }}>
               L'appartamento è stato progettato per dare ai viaggiatori attenti una casa all'altezza del territorio. Casa vacanze nel centro storico di Bertinoro, vicino a Cesena, ideale per weekend romantici sulle colline romagnole.
