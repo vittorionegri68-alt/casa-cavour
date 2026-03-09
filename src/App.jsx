@@ -170,8 +170,6 @@ function Nav() {
     </nav>
   );
 }
-
-
 // ── Hero ──────────────────────────────────────────────────────────────────────
 function Hero() {
   const [loaded, setLoaded] = useState(false);
