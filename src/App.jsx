@@ -81,7 +81,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartement", "Locatie", "Ervaringen", "Recensies"];
+  const links = ["Appartamento", "Località", "Esperienza", "Recensioni"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
