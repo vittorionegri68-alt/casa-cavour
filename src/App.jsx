@@ -425,7 +425,7 @@ function HowItWorks() {
           {[
             { n:"01", t:"Cerca & Prenota", b:"Trovaci su Airbnb. Leggi le recensioni di chi ha già vissuto la Romagna da qui." },
             { n:"02", t:"Confermiamo", b:"Ricevi accesso completo, consigli locali e suggerimenti personalizzati per il tuo soggiorno." },
-            { n:"03", t:"Check-in autonomo", b:"Arriva quando vuoi. Le chiavi ti aspettano." },
+            { n:"03", t:"Check-in autonomo", b:"Arriva quando vuoi. Le chiavi ti aspettano, nessuna coda, nessuna reception." },
             { n:"04", t:"Vivi da locale", b:"Mercato mattutino, aperitivo in collina, cantina storica. Questa è la tua Bertinoro." },
           ].map(({n,t,b}) => (
             <Reveal key={n} delay={parseInt(n)*60}>
