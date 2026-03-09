@@ -126,6 +126,13 @@ function Nav() {
               onMouseLeave={e => e.currentTarget.style.color = C.textSoft}>
               EN
             </a>
+            <span style={{ color: C.border, fontSize: "0.7rem", alignSelf: "center" }}>|</span>
+            <a href="https://casa-cavour-nl.vercel.app"
+              style={{ color: C.gold, textDecoration: "none", fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s", padding: "0.2rem 0.3rem" }}
+              onMouseEnter={e => e.currentTarget.style.color = C.gold}
+              onMouseLeave={e => e.currentTarget.style.color = C.textSoft}>
+              NL
+            </a>
           </div>
         </div>
         <button onClick={() => setOpen(!open)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "0.5rem", flexDirection: "column", gap: 5 }} className="burger">
