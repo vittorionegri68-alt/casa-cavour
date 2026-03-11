@@ -81,7 +81,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Località", "Esperienze", "Recensioni"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Recensioni"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -321,7 +321,7 @@ function Apartment() {
 // ── Location ──────────────────────────────────────────────────────────────────
 function Location() {
   return (
-    <section id="Località" style={{ background: C.bg, padding: "7rem 2rem" }}>
+    <section id="Posizione" style={{ background: C.bg, padding: "7rem 2rem" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Reveal>
           <div style={{ marginBottom: "3.5rem" }}>
@@ -593,7 +593,7 @@ function Footer() {
           </div>
           <div>
             <div style={{ fontSize: "0.67rem", letterSpacing: "0.18em", textTransform: "uppercase", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", marginBottom: "0.85rem" }}>Naviga</div>
-            {["Appartamento","Località","Esperienze","Testimonianze"].map(l => (
+            {["Appartamento","Posizione","Esperienze","Testimonianze"].map(l => (
               <a key={l} href={`#${l.toLowerCase()}`} style={{ display: "block", color: C.textMid, textDecoration: "none", fontSize: "0.83rem", fontFamily: "'DM Sans',sans-serif", marginBottom: "0.5rem", transition: "color 0.2s" }}
                 onMouseEnter={e => e.target.style.color=C.gold} onMouseLeave={e => e.target.style.color=C.textMid}>
                 {l}
