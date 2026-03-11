@@ -81,7 +81,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Recensioni"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -321,7 +321,7 @@ function Apartment() {
 // ── Location ──────────────────────────────────────────────────────────────────
 function Location() {
   return (
-    <section id="Posizione" style={{ background: C.bg, padding: "7rem 2rem" }}>
+    <section id="posizione" style={{ background: C.bg, padding: "7rem 2rem" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Reveal>
           <div style={{ marginBottom: "3.5rem" }}>
@@ -486,7 +486,7 @@ function Testimonials() {
               <div key={b} style={{ border: `1px solid ${C.border}`, padding: "0.3rem 0.85rem", fontSize: "0.72rem", color: C.gold, fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.08em", background: C.cardBg }}>{b}</div>
             ))}
           </div>
-        </Reveal>s
+        </Reveal>
       </div>
       <DiagDivider topColor={C.bg} botColor={C.bg2} flip />
     </section>
