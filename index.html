@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Casa Cavour - Appartamento vacanze nel centro storico di Bertinoro, colline romagnole. Vicino a Cesena, Rimini, San Marino. Weekend romantico in Romagna." />
-    <meta name="keywords" content="casa vacanze Bertinoro, appartamento Bertinoro centro storico, affitto Bertinoro, vicino Cesena, colline romagnole, weekend romantico Romagna, Casa Cavour Bertinoro, alloggio Bertinoro, B&B Bertinoro" />
-    <meta property="og:title" content="Casa Cavour – Bertinoro, Romagna" />
-    <meta property="og:description" content="Appartamento di design nel centro storico di Bertinoro. Il Balcone della Romagna, a 15 min da Cesena, 40 min da Rimini, 35 min da San Marino." />
-    <meta property="og:type" content="website" />
-    <title>Casa Cavour – Bertinoro, Romagna</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJD89SFMDC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Casa Cavour - Appartamento vacanze nel centro storico di Bertinoro, colline romagnole. Vicino a Cesena, Rimini, San Marino. Weekend romantico in Romagna." />
+  <meta name="keywords" content="casa vacanze Bertinoro, appartamento Bertinoro centro storico, affitto Bertinoro, vicino Cesena, colline romagnole, weekend romantico Romagna, Casa Cavour Bertinoro, alloggio Bertinoro, B&B Bertinoro" />
 
-  gtag('config', 'G-PJD89SFMDC');
-</script>
-  </head>
+  <meta property="og:title" content="Casa Cavour – Bertinoro, Romagna" />
+  <meta property="og:description" content="Appartamento di design nel centro storico di Bertinoro. Il Balcone della Romagna, a 15 min da Cesena, 40 min da Rimini, 35 min da San Marino." />
+  <meta property="og:type" content="website" />
+
+  <title>Casa Cavour – Bertinoro, Romagna</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJD89SFMDC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PJD89SFMDC');
+  </script>
+
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Casa Cavour",
+    "url": "https://www.casa-cavour.com",
+    "description": "Appartamento vacanze nel centro storico di Bertinoro, Romagna.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bertinoro",
+      "addressRegion": "Emilia-Romagna",
+      "addressCountry": "IT"
+    }
+  }
+  </script>
+
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
