@@ -25,21 +25,50 @@
   </script>
 
   <!-- Structured data for Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LodgingBusiness",
-    "name": "Casa Cavour",
-    "url": "https://www.casa-cavour.com",
-    "description": "Appartamento vacanze nel centro storico di Bertinoro, Romagna.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bertinoro",
-      "addressRegion": "Emilia-Romagna",
-      "addressCountry": "IT"
-    }
-  }
-  </script>
+ <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TouristAccommodation",
+ "name": "Casa Cavour",
+ "description": "Appartamento vacanze di design nel centro storico di Bertinoro, il Balcone della Romagna. Perfetto per weekend romantici e soggiorni nelle colline romagnole.",
+ "url": "https://www.casa-cavour.com",
+ "image": [
+   "https://www.casa-cavour.com/assets/Panorama_1-_vBQD8Xr.jpg",
+   "https://www.casa-cavour.com/assets/Giardino_2-BaaXyxQR.jpg"
+ ],
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Bertinoro",
+   "addressRegion": "Emilia-Romagna",
+   "postalCode": "47032",
+   "addressCountry": "IT"
+ },
+ "geo": {
+   "@type": "GeoCoordinates",
+   "latitude": "44.1485",
+   "longitude": "12.1362"
+ },
+ "amenityFeature": [
+   {
+     "@type": "LocationFeatureSpecification",
+     "name": "WiFi",
+     "value": true
+   },
+   {
+     "@type": "LocationFeatureSpecification",
+     "name": "Kitchen",
+     "value": true
+   },
+   {
+     "@type": "LocationFeatureSpecification",
+     "name": "Air conditioning",
+     "value": true
+   }
+ ],
+ "checkinTime": "15:00",
+ "checkoutTime": "11:00"
+}
+</script>
 
 </head>
   <body>
