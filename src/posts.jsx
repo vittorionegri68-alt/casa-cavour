@@ -8,6 +8,63 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+ {
+    id: "giro-italia-cervia-2026",
+    titolo: "Il Giro d'Italia passa da Cervia: vivi la tappa da Casa Cavour",
+    data: "2026-04-15",
+    categoria: "Eventi",
+    sommario: "Il 17 maggio 2026 Cervia ospita la partenza della nona tappa del Giro d'Italia 2026. A soli 30 minuti da Casa Cavour, un evento da non perdere. Scarica i nostri poster in omaggio.",
+    contenuto: [
+      {
+        tipo: "paragrafo",
+        testo: "Il 17 maggio 2026 la Riviera Romagnola si tinge di rosa. Cervia ospita la partenza della nona tappa della 109ª edizione del Giro d'Italia — 184 km di grande ciclismo con arrivo in salita al Corno alle Scale, sull'Appennino bolognese. Una tappa che si annuncia decisiva per la classifica generale."
+      },
+      {
+        tipo: "titoletto",
+        testo: "La tappa nel dettaglio"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "La partenza ufficiale (km 0) sarà da Piazza Andrea Costa, con il percorso cittadino che attraverserà via Nazario Sauro, il Lungomare d'Annunzio, viale Roma e via Martiri Fantini prima di lasciare Cervia in direzione Appennino. Per Cervia si tratta della quinta presenza del Giro — un traguardo storico che la città celebrerà tingendosi di rosa, in concomitanza con la storica festa dello Sposalizio del Mare."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Casa Cavour: la base perfetta per l'evento"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Bertinoro dista appena 30 minuti da Cervia in auto. Soggiornare a Casa Cavour significa avere una base comoda, elegante e autentica per vivere questo evento straordinario senza lo stress di trovare alloggio sulla costa — dove i prezzi schizzeranno alle stelle nei giorni intorno alla tappa."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Puoi assistere alla partenza da Cervia la mattina del 17 maggio, respirare l'atmosfera rosa della carovana del Giro, e tornare la sera nel silenzio delle colline romagnole con un calice di Sangiovese. Il meglio dei due mondi."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Scarica i nostri poster in omaggio"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Per celebrare questo evento abbiamo creato due poster dedicati alla tappa Cervia - Corno alle Scale. Sono completamente gratuiti e scaricabili liberamente — un ricordo da tenere o da stampare per l'occasione."
+      },
+      {
+        tipo: "download",
+        label1: "Scarica Poster 1",
+        src1: "/assets/Cervia_1.png",
+        label2: "Scarica Poster 2",
+        src2: "/assets/Cervia_2.png"
+      },
+      {
+        tipo: "titoletto",
+        testo: "Informazioni pratiche"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Data: domenica 17 maggio 2026. Partenza: Piazza Andrea Costa, Cervia (RA). Arrivo: Corno alle Scale (BO). Distanza: 184 km. Tappa: 9ª della 109ª edizione del Giro d'Italia."
+      }
+    ],
+    attivo: true,
+  },
   {
     id: "5-cose-da-fare-bertinoro",
     titolo: "5 cose da fare a Bertinoro in un weekend",
