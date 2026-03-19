@@ -570,7 +570,12 @@ function Blog() {
 
         {/* Article list */}
         {aperto === null && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "1.5rem" }} className="blog-grid">
+          <div style={{ 
+  display: "grid", 
+  gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", 
+  gap: "1.5rem",
+  alignItems: "stretch",   // ← add this
+}} className="blog-grid">
             {visibili.map((post, i) => (
               <Reveal key={post.id} delay={i * 80}>
                 <div
