@@ -50,9 +50,9 @@ export const posts = [
       {
         tipo: "download",
         label1: "Scarica Poster 1",
-        src1: "/assets/Cervia_1.png",
+        src1: "/Cervia_1.png",
         label2: "Scarica Poster 2",
-        src2: "/assets/Cervia_2.png"
+        src2: "/Cervia_2.png"
       },
       {
         tipo: "titoletto",
