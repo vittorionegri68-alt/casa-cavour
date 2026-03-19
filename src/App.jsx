@@ -644,21 +644,44 @@ function Blog() {
                 </p>
                 {/* Content blocks */}
                 {post.contenuto.map((blocco, i) => {
-                  if (blocco.tipo === "paragrafo") {
-                    return (
-                      <p key={i} style={{ fontSize: "0.95rem", color: C.textMid, lineHeight: 1.9, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.25rem" }}>
-                        {blocco.testo}
-                      </p>
-                    );
-                  }
-                  if (blocco.tipo === "titoletto") {
-                    return (
-                      <h3 key={i} style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1.35rem", color: C.text, fontWeight: 700, marginBottom: "0.6rem", marginTop: "2rem", letterSpacing: "-0.01em" }}>
-                        {blocco.testo}
-                      </h3>
-                    );
-                  }
-                  return null;
+  if (blocco.tipo === "paragrafo") {
+    return (
+      <p key={i} style={{ fontSize: "0.95rem", color: C.textMid, lineHeight: 1.9, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.25rem" }}>
+        {blocco.testo}
+      </p>
+    );
+  }
+  if (blocco.tipo === "titoletto") {
+    return (
+      <h3 key={i} style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1.35rem", color: C.text, fontWeight: 700, marginBottom: "0.6rem", marginTop: "2rem", letterSpacing: "-0.01em" }}>
+        {blocco.testo}
+      </h3>
+    );
+  }
+  if (blocco.tipo === "download") {
+    return (
+      <div key={i} style={{ display: "flex", gap: "1rem", flexWrap: "wrap", margin: "1.5rem 0" }}>
+        
+          href={blocco.src1}
+          download
+          style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: C.gold, color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.75rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
+          onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
+          onMouseLeave={e => e.currentTarget.style.background = C.gold}>
+          ↓ {blocco.label1}
+        </a>
+        
+          href={blocco.src2}
+          download
+          style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "transparent", color: C.gold, padding: "0.75rem 1.5rem", fontSize: "0.75rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", border: `1.5px solid ${C.gold}`, transition: "all 0.2s" }}
+          onMouseEnter={e => { e.currentTarget.style.background = C.gold; e.currentTarget.style.color = "#fff"; }}
+          onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.gold; }}>
+          ↓ {blocco.label2}
+        </a>
+      </div>
+    );
+  }
+  return null;
+})}
                 })}
                 {/* CTA at end of article */}
                 <div style={{ marginTop: "3rem", padding: "2rem", background: C.bg3, borderLeft: `3px solid ${C.gold}` }}>
