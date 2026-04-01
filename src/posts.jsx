@@ -38,7 +38,7 @@ export const posts = [
 
      {
         tipo: "paragrafo",
-       testo: Il risultato? Più eventi nei borghi, più accessibilità, più attenzione ai piccoli comuni."
+       testo: "Il risultato? Più eventi nei borghi, più accessibilità, più attenzione ai piccoli comuni."
       },
       {
         tipo: "paragrafo",
