@@ -8,6 +8,76 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+  {
+    id: "Aprile in Romagna",
+    titolo: "Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva.",
+    data: "2026-04-1",
+    categoria: "Eventi",
+    sommario: "Hai mai pensato che i borghi medievali fossero musei all'aperto da vedere solo d'estate?",
+    contenuto: [
+      {
+        tipo: "paragrafo",
+        testo: "Sbagliato. Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Le colline romagnole"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Le colline romagnole si risvegliano. I vicoli di Bertinoro, Longiano e Verucchio si riempiono di luce primaverile. Temperature mite, niente code, e finalmente riesci a parlare con chi ci vive davvero."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Casa Cavour: il punto di partenza perfetto per i fine settimana di Aprile"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Aprile 2026 porta con sé una Romagna che investe forte sulla cultura. La Regione ha stanziato 34 milioni per valorizzare non solo la Riviera, ma anche l'entroterra. "
+      },
+
+     {
+        tipo: "paragrafo",
+       testo: Il risultato? Più eventi nei borghi, più accessibilità, più attenzione ai piccoli comuni."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A Bertinoro il Castello Malaspina riapre i battenti con visite guidate ogni weekend (€5, prenotazione consigliata). Da lì il panorama abbraccia la costa fino a Rimini. "
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Longiano ospita il Museo Italiano della Ghisa e la Fondazione Tito Balestra — arte contemporanea in un borgo che profuma di pietra e glicine."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Verucchio, patria dei Malatesta, custodisce uno dei musei archeologici più sorprendenti della regione. Da Casa Cavour bastano 15 minuti per raggiungere Longiano, 20 per Verucchio. Pasqua in Romagna quest'anno non è solo mare. È storia, è arte, è scoprire che dietro ogni porta c'è una storia che nessuno racconta sui dépliant turistici."
+      },
+     {
+        tipo: "paragrafo",
+        testo: "Da Casa Cavour bastano 15 minuti per raggiungere Longiano, 20 per Verucchio. Pasqua in Romagna quest'anno non è solo mare."
+      },
+     {
+        tipo: "paragrafo",
+        testo: "È storia, è arte, è scoprire che dietro ogni porta c'è una storia che nessuno racconta sui dépliant turistici."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Seguici anche sui nostri canali Social media"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "ogni settimana pubblichiamo sui nostri social madia informazioni Culturali culinarie e turistiche della Romagna"
+      }
+     {
+        tipo: "paragrafo",
+        testo: "https://www.instagram.com/bnb_bertinoro/"
+      }
+      {
+        tipo: "paragrafo",
+        testo: "https://www.facebook.com/profile.php?id=61577458010505"
+      }
+    ],
+    attivo: true,
  {
     id: "giro-italia-cervia-2026",
     titolo: "Il Giro d'Italia passa da Cervia: vivi la tappa da Casa Cavour",
