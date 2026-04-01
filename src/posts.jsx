@@ -79,6 +79,7 @@ export const posts = [
     ],
     attivo: true,
   },
+ {
     id: "giro-italia-cervia-2026",
     titolo: "Il Giro d'Italia passa da Cervia: vivi la tappa da Casa Cavour",
     data: "2026-04-15",
