@@ -69,11 +69,11 @@ export const posts = [
         testo: "ogni settimana pubblichiamo sui nostri social madia informazioni Culturali culinarie e turistiche della Romagna"
       }
      {
-        tipo: "paragrafo",
+        tipo: "link",
         testo: "https://www.instagram.com/bnb_bertinoro/"
       }
       {
-        tipo: "paragrafo",
+        tipo: "link",
         testo: "https://www.facebook.com/profile.php?id=61577458010505"
       }
     ],
