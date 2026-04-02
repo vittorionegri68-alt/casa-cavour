@@ -683,7 +683,6 @@ function Blog() {
   }
   return null;
 })}
-                })}
                 {/* CTA at end of article */}
                 <div style={{ marginTop: "3rem", padding: "2rem", background: C.bg3, borderLeft: `3px solid ${C.gold}` }}>
                   <p style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1.1rem", color: C.text, marginBottom: "1rem", fontStyle: "italic" }}>
