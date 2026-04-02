@@ -8,6 +8,29 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+ {
+  id: "pasqua-romagna-2026",
+  titolo: "Pasqua in Romagna 2026: dove andare tra borghi, mare e tradizioni",
+  data: "2026-04-01",
+  categoria: "itinerari",
+  sommario: "Pasqua e i ponti primaverili sono il momento perfetto per scoprire la Romagna fuori stagione. Tra borghi medievali, Riviera ancora tranquilla e le prime sagre, ecco come vivere un weekend autentico tra Bertinoro, Ravenna e la costa romagnola.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Aprile 2026 porta con sé Pasqua e i primi weekend di primavera piena. La Romagna si risveglia dopo l'inverno, ma senza la folla estiva: i borghi sulle colline sono ancora silenziosi, la Riviera offre passeggiate sul mare con aria fresca, e le osterie iniziano a riempirsi di profumi di erbe di campo e primi asparagi. È il momento migliore per chi cerca un'esperienza autentica, lontano dai ritmi della stagione alta." },
+    
+    { tipo: "titoletto", testo: "Bertinoro e le colline: tra vigne e borghi silenziosi" },
+    { tipo: "paragrafo", testo: "Bertinoro ad aprile è un piccolo gioiello. Le vigne iniziano a germogliare, i vicoli del centro storico sono deserti al tramonto, e la Rocca Malatestiana offre una vista che spazia fino al mare. Da qui partono percorsi a piedi o in bici verso Polenta, Fratta Terme e le colline circostanti. Il weekend di Pasqua è perfetto per una camminata fino al Santuario della Madonna del Lago (45 minuti a piedi) o per un pranzo in una delle osterie storiche del centro. Dettaglio pratico: evita il sabato pomeriggio se vuoi avere i locali per te." },
+    
+    { tipo: "titoletto", testo: "Ravenna: mosaici, pinete e la Pasqua bizantina" },
+    { tipo: "paragrafo", testo: "Ravenna ad aprile è meno affollata rispetto all'estate, ma offre la stessa intensità. I mosaici di San Vitale e del Mausoleo di Galla Placidia sembrano brillare di più con la luce primaverile che entra dalle finestre. Il periodo pasquale porta anche concerti di musica sacra nelle basiliche e mercatini nei chiostri. Dopo la visita culturale, una passeggiata nella Pineta di Classe (10 minuti in auto dal centro) è d'obbligo: silenziosa, profumata di resina, perfetta per chi cerca un momento di pace. Info utili: i musei sono aperti anche a Pasqua e Pasquetta, biglietto unico a 12€ per 5 monumenti UNESCO." },
+    
+    { tipo: "titoletto", testo: "Riviera romagnola fuori stagione: il mare senza ombrelloni" },
+    { tipo: "paragrafo", testo: "Cesenatico, Rimini, Riccione ad aprile sono irriconoscibili. Niente ombrelloni, poche auto, solo mare aperto e spiagge vuote. È il momento migliore per una pedalata lungo il lungomare, una passeggiata al Porto Canale di Cesenatico (con i gozzi storici ancora ormeggiati) o un aperitivo al tramonto senza prenotare. Il ponte di Pasqua porta qualche evento – mercatini dell'artigianato, concerti nei centri storici – ma niente della confusione estiva. Consiglio pratico: molti ristoranti sul mare riaprono proprio a Pasqua, ma conviene prenotare per il pranzo della domenica." },
+    
+    { tipo: "titoletto", testo: "Cosa portare a casa: prodotti di stagione" },
+    { tipo: "paragrafo", testo: "Aprile in Romagna significa asparagi selvatici, erbe di campo, primo formaggio squacquerone fresco, e vini bianchi appena imbottigliati. I mercati contadini (Cesena il mercoledì e sabato mattina, Bertinoro la domenica) sono il posto giusto per fare scorta. Se passi da Longiano o Bertinoro, fermati in una cantina aperta: molte fanno degustazioni anche senza prenotare, soprattutto nei weekend di festa." },
+  ],
+  attivo: true,
+},
   {
     id: "Aprile in Romagna",
     titolo: "Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva.",
