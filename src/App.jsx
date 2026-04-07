@@ -931,15 +931,6 @@ export default function App() {https://github.com/vittorionegri68-alt/casa-cavou
   return (
     <>
       
-
-  "hasMap": "https://maps.google.com/?q=Bertinoro+FC+Italy",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "10",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
   "amenityFeature": [
     { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Cucina attrezzata", "value": true },
