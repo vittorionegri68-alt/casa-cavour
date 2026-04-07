@@ -927,7 +927,7 @@ function Footer() {
 }
 
 // ── App ───────────────────────────────────────────────────────────────────────
-export default function App() {
+export default function App() {https://github.com/vittorionegri68-alt/casa-cavour/blob/main/src/App.jsx
   return (
     <>
       <style>{`
@@ -946,7 +946,7 @@ export default function App() {
       <Location />
       <HowItWorks />
       <Testimonials />
-      <qa />
+      href={`#${l === "Q&A" ? "qa" : l.toLowerCase()}`}
       <About />
       <Blog />
       <FinalCTA />
