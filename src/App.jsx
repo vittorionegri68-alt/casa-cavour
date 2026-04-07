@@ -931,11 +931,7 @@ export default function App() {https://github.com/vittorionegri68-alt/casa-cavou
   return (
     <>
       
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 44.1469,
-    "longitude": 12.1369
-  },
+
   "hasMap": "https://maps.google.com/?q=Bertinoro+FC+Italy",
   "aggregateRating": {
     "@type": "AggregateRating",
