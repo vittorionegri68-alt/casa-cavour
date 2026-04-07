@@ -930,22 +930,7 @@ function Footer() {
 export default function App() {https://github.com/vittorionegri68-alt/casa-cavour/blob/main/src/App.jsx
   return (
     <>
-      <script type="application/ld+json">{JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "LodgingBusiness",
-  "name": "Casa Cavour Bertinoro",
-  "description": "Appartamento di charme nel centro storico di Bertinoro, il Balcone della Romagna. Ideale per coppie, smart workers e viaggiatori che cercano autenticità e comfort nelle colline romagnole.",
-  "url": "https://www.casa-cavour.com",
-  "image": "https://www.casa-cavour.com/og-image.jpg",
-  "telephone": "",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Cavour",
-    "addressLocality": "Bertinoro",
-    "addressRegion": "Emilia-Romagna",
-    "postalCode": "47032",
-    "addressCountry": "IT"
-  },
+      
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 44.1469,
