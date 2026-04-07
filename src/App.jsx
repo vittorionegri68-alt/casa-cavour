@@ -482,8 +482,8 @@ function Testimonials() {
     </section>
   );
 }
-// ── QA ───────────────────────
-function QA() {
+// ── qa ───────────────────────
+function qa() {
   const [aperto, setAperto] = useState(null);
  
   const toggle = (id) => {
@@ -946,7 +946,7 @@ export default function App() {
       <Location />
       <HowItWorks />
       <Testimonials />
-      <QA />
+      <qa />
       <About />
       <Blog />
       <FinalCTA />
