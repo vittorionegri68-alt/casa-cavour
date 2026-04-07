@@ -946,7 +946,7 @@ export default function App() {https://github.com/vittorionegri68-alt/casa-cavou
       <Location />
       <HowItWorks />
       <Testimonials />
-      href={`#${l === "Q&A" ? "qa" : l.toLowerCase()}`}
+      <Q&A />
       <About />
       <Blog />
       <FinalCTA />
