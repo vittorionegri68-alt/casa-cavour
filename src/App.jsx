@@ -1041,7 +1041,7 @@ export default function App() {https://github.com/vittorionegri68-alt/casa-cavou
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "12",
+    "reviewCount": "10",
     "bestRating": "5",
     "worstRating": "1"
   },
