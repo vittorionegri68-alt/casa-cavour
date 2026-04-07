@@ -927,51 +927,9 @@ function Footer() {
 }
 
 // ── App ───────────────────────────────────────────────────────────────────────
-export default function App() {https://github.com/vittorionegri68-alt/casa-cavour/blob/main/src/App.jsx
+export default function App() {
   return (
     <>
-      
-  "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Cucina attrezzata", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Aria condizionata", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Riscaldamento", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Parcheggio nelle vicinanze", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Smart working friendly", "value": true }
-  ],
-  "numberOfRooms": "2",
-  "occupancy": {
-    "@type": "QuantitativeValue",
-    "maxValue": 4
-  },
-  "petsAllowed": false,
-  "checkinTime": "15:00",
-  "checkoutTime": "10:00",
-  "priceRange": "€€",
-  "currenciesAccepted": "EUR",
-  "paymentAccepted": "Airbnb",
-  "tourBookingPage": "https://www.airbnb.com/rooms/1374591120957342823",
-  "containedInPlace": {
-    "@type": "Place",
-    "name": "Bertinoro",
-    "description": "Borgo medievale soprannominato il Balcone della Romagna, nella provincia di Forlì-Cesena"
-  },
-  "nearbyAttractions": [
-    { "@type": "TouristAttraction", "name": "Rocca Albornoziana di Bertinoro", "distance": "5 minuti a piedi" },
-    { "@type": "TouristAttraction", "name": "Strada dei Vini e dei Sapori", "distance": "10 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Cesena", "distance": "15 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Cesenatico e Riviera Adriatica", "distance": "30 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Repubblica di San Marino", "distance": "35 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Ravenna - Patrimonio UNESCO", "distance": "40 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Rimini", "distance": "40 minuti in auto" },
-    { "@type": "TouristAttraction", "name": "Bologna", "distance": "60 minuti in auto" }
-  ],
-  "sameAs": [
-    "https://www.instagram.com/bnb_bertinoro/",
-    "https://www.facebook.com/profile.php?id=61577458010505",
-    "https://www.airbnb.com/rooms/1374591120957342823"
-  ]
-})}</script>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
