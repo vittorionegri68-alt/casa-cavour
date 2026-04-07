@@ -11,8 +11,8 @@ export const posts = [
 {
   id: "geo-aeo-dormire-visitare-cantine-romagna-2025",
   titolo: "Dove Dormire per Visitare le Cantine di Romagna: Bertinoro e la Strada dei Vini",
-  data: "2025-02-04",
-  categoria: "GEO-AEO",
+  data: "2025-07-04",
+  categoria: "Storie di Romagna",
   sommario: "Ora che sapete dove alloggiare tra Forlì e Cesena, è tempo di scoprire le cantine storiche che rendono queste colline uniche. Bertinoro non è solo il Balcone di Romagna: è la porta d'accesso alla cultura del vino romagnolo.",
   contenuto: [
     { tipo: "paragrafo", testo: "La luce del mattino filtra tra i filari di Sangiovese che disegnano geometrie perfette sulle colline. Dai vigneti sale il profumo di terra umida e mosto, mentre in lontananza si intravede il profilo del borgo di Bertinoro, con la sua rocca che domina la vallata. Se vi abbiamo già raccontato perché dormire vicino a Forlì e Cesena significa scegliere le colline di Bertinoro, oggi è il momento di scoprire cosa rende questo territorio davvero speciale: le sue cantine." },
@@ -46,8 +46,8 @@ export const posts = [
 {
   id: "geo-aeo-dove-dormire-forli-cesena-2025",
   titolo: "Dove Dormire Vicino a Forlì e Cesena: La Guida alle Colline Romagnole",
-  data: "2025-02-04",
-  categoria: "GEO-AEO",
+  data: "2025-07-04",
+  categoria: "Storie di Romagna",
   sommario: "Il sole del tardo pomeriggio illumina le colline che dalla Val di Savio scivolano verso l'Adriatico. Da quassù, dal Balcone di Romagna, lo sguardo si perde tra vigneti, borghi medievali e calanchi. Scopri dove dormire per vivere la Romagna autentica.",
   contenuto: [
     { tipo: "paragrafo", testo: "Il sole del tardo pomeriggio illumina le colline che dalla Val di Savio scivolano dolcemente verso l'Adriatico. Da quassù, dalla terrazza del Balcone di Romagna, lo sguardo si perde tra vigneti e calanchi, borghi medievali e campanili che punteggiano un paesaggio rimasto intatto da secoli. È questo il volto autentico della Romagna dell'entroterra: lontano dalla costa affollata, ma abbastanza vicino per sentirne il respiro." },
