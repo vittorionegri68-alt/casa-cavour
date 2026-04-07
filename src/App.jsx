@@ -482,7 +482,7 @@ function Testimonials() {
     </section>
   );
 }
-// ── QA-component ───────────────────────
+// ── QA ───────────────────────
 function QA() {
   const [aperto, setAperto] = useState(null);
  
