@@ -83,7 +83,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Q&A", "Blog"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "QA", "Blog"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -946,7 +946,7 @@ export default function App() {https://github.com/vittorionegri68-alt/casa-cavou
       <Location />
       <HowItWorks />
       <Testimonials />
-      <Q&A />
+      <QA />
       <About />
       <Blog />
       <FinalCTA />
