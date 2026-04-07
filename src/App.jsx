@@ -930,6 +930,92 @@ function Footer() {
 export default function App() {https://github.com/vittorionegri68-alt/casa-cavour/blob/main/src/App.jsx
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è una buona base per esplorare Forlì e Cesena?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, Bertinoro si trova a soli 12 km da Forlì e 15 km da Cesena — meno di 20 minuti in auto. Da Casa Cavour puoi raggiungere entrambe le città comodamente, visitarle in una giornata e tornare la sera nel silenzio delle colline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Da Casa Cavour è facile visitare le colline romagnole?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casa Cavour si trova nel cuore di Bertinoro, uno dei borghi più belli delle colline romagnole. I borghi vicini come Polenta, Meldola e Longiano sono raggiungibili in 15-20 minuti. Le colline sono letteralmente fuori dalla porta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è adatta per un soggiorno durante un tour delle cantine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Assolutamente sì. Bertinoro è la capitale del vino romagnolo e le cantine storiche della zona distano pochi chilometri. La cucina completamente attrezzata ti permette di portare a casa le bottiglie acquistate e organizzare cene con i prodotti locali."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è una buona scelta per un weekend enogastronomico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "È la scelta ideale. Sei nel cuore della Romagna del vino e del cibo — a pochi minuti dalle cantine di Predappio, dalle osterie di Bertinoro e dai mercati contadini della zona. La cucina attrezzata completa l'esperienza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Da Casa Cavour posso esplorare tutta la Romagna facilmente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. La posizione di Bertinoro è strategica: Ravenna a 40 km, Rimini a 60 km, San Marino a 50 km, Bologna a 70 km. Casa Cavour è il punto di partenza perfetto per un itinerario che copre mare, colline e città d'arte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è adatta per chi vuole staccare dalla routine vicino a Bologna?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Perfetta. A soli 70 km da Bologna — meno di un'ora in auto — Bertinoro offre un ritmo completamente diverso. Silenzio, panorami sulle colline, cucina romagnola autentica. Il distacco dalla città inizia appena arrivi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è romantica per un weekend in coppia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, è pensata per questo. Un appartamento privato nel centro storico di Bertinoro, con vista sulle colline, cucina per cucinare insieme, e il belvedere panoramico a pochi passi per i tramonti più belli della Romagna."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è un buon posto per ricaricare le energie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "È esattamente questo. Bertinoro ha il ritmo lento delle colline romagnole — nessuna folla, aria pulita, paesaggi che distendono. Casa Cavour ti offre uno spazio privato e confortevole per disconnetterti davvero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Casa Cavour è adatta per lavorare in smart working qualche giorno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. L'appartamento dispone di connessione wifi, spazi confortevoli e una cucina attrezzata per gestire i pasti in autonomia. Lavori con vista sulle colline romagnole e dopo le ore di lavoro hai un territorio straordinario da esplorare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Bertinoro si trova un appartamento con cucina per un affitto breve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casa Cavour è esattamente questo — un appartamento di charme nel centro storico di Bertinoro con cucina completamente attrezzata, ideale per soggiorni brevi di qualità. Puoi prenotare direttamente su Airbnb."
+      }
+    }
+  ]
+})}</script>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
