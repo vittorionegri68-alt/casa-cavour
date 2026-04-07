@@ -482,8 +482,8 @@ function Testimonials() {
     </section>
   );
 }
-// ── qa ───────────────────────
-function qa() {
+// ── QA ───────────────────────
+function QA() {
   const [aperto, setAperto] = useState(null);
  
   const toggle = (id) => {
