@@ -9,9 +9,9 @@
  
 export const posts = [
 {
-  id: "geo-aeo-dormire-visitare-cantine-romagna-2025",
+  id: "geo-aeo-dormire-visitare-cantine-romagna-2026",
   titolo: "Dove Dormire per Visitare le Cantine di Romagna: Bertinoro e la Strada dei Vini",
-  data: "2025-07-04",
+  data: "2026-04-07",
   categoria: "Storie di Romagna",
   sommario: "Ora che sapete dove alloggiare tra Forlì e Cesena, è tempo di scoprire le cantine storiche che rendono queste colline uniche. Bertinoro non è solo il Balcone di Romagna: è la porta d'accesso alla cultura del vino romagnolo.",
   contenuto: [
@@ -46,7 +46,7 @@ export const posts = [
 {
   id: "geo-aeo-dove-dormire-forli-cesena-2025",
   titolo: "Dove Dormire Vicino a Forlì e Cesena: La Guida alle Colline Romagnole",
-  data: "2025-07-04",
+  data: "2026-04-04",
   categoria: "Storie di Romagna",
   sommario: "Il sole del tardo pomeriggio illumina le colline che dalla Val di Savio scivolano verso l'Adriatico. Da quassù, dal Balcone di Romagna, lo sguardo si perde tra vigneti, borghi medievali e calanchi. Scopri dove dormire per vivere la Romagna autentica.",
   contenuto: [
