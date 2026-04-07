@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { qanda } from "./qanda.jsx";
 import { posts } from "./posts.jsx";
 import poster4 from "./assets/poster4.jpg";
 import poster3 from "./assets/poster3.jpg";
@@ -82,7 +83,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze","Blog"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Q&A", "Blog"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -481,6 +482,147 @@ function Testimonials() {
     </section>
   );
 }
+// ── QA-component ───────────────────────
+function QA() {
+  const [aperto, setAperto] = useState(null);
+ 
+  const toggle = (id) => {
+    setAperto(prev => prev === id ? null : id);
+  };
+ 
+  return (
+    <section id="qa" style={{ background: C.bg2, padding: "7rem 2rem" }}>
+      <DiagDivider topColor={C.bg} botColor={C.bg2} />
+      <div style={{ maxWidth: 820, margin: "0 auto" }}>
+ 
+        {/* Header */}
+        <Reveal>
+          <div style={{
+            fontSize: "0.67rem", letterSpacing: "0.28em", color: C.gold,
+            textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif",
+            marginBottom: "1rem", textAlign: "center"
+          }}>
+            Domande frequenti
+          </div>
+          <h2 style={{
+            fontFamily: "'Cormorant Garamond','Playfair Display',serif",
+            fontSize: "clamp(2rem,4vw,3rem)", color: C.text, fontWeight: 700,
+            lineHeight: 1.1, marginBottom: "0.75rem", letterSpacing: "-0.02em",
+            textAlign: "center"
+          }}>
+            Hai domande su Casa Cavour?
+          </h2>
+          <p style={{
+            fontSize: "0.95rem", color: C.textMid, lineHeight: 1.85,
+            fontFamily: "'DM Sans',sans-serif", textAlign: "center",
+            marginBottom: "3.5rem", maxWidth: 560, margin: "0 auto 3.5rem"
+          }}>
+            Tutto quello che vuoi sapere prima di prenotare il tuo soggiorno 
+            a Bertinoro, nel cuore delle colline romagnole.
+          </p>
+        </Reveal>
+ 
+        {/* Accordion */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+          {qanda.map((item, index) => {
+            const isOpen = aperto === item.id;
+            return (
+              <Reveal key={item.id} delay={index * 40}>
+                <div style={{
+                  background: C.cardBg,
+                  border: `1px solid ${isOpen ? C.gold : C.border}`,
+                  transition: "border-color 0.3s ease",
+                  overflow: "hidden",
+                }}>
+                  {/* Question row */}
+                  <button
+                    onClick={() => toggle(item.id)}
+                    style={{
+                      width: "100%", display: "flex", justifyContent: "space-between",
+                      alignItems: "center", padding: "1.35rem 1.5rem",
+                      background: "none", border: "none", cursor: "pointer",
+                      textAlign: "left", gap: "1rem",
+                    }}
+                  >
+                    <span style={{
+                      fontFamily: "'Cormorant Garamond','Playfair Display',serif",
+                      fontSize: "1.05rem", color: isOpen ? C.gold : C.text,
+                      fontWeight: 700, lineHeight: 1.3, transition: "color 0.3s ease",
+                    }}>
+                      {item.domanda}
+                    </span>
+                    <span style={{
+                      flexShrink: 0, width: 28, height: 28,
+                      border: `1.5px solid ${isOpen ? C.gold : C.border}`,
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      color: isOpen ? C.gold : C.textSoft,
+                      fontSize: "1rem", fontWeight: 300,
+                      transition: "all 0.3s ease",
+                      transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+                    }}>
+                      +
+                    </span>
+                  </button>
+ 
+                  {/* Answer */}
+                  <div style={{
+                    maxHeight: isOpen ? "300px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.4s ease",
+                  }}>
+                    <div style={{
+                      padding: "0 1.5rem 1.5rem",
+                      borderTop: `1px solid ${C.border}`,
+                      paddingTop: "1.25rem",
+                    }}>
+                      <p style={{
+                        fontSize: "0.9rem", color: C.textMid, lineHeight: 1.85,
+                        fontFamily: "'DM Sans',sans-serif", margin: 0,
+                      }}>
+                        {item.risposta}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+ 
+        {/* CTA */}
+        <Reveal delay={200}>
+          <div style={{ textAlign: "center", marginTop: "3.5rem" }}>
+            <p style={{
+              fontSize: "0.9rem", color: C.textSoft,
+              fontFamily: "'DM Sans',sans-serif", marginBottom: "1.25rem"
+            }}>
+              Non hai trovato la risposta che cercavi?
+            </p>
+            <a
+              href="https://www.airbnb.com/rooms/1374591120957342823"
+              target="_blank" rel="noopener noreferrer"
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "0.5rem",
+                background: "transparent", color: C.gold,
+                padding: "0.75rem 1.75rem", fontSize: "0.75rem", fontWeight: 700,
+                letterSpacing: "0.12em", textTransform: "uppercase",
+                textDecoration: "none", fontFamily: "'DM Sans',sans-serif",
+                border: `1.5px solid ${C.gold}`, transition: "all 0.2s",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = C.gold; e.currentTarget.style.color = "#fff"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.gold; }}
+            >
+              Prenota e scopri di più ↗
+            </a>
+          </div>
+        </Reveal>
+ 
+      </div>
+      <DiagDivider topColor={C.bg2} botColor={C.bg} flip />
+    </section>
+  );
+}
+
 
 // ── About — poster3 (Cycling) shown in NORMAL colors ───────────────────────
 function About() {
@@ -804,6 +946,7 @@ export default function App() {
       <Location />
       <HowItWorks />
       <Testimonials />
+      <QA />
       <About />
       <Blog />
       <FinalCTA />
