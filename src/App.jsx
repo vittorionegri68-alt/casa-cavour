@@ -78,7 +78,8 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "QA"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "Q&A"];
+  const ids   = ["appartamento", "posizione", "esperienze", "testimonianze", "blog", "qa"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -95,8 +96,8 @@ function Nav() {
           </div>
         </div>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }} className="desk-nav">
-          {links.map(l => (
-            <a key={l} href={`#${l.toLowerCase()}`} style={{ color: C.textMid, textDecoration: "none", fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
+          {links.map((l, i) => (
+  <a key={l} href={`#${ids[i]}`} style={{ color: C.textMid, textDecoration: "none", fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
               onMouseEnter={e => e.target.style.color = C.gold} onMouseLeave={e => e.target.style.color = C.textMid}>
               {l}
             </a>
@@ -125,8 +126,8 @@ function Nav() {
       </div>
       {open && (
         <div style={{ background: C.bg, padding: "1rem 1.5rem 1.5rem", borderTop: `1px solid ${C.border}` }}>
-          {links.map(l => (
-            <a key={l} href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)}
+          {links.map((l, i) => (
+  <a key={l} href={`#${ids[i]}`} onClick={() => setOpen(false)}
               style={{ display: "block", color: C.textMid, textDecoration: "none", padding: "0.65rem 0", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", borderBottom: `1px solid ${C.border}` }}>
               {l}
             </a>
