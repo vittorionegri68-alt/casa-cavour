@@ -709,19 +709,18 @@ function Blog() {
   );
 }
 
-// ── QA ───────────────────────
+// ── QA ───────────────────────────────────────────────────────────────────────
 function QA() {
   const [aperto, setAperto] = useState(null);
- 
+
   const toggle = (id) => {
     setAperto(prev => prev === id ? null : id);
   };
- 
+
   return (
-    <section id="qa" style={{ background: C.bg2, padding: "7rem 2rem" }}>
-      <DiagDivider topColor={C.bg} botColor={C.bg2} />
-      <div style={{ maxWidth: 820, margin: "0 auto" }}>
- 
+    <section id="qa" style={{ background: C.bg, padding: "7rem 2rem" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+
         {/* Header */}
         <Reveal>
           <div style={{
@@ -742,15 +741,20 @@ function QA() {
           <p style={{
             fontSize: "0.95rem", color: C.textMid, lineHeight: 1.85,
             fontFamily: "'DM Sans',sans-serif", textAlign: "center",
-            marginBottom: "3.5rem", maxWidth: 560, margin: "0 auto 3.5rem"
+            maxWidth: 560, margin: "0 auto 3.5rem"
           }}>
-            Tutto quello che vuoi sapere prima di prenotare il tuo soggiorno 
+            Tutto quello che vuoi sapere prima di prenotare il tuo soggiorno
             a Bertinoro, nel cuore delle colline romagnole.
           </p>
         </Reveal>
- 
-        {/* Accordion */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+
+        {/* Griglia 3 colonne */}
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "1rem",
+          alignItems: "start",
+        }} className="qa-grid">
           {qanda.map((item, index) => {
             const isOpen = aperto === item.id;
             return (
@@ -766,20 +770,20 @@ function QA() {
                     onClick={() => toggle(item.id)}
                     style={{
                       width: "100%", display: "flex", justifyContent: "space-between",
-                      alignItems: "center", padding: "1.35rem 1.5rem",
+                      alignItems: "flex-start", padding: "1.25rem 1.25rem",
                       background: "none", border: "none", cursor: "pointer",
-                      textAlign: "left", gap: "1rem",
+                      textAlign: "left", gap: "0.75rem",
                     }}
                   >
                     <span style={{
                       fontFamily: "'Cormorant Garamond','Playfair Display',serif",
-                      fontSize: "1.05rem", color: isOpen ? C.gold : C.text,
+                      fontSize: "0.95rem", color: isOpen ? C.gold : C.text,
                       fontWeight: 700, lineHeight: 1.3, transition: "color 0.3s ease",
                     }}>
                       {item.domanda}
                     </span>
                     <span style={{
-                      flexShrink: 0, width: 28, height: 28,
+                      flexShrink: 0, width: 24, height: 24,
                       border: `1.5px solid ${isOpen ? C.gold : C.border}`,
                       display: "flex", alignItems: "center", justifyContent: "center",
                       color: isOpen ? C.gold : C.textSoft,
@@ -790,20 +794,20 @@ function QA() {
                       +
                     </span>
                   </button>
- 
+
                   {/* Answer */}
                   <div style={{
-                    maxHeight: isOpen ? "300px" : "0px",
+                    maxHeight: isOpen ? "400px" : "0px",
                     overflow: "hidden",
                     transition: "max-height 0.4s ease",
                   }}>
                     <div style={{
-                      padding: "0 1.5rem 1.5rem",
+                      padding: "0 1.25rem 1.25rem",
                       borderTop: `1px solid ${C.border}`,
-                      paddingTop: "1.25rem",
+                      paddingTop: "1rem",
                     }}>
                       <p style={{
-                        fontSize: "0.9rem", color: C.textMid, lineHeight: 1.85,
+                        fontSize: "0.85rem", color: C.textMid, lineHeight: 1.8,
                         fontFamily: "'DM Sans',sans-serif", margin: 0,
                       }}>
                         {item.risposta}
@@ -815,7 +819,7 @@ function QA() {
             );
           })}
         </div>
- 
+
         {/* CTA */}
         <Reveal delay={200}>
           <div style={{ textAlign: "center", marginTop: "3.5rem" }}>
@@ -825,7 +829,7 @@ function QA() {
             }}>
               Non hai trovato la risposta che cercavi?
             </p>
-            <a
+            
               href="https://www.airbnb.com/rooms/1374591120957342823"
               target="_blank" rel="noopener noreferrer"
               style={{
@@ -843,9 +847,12 @@ function QA() {
             </a>
           </div>
         </Reveal>
- 
+
       </div>
-      <DiagDivider topColor={C.bg2} botColor={C.bg} flip />
+      <style>{`
+        @media(max-width:1024px){.qa-grid{grid-template-columns:repeat(2,1fr)!important;}}
+        @media(max-width:600px){.qa-grid{grid-template-columns:1fr!important;}}
+      `}</style>
     </section>
   );
 }
