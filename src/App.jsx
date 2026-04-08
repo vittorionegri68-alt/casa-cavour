@@ -721,7 +721,6 @@ function QA() {
     <section id="qa" style={{ background: C.bg, padding: "7rem 2rem" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
-        {/* Header */}
         <Reveal>
           <div style={{
             fontSize: "0.67rem", letterSpacing: "0.28em", color: C.gold,
@@ -748,7 +747,6 @@ function QA() {
           </p>
         </Reveal>
 
-        {/* Griglia 3 colonne */}
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
@@ -765,12 +763,11 @@ function QA() {
                   transition: "border-color 0.3s ease",
                   overflow: "hidden",
                 }}>
-                  {/* Question row */}
                   <button
                     onClick={() => toggle(item.id)}
                     style={{
                       width: "100%", display: "flex", justifyContent: "space-between",
-                      alignItems: "flex-start", padding: "1.25rem 1.25rem",
+                      alignItems: "flex-start", padding: "1.25rem",
                       background: "none", border: "none", cursor: "pointer",
                       textAlign: "left", gap: "0.75rem",
                     }}
@@ -794,17 +791,14 @@ function QA() {
                       +
                     </span>
                   </button>
-
-                  {/* Answer */}
                   <div style={{
                     maxHeight: isOpen ? "400px" : "0px",
                     overflow: "hidden",
                     transition: "max-height 0.4s ease",
                   }}>
                     <div style={{
-                      padding: "0 1.25rem 1.25rem",
+                      padding: "1rem 1.25rem 1.25rem",
                       borderTop: `1px solid ${C.border}`,
-                      paddingTop: "1rem",
                     }}>
                       <p style={{
                         fontSize: "0.85rem", color: C.textMid, lineHeight: 1.8,
@@ -820,7 +814,6 @@ function QA() {
           })}
         </div>
 
-        {/* CTA */}
         <Reveal delay={200}>
           <div style={{ textAlign: "center", marginTop: "3.5rem" }}>
             <p style={{
@@ -831,7 +824,8 @@ function QA() {
             </p>
             
               href="https://www.airbnb.com/rooms/1374591120957342823"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: "inline-flex", alignItems: "center", gap: "0.5rem",
                 background: "transparent", color: C.gold,
@@ -856,7 +850,6 @@ function QA() {
     </section>
   );
 }
-
 // ── Final CTA ─────────────────────────────────────────────────────────────────
 function FinalCTA() {
   return (
