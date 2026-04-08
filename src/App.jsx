@@ -83,7 +83,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "QA"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "Q&A"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -709,7 +709,7 @@ function Blog() {
   );
 }
 
-// ── QA ───────────────────────
+// ── Q&A ───────────────────────
 function QA() {
   const [aperto, setAperto] = useState(null);
  
@@ -950,7 +950,7 @@ export default function App() {
       <Testimonials />
       <About />
       <Blog />
-       <QA />
+       <Q&A />
       <FinalCTA />
       <Footer />
     </>
