@@ -9,6 +9,48 @@
  
 export const posts = [
 {
+  id: "geo-aeo-staccare-routine-bologna-2026",
+  titolo: "Dove staccare dalla routine vicino a Bologna: le colline di Bertinoro come rifugio",
+  data: "2026-04-09",
+  categoria: "Storie di Romagna",
+  sommario: "A un'ora da Bologna, tra vigneti e borghi silenziosi, le colline romagnole offrono sentieri panoramici, terme e tramonti che rallentano il tempo. Bertinoro è il luogo dove la fuga dalla routine diventa un rituale.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Dopo aver esplorato le cantine della Strada dei Vini e assaggiato il Sangiovese tra i filari, dopo aver percorso le strade che collegano Forlì e Cesena ai borghi collinari, c'è un momento in cui la Romagna ti chiede di fermarti. Non per visitare, ma per respirare. Le colline di Bertinoro, a meno di un'ora da Bologna, sono questo: un rifugio dove staccare dalla routine non significa scappare lontano, ma ritrovarsi in un paesaggio che rallenta il tempo." },
+    { tipo: "paragrafo", testo: "Quando arrivi a Bertinoro, il primo segnale che qualcosa cambia è il panorama. Dal centro storico, che si apre sulla pianura romagnola fino al mare, la vista abbraccia chilometri di colline, vigneti e borghi sparsi. Non è solo la bellezza a colpire, ma il silenzio. Qui, a 254 metri sul livello del mare, la frenesia della città si dissolve tra le strade in pietra e i balconi che danno sul tramonto." },
+    
+    { tipo: "titoletto", testo: "Bertinoro, il Balcone della Romagna: dove inizia la pausa" },
+    { tipo: "paragrafo", testo: "Conosciuto come il \"Balcone della Romagna\", Bertinoro dista 80 chilometri da Bologna (circa un'ora via A14 e SS71), 15 chilometri da Forlì e 50 da Rimini. È un borgo medievale arroccato sulle prime colline dell'Appennino, dove la storia si intreccia con la natura. Piazza della Libertà, cuore del centro storico, custodisce la Colonna degli Anelli, simbolo dell'ospitalità medievale: dodici anelli di pietra dove i viandanti legavano i cavalli, e a ciascun anello corrispondeva una famiglia che offriva accoglienza. Ancora oggi, quel rito antico sopravvive nella Festa dell'Ospitalità, ma soprattutto nell'atmosfera del borgo." },
+    { tipo: "paragrafo", testo: "Passeggiare tra le strade tortuose, fermarsi sui balconi panoramici al tramonto o nel Parco Pubblico (Giardino dei Popoli) significa concedersi il lusso di non avere fretta. La Rocca di Bertinoro, fortezza medievale che domina il borgo, ospita il Museo Interreligioso, uno spazio inaspettato dedicato al dialogo tra Ebraismo, Cristianesimo e Islam, con opere di Rembrandt e Manzù. Intorno, un'area picnic con tavoli sotto le mura invita a sostare con un cestino di prodotti locali." },
+    
+    { tipo: "titoletto", testo: "Sentieri tra vigneti e crinali: camminare per staccare davvero" },
+    { tipo: "paragrafo", testo: "Staccare dalla routine, nelle colline di Bertinoro, significa anche muoversi lentamente. I sentieri che partono dal borgo attraversano vigneti, case rurali abbandonate e crinali che un tempo erano linea costiera dell'Antico Mare Padano. Il percorso lungo l'antica Pista Pedemontana, circa 4,5 chilometri di trekking facile, tocca il \"sasso spungone\", un masso solitario con vista a 360 gradi, e si snoda tra boschi di querce e roverelle. Durata: due ore abbondante, meglio con scarpe comode e una bottiglia d'acqua." },
+    { tipo: "paragrafo", testo: "Per chi ama la corsa o la bicicletta, la rete di sentieri collinari offre percorsi panoramici ideali in primavera e autunno, quando le colline si tingono di verde brillante o di ocra dorato. Non mancano i punti di sosta: piccole osterie di campagna come Ca' de Be', dove il pranzo diventa un rito lento, tra tortelli fatti a mano e vino locale." },
+    
+    { tipo: "titoletto", testo: "Terme, vino e cene con vista: il rituale del rallentamento" },
+    { tipo: "paragrafo", testo: "A pochi passi dal centro storico, le Terme della Fratta offrono acque termali terapeutiche, saune, bagno turco e idropercorso. È il luogo ideale per rigenerarsi dopo una camminata o semplicemente per dedicarsi qualche ora di benessere, lontano dal rumore quotidiano. La struttura moderna contrasta con il borgo antico, ma l'esperienza si completa in armonia: un pomeriggio alle terme, poi una passeggiata al tramonto lungo le mura medievali." },
+    { tipo: "paragrafo", testo: "La sera, il centro si illumina dolcemente, e i ristoranti panoramici aprono le loro terrazze sulla pianura romagnola. Cenare qui, con un calice di Sangiovese e lo sguardo che spazia fino al mare, è un modo per chiudere la giornata senza fretta, lasciandosi avvolgere dal silenzio delle colline." },
+    
+    { tipo: "titoletto", testo: "Casa Cavour Bertinoro: il punto di partenza per ritrovare il ritmo giusto" },
+    { tipo: "paragrafo", testo: "Nel cuore del borgo, Casa Cavour Bertinoro è un appartamento di charme che si affaccia sulle colline romagnole. Non è solo un luogo dove dormire, ma un punto di partenza per vivere Bertinoro con calma: la cucina completamente attrezzata permette di preparare colazioni lente con i prodotti del mercato locale, il terrazzo invita a leggere un libro al sole, la posizione centrale facilita le passeggiate senza bisogno dell'auto. È pensato per chi cerca qualità, silenzio e autonomia, ideale per coppie o per chi vuole prendersi una pausa vera." },
+    
+    { tipo: "titoletto", testo: "Informazioni pratiche: quando andare e cosa portare" },
+    { tipo: "paragrafo", testo: "Bertinoro è accessibile tutto l'anno, ma le stagioni migliori per staccare dalla routine sono la primavera (aprile-giugno) e l'autunno (settembre-novembre), quando il clima è mite, i sentieri sono percorribili senza afa e le vigne si colorano. Da Bologna, si raggiunge in auto via A14 uscita Cesena Nord, poi SS71 direzione Bertinoro (circa 1 ora). In treno, stazione di Forlì (15 km) con bus locali o taxi. Porta scarpe comode per camminare, un abbigliamento a strati e, se possibile, una borraccia riutilizzabile: molti sentieri non hanno fontane." },
+    
+    { tipo: "titoletto", testo: "Staccare vicino Bologna non è solo possibile, è necessario" },
+    { tipo: "paragrafo", testo: "Le colline di Bertinoro non offrono attrazioni chiassose o programmi serrati. Offrono spazio, silenzio, panorami che cambiano con la luce del giorno e la possibilità di rallentare senza sensi di colpa. A un'ora da Bologna, è il rifugio ideale per chi cerca una pausa autentica, fatta di passeggiate, vino, terme e tramonti che non si dimenticano. Casa Cavour Bertinoro ti aspetta per vivere questa esperienza con calma, proprio nel cuore del borgo." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
+{
   id: "geo-aeo-dormire-visitare-cantine-romagna-2026",
   titolo: "Dove Dormire per Visitare le Cantine di Romagna: Bertinoro e la Strada dei Vini",
   data: "2026-04-07",
