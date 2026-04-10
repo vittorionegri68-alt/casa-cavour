@@ -78,8 +78,7 @@ function Nav() {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "Q&A"];
-  const ids   = ["appartamento", "posizione", "esperienze", "testimonianze", "blog", "qa"];
+  const links = ["Appartamento", "Posizione", "Esperienze", "Testimonianze", "Blog", "QA"];
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -96,8 +95,8 @@ function Nav() {
           </div>
         </div>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }} className="desk-nav">
-          {links.map((l, i) => (
-  <a key={l} href={`#${ids[i]}`} style={{ color: C.textMid, textDecoration: "none", fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
+          {links.map(l => (
+            <a key={l} href={`#${l.toLowerCase()}`} style={{ color: C.textMid, textDecoration: "none", fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
               onMouseEnter={e => e.target.style.color = C.gold} onMouseLeave={e => e.target.style.color = C.textMid}>
               {l}
             </a>
@@ -126,8 +125,8 @@ function Nav() {
       </div>
       {open && (
         <div style={{ background: C.bg, padding: "1rem 1.5rem 1.5rem", borderTop: `1px solid ${C.border}` }}>
-          {links.map((l, i) => (
-  <a key={l} href={`#${ids[i]}`} onClick={() => setOpen(false)}
+          {links.map(l => (
+            <a key={l} href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)}
               style={{ display: "block", color: C.textMid, textDecoration: "none", padding: "0.65rem 0", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", borderBottom: `1px solid ${C.border}` }}>
               {l}
             </a>
@@ -168,13 +167,13 @@ function Hero() {
           <div style={{ flex: "1 1 320px", minWidth: 0 }}>
             <div style={{ opacity: loaded?1:0, transform: loaded?"translateY(0)":"translateY(18px)", transition: "all 0.7s ease 0.15s", display: "flex", alignItems: "center", gap: "0.8rem", marginBottom: "1.3rem" }}>
               <span style={{ display: "inline-block", width: 32, height: 1, background: C.gold }} />
-              <span style={{ fontSize: "0.67rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif" }}>Bertinoro · Emilia-Romagna · B&amp;B</span>
+              <span style={{ fontSize: "0.67rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif" }}>Bertinoro · Colline Romagnole · Forlì-Cesena</span>
             </div>
             <h1 style={{ opacity: loaded?1:0, transform: loaded?"translateY(0)":"translateY(28px)", transition: "all 0.85s ease 0.3s", fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "clamp(2.6rem,5.5vw,5rem)", fontWeight: 700, color: C.text, lineHeight: 1.04, letterSpacing: "-0.02em", margin: "0 0 1.2rem" }}>
               Vivi la Romagna<br /><span style={{ color: C.gold, fontStyle: "italic" }}>come un Romagnolo.</span>
             </h1>
             <p style={{ opacity: loaded?1:0, transform: loaded?"translateY(0)":"translateY(24px)", transition: "all 0.85s ease 0.46s", fontSize: "clamp(0.93rem,1.8vw,1.08rem)", color: C.textMid, lineHeight: 1.82, margin: "0 0 2rem", fontFamily: "'DM Sans',sans-serif" }}>
-              Un appartamento di design nel centro storico di Bertinoro — il <em style={{ color: C.text }}>"Balcone della Romagna"</em>. Per coppie, professionisti e viaggiatori che cercano autenticità, comfort e connessione vera con il territorio.
+              Appartamento vacanze con cucina attrezzata nel centro storico di Bertinoro — il <em style={{ color: C.text }}>"Balcone della Romagna"</em>, sulle colline romagnole tra Forlì e Cesena. La base ideale per un weekend romantico, per visitare le cantine di Romagna o per rigenerarsi lontano dalla folla. A 15 min da Cesena, 60 min da Bologna.
             </p>
             <div style={{ opacity: loaded?1:0, transform: loaded?"translateY(0)":"translateY(24px)", transition: "all 0.85s ease 0.6s", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <a href="https://airbnb.com/h/casacavour-bertinoro" target="_blank" rel="noopener noreferrer"
@@ -190,7 +189,7 @@ function Hero() {
               </a>
             </div>
             <div style={{ opacity: loaded?1:0, transition: "opacity 0.8s ease 0.78s", display: "flex", gap: "2rem", marginTop: "2.5rem", paddingTop: "1.75rem", borderTop: `1px solid ${C.border}`, flexWrap: "wrap" }}>
-              {[["★★★★★","Rating Airbnb"],["4","Ospiti max"],["15 min","da Cesena"],["35 min","da San Marino"]].map(([v,l]) => (
+              {[["★★★★★","Rating Airbnb"],["4","Ospiti max"],["15 min","da Cesena"],["60 min","da Bologna"]].map(([v,l]) => (
                 <div key={l}>
                   <div style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1.3rem", color: C.gold, fontWeight: 700 }}>{v}</div>
                   <div style={{ fontSize: "0.66rem", color: C.textSoft, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", marginTop: 2 }}>{l}</div>
@@ -250,7 +249,7 @@ function Apartment() {
                 Casa tua<br /><span style={{ color: C.gold, fontStyle: "italic" }}>dal primo giorno.</span>
               </h2>
               <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.2rem" }}>
-                <strong style={{ color: C.text }}>Casa Cavour</strong> è un appartamento completamente arredato nel centro storico di Bertinoro — borgo medievale sulle colline romagnole soprannominato il <em>"Balcone della Romagna"</em>. Ideale per coppie, smart workers e famiglie fino a 4 persone.
+                <strong style={{ color: C.text }}>Casa Cavour</strong> è un appartamento vacanze con cucina completamente attrezzata nel centro storico di Bertinoro (FC) — borgo medievale sulle colline romagnole, nella provincia di Forlì-Cesena, soprannominato il <em>"Balcone della Romagna"</em>. Ideale per un weekend romantico, per l'enoturismo tra le cantine romagnole o per rigenerarsi lontano dalla routine. Fino a 4 persone.
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.6px", background: C.border, marginBottom: "2rem" }}>
                 {[
@@ -336,12 +335,14 @@ function Location() {
               <h3 style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", letterSpacing: "0.2em", textTransform: "uppercase", color: C.textSoft, marginBottom: "1.1rem" }}>COSA FARE NEI DINTORNI</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.6px", background: C.border }}>
                 {[
-                  { icon:"🍷", title:"Wine Tour in Romagna", desc:"Albana DOCG e Sangiovese — i vigneti sono a 10 minuti. Cantine storiche." },
+                  { icon:"🍷", title:"Enoturismo tra le Cantine di Romagna", desc:"Albana DOCG e Sangiovese di Romagna — i vigneti sono a 10 minuti. Cantine storiche, degustazioni e Strada dei Vini. Il territorio ideale per un weekend enogastronomico." },
                   { icon:"🚴", title:"Ciclovia & Sentieri", desc:"Percorsi cicloturistici collinari tra borghi medievali, oliveti e panorami adriatici." },
                   { icon:"🌅", title:"Tramonto sul Balcone", desc:"La terrazza panoramica di Bertinoro offre uno dei tramonti più belli della Romagna, vista Adriatico." },
-                  { icon:"🍝", title:"Cucina Romagnola", desc:"Piadina, tagliatelle al ragù, squacquerone. Osterie a 5 min dove mangiano i locali." },
+                  { icon:"🍝", title:"Cucina Romagnola Autentica", desc:"Piadina, tagliatelle al ragù, squacquerone fresco. Osterie a 5 min dove mangiano i locali — niente turismo, solo Romagna vera." },
+                  { icon:"💑", title:"Weekend Romantico sulle Colline", desc:"Tramonto sul Balcone, cena in un'osteria storica, colazione con prodotti locali. Bertinoro è uno dei posti più romantici della Romagna." },
                   { icon:"🏖️", title:"Riviera Adriatica", desc:"Cesenatico, Rimini e le spiagge a soli 30–40 min in auto." },
-                  { icon:"🏰", title:"San Marino & Castelli", desc:"La Serenissima Repubblica a 35 min. Borghi medievali intatti nei dintorni." },
+                  { icon:"🏰", title:"San Marino & Borghi Medievali", desc:"La Serenissima Repubblica a 35 min. Borghi medievali intatti nei dintorni, ideali per escursioni di mezza giornata." },
+                  { icon:"🌿", title:"Staccare dalla Routine vicino a Bologna", desc:"Bertinoro dista solo 60 km da Bologna: colline, silenzio e paesaggi adriatici a portata di mano per chi vuole rigenerarsi senza allontanarsi troppo." },
                 ].map(({icon,title,desc}) => (
                   <div key={title} style={{ display: "flex", gap: "1rem", marginBottom: "0.6px", alignItems: "flex-start", background: C.cardBg, padding: "0.85rem 1rem", transition: "background 0.2s" }}
                     onMouseEnter={e => e.currentTarget.style.background=C.bg2}
@@ -468,10 +469,10 @@ function About() {
               Una gemma nascosta,<br /><span style={{ color: C.gold, fontStyle: "italic" }}>custodita con cura.</span>
             </h2>
             <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1rem" }}>
-              Casa Cavour si trova in Via Cavour, una delle vie più antiche di Bertinoro, borgo medievale collinare soprannominato il <em>"Balcone della Romagna"</em> per la sua vista panoramica fino all'Adriatico.
+              Casa Cavour si trova in Via Cavour, nel cuore del centro storico di Bertinoro — borgo medievale sulle colline romagnole nella provincia di Forlì-Cesena, soprannominato il <em>"Balcone della Romagna"</em> per la sua vista panoramica sull'Adriatico.
             </p>
             <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.75rem" }}>
-              L'appartamento è stato progettato per dare ai viaggiatori attenti una casa all'altezza del territorio. Casa vacanze nel centro storico di Bertinoro, vicino a Cesena, ideale per weekend romantici sulle colline romagnole.
+              L'appartamento è stato progettato per chi vuole vivere la Romagna autentica: affitto breve con cucina attrezzata, ideale per coppie in cerca di un weekend romantico, per gli amanti dell'enoturismo e per chi vuole usare Bertinoro come base per esplorare la Romagna, il mare e i borghi medievali dell'Emilia-Romagna.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {[
@@ -479,7 +480,9 @@ function About() {
                 "35 min dalla Repubblica di San Marino",
                 "40 min da Rimini e dalla Riviera Adriatica",
                 "Accesso diretto alla Strada dei Vini e dei Sapori",
-                "A passi dai migliori ristoranti e cantine di Romagna",
+                "Accesso diretto alla Strada dei Vini: Sangiovese, Albana DOCG e cantine storiche a 10 min",
+                "Base ideale per esplorare Forlì, Cesena, Ravenna, San Marino e la Riviera Adriatica",
+                "A passi dai migliori ristoranti e osterie tipiche della Romagna",
               ].map(item => (
                 <div key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
                   <span style={{ color: C.gold, fontSize: "0.6rem", marginTop: "0.3rem", flexShrink: 0 }}>◆</span>
@@ -715,7 +718,7 @@ function Footer() {
               Via Cavour · Bertinoro (FC)<br />Emilia-Romagna · Italia 47032
             </div>
             <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.76rem", color: C.textSoft, lineHeight: 1.7 }}>
-              Casa vacanze nel centro storico di Bertinoro.<br />Appartamento vicino a Cesena, Rimini, San Marino.
+              Affitto breve nel centro storico di Bertinoro, colline romagnole (FC).<br />Base ideale per enoturismo, weekend romantici e relax in Romagna.
             </div>
           </div>
           <div>
