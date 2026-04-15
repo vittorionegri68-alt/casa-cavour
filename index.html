@@ -51,39 +51,19 @@
       });
     </script>
 
-    <!-- Structured data — LodgingBusiness -->
+    <!-- Structured data — LodgingBusiness + ApartmentComplex -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LodgingBusiness", "Accommodation"],
-      "@id": "https://www.casa-cavour.com/#lodging",
+      "@type": "LodgingBusiness",
       "name": "Casa Cavour Bertinoro",
       "alternateName": "Casa Cavour",
-      "accommodationCategory": "Apartment",
       "description": "Appartamento vacanze con cucina completamente attrezzata nel centro storico di Bertinoro, sulle colline romagnole nella provincia di Forlì-Cesena. Soprannominato il Balcone della Romagna per la vista panoramica sulla Pianura Padana e sulla costa adriatica. Base ideale per weekend romantici, enoturismo tra le cantine di Romagna (Sangiovese, Albana DOCG) e soggiorni autentici lontano dalla routine. A 15 min da Cesena, 20 min da Forlì, 40 min da Rimini, 35 min da San Marino, 60 min da Bologna.",
       "url": "https://www.casa-cavour.com",
       "image": [
-        {
-          "@type": "ImageObject",
-          "@id": "https://www.casa-cavour.com/#image-og",
-          "url": "https://www.casa-cavour.com/og-image.jpg",
-          "contentUrl": "https://www.casa-cavour.com/og-image.jpg",
-          "name": "Casa Cavour Bertinoro — Vista esterna",
-          "width": 1200,
-          "height": 630
-        },
-        {
-          "@type": "ImageObject",
-          "@id": "https://www.casa-cavour.com/#image-giardino",
-          "url": "https://www.casa-cavour.com/assets/Giardino_2-BaaXyxQR.jpg",
-          "contentUrl": "https://www.casa-cavour.com/assets/Giardino_2-BaaXyxQR.jpg",
-          "name": "Casa Cavour Bertinoro — Giardino privato"
-        }
+        "https://www.casa-cavour.com/og-image.jpg",
+        "https://www.casa-cavour.com/assets/Giardino_2-BaaXyxQR.jpg"
       ],
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.casa-cavour.com/og-image.jpg"
-      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Cavour, 44",
@@ -94,17 +74,11 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 44.150444,
-        "longitude": 12.136917
+        "latitude": "44.150444",
+        "longitude": "12.136917"
       },
+      "hasMap": "https://maps.google.com/?q=44.150444,12.136917",
       "telephone": "+393925200650",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+393925200650",
-        "email": "vittorionegri68@gmail.com",
-        "contactType": "reservations",
-        "availableLanguage": ["Italian", "English", "Dutch"]
-      },
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "WiFi gratuito", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Cucina completamente attrezzata", "value": true },
@@ -120,11 +94,10 @@
         { "@type": "LocationFeatureSpecification", "name": "Biancheria e asciugamani inclusi", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Ferro da stiro", "value": true }
       ],
-      "checkinTime": "T16:00:00",
-      "checkoutTime": "T10:00:00",
-      "numberOfRooms": 4,
+      "checkinTime": "16:00",
+      "checkoutTime": "10:00",
+      "numberOfRooms": 2,
       "numberOfBedrooms": 2,
-      "numberOfBathroomsTotal": 1,
       "occupancy": {
         "@type": "QuantitativeValue",
         "minValue": 1,
@@ -132,69 +105,31 @@
       },
       "petsAllowed": true,
       "smokingAllowed": false,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "1",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "offers": {
         "@type": "Offer",
         "url": "https://www.airbnb.com/rooms/1374591120957342823",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": 70,
+          "price": "70",
           "priceCurrency": "EUR",
-          "unitText": "notte",
-          "description": "Tariffa base per notte (bassa stagione)",
-          "validFrom": "2026-01-01",
-          "validThrough": "2026-12-31"
+          "unitText": "notte"
         },
         "availability": "https://schema.org/InStock"
       },
       "tourBookingPage": "https://www.airbnb.com/rooms/1374591120957342823",
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "CIR",
-        "value": "IT040003C28FEZ8O7L"
-      },
+      "identifier": "IT040003C28FEZ8O7L",
       "containedInPlace": {
         "@type": "AdministrativeArea",
         "name": "Forlì-Cesena"
       },
+      "touristType": ["Coppie", "Turisti culturali", "Turisti enogastronomici", "Smart worker"],
+      "inLanguage": ["it", "en", "nl"],
       "sameAs": [
+        "https://airbnb.com/h/casacavour-bertinoro",
         "https://www.airbnb.com/rooms/1374591120957342823",
         "https://www.instagram.com/bnb_bertinoro/",
         "https://www.facebook.com/profile.php?id=61577458010505"
-      ]
-    }
-    </script>
-
-    <!-- Structured data — WebSite -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://www.casa-cavour.com/#website",
-      "name": "Casa Cavour Bertinoro",
-      "url": "https://www.casa-cavour.com",
-      "publisher": {
-        "@type": "LodgingBusiness",
-        "@id": "https://www.casa-cavour.com/#lodging"
-      }
-    }
-    </script>
-
-    <!-- Structured data — BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.casa-cavour.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Appartamento Vacanze Bertinoro", "item": "https://www.casa-cavour.com/" }
       ]
     }
     </script>
