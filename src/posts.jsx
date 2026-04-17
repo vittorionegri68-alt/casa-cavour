@@ -8,7 +8,12 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+ // ── NIEUW POST — Giro d'Italia Cervia 2026 ───────────────────────────────
+  // Voeg dit blok toe aan de posts[] array in src/posts.js
+  // Upload ook src/assets/Cervia_1.png en src/assets/Cervia_2.png naar GitHub
+
 {
+
   id: "artigiamo-santarcangelo-aprile-2026",
   titolo: "ARTIGIAMO Festival dell'Artigianato a Santarcangelo di Romagna — Aprile 2026",
   data: "2026-04-01",
