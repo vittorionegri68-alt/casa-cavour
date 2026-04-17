@@ -8,7 +8,23 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
-
+{
+  id: "artigiamo-santarcangelo-aprile-2026",
+  titolo: "ARTIGIAMO Festival dell'Artigianato a Santarcangelo di Romagna — Aprile 2026",
+  data: "2026-04-01",
+  categoria: "eventi",
+  sommario: "Ogni anno ad aprile, Santarcangelo di Romagna si trasforma in una vetrina dell'artigianato italiano. ARTIGIAMO porta nelle strade del borgo romagnolo centinaia di maestri artigiani, botteghe storiche e giovani talenti. Un weekend per scoprire la tradizione che si fa contemporanea, a 25 minuti da Bertinoro.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Santarcangelo di Romagna è uno dei borghi più vivi della provincia di Forlì-Cesena. Non solo storia e architettura — ma anche un tessuto artigianale attivo, che ogni primavera esplode nel festival ARTIGIAMO. L'edizione 2026 si svolge il 26 e 27 aprile, con oltre 150 espositori distribuiti tra piazze, vicoli, corti interne e sotto i portici. Non è una fiera di souvenir: è un incontro diretto con chi lavora la ceramica, il legno, il ferro, la carta, il vetro. Molti artigiani aprono le loro botteghe per dimostrazioni dal vivo." },
+    { tipo: "titoletto", testo: "Perché vale la pena andarci" },
+    { tipo: "paragrafo", testo: "ARTIGIAMO non è solo vetrina commerciale, ma un'esperienza culturale. Si assiste alla lavorazione della pelle per borse e cinture, alla fusione del vetro artistico, alla decorazione delle maioliche. Molti espositori vengono da altre regioni, ma la base è romagnola: ceramisti da Faenza, tessitori da Cesena, liutai dalla collina. L'atmosfera è quella dei mercati di una volta, ma con prodotti contemporanei. I prezzi sono allineati alla qualità artigianale: un piatto in ceramica dipinta a mano parte da 30-40 euro, un portafoglio in cuoio da 50 euro. Durante il weekend, enoteche e osterie propongono menu speciali con vini locali — da provare il Sangiovese di Romagna in abbinamento ai formaggi di fossa." },
+    { tipo: "titoletto", testo: "Come organizzare la visita" },
+    { tipo: "paragrafo", testo: "Santarcangelo dista 35 minuti in auto da Bertinoro, dove Casa Cavour offre un appartamento con cucina attrezzata ideale come base per esplorare la Romagna. Il borgo è piccolo e si visita a piedi in 2-3 ore. Parcheggi segnalati lungo via Trasversale Marecchia e via del Mare, a circa 5-10 minuti a piedi dal centro storico. Il festival apre sabato e domenica dalle 10 alle 19. Consiglio: arrivare al mattino per evitare la folla del pomeriggio. Se rimani fino al tramonto, sali alla Rocca Malatestiana — la vista sulle colline romagnole fino all'Adriatico è notevole. L'ingresso alla rocca è gratuito." },
+    { tipo: "titoletto", testo: "Cosa vedere oltre al festival" },
+    { tipo: "paragrafo", testo: "Santarcangelo ha una vita oltre ARTIGIAMO. Le grotte tufacee — antichi ipogei scavati nel tufo — sono visitabili su prenotazione (info su visitbertinoro.it). Il centro è ricco di botteghe artigiane aperte tutto l'anno: cartolerie con carta fatta a mano, laboratori di ceramica, piccole gallerie d'arte. Se cerchi qualcosa di più intimo della riviera romagnola, questa zona offre ritmi più lenti e una tradizione artigianale ancora viva. Da qui è facile raggiungere Rimini (15 minuti), Cesena (20 minuti) o le cantine della Strada dei Vini e dei Sapori per un'esperienza di enoturismo completa. Secondo i dati ufficiali del turismo regionale, la Romagna ha superato nel 2025 i livelli pre-Covid, con una crescita trainata proprio dal turismo di prossimità e dagli eventi culturali diffusi come ARTIGIAMO." },
+  ],
+  attivo: true,
+},
 {
   id: "geo-aeo-weekend-romantico-colline-romagnole-2026",
   titolo: "Weekend romantico nelle colline romagnole: Bertinoro, il Balcone della Romagna",
