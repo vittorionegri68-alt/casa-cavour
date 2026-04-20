@@ -55,6 +55,16 @@
       });
     </script>
 
+    <!-- Structured data — WebSite (solo IT) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Casa Cavour Bertinoro",
+      "url": "https://www.casa-cavour.com"
+    }
+    </script>
+
     <!-- Structured data — Person (gestore) -->
     <script type="application/ld+json">
     {
@@ -65,7 +75,23 @@
     }
     </script>
 
-    <!-- Structured data — LodgingBusiness + ApartmentComplex -->
+    <!-- Structured data — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Casa Cavour Bertinoro",
+          "item": "https://www.casa-cavour.com"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured data — LodgingBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
