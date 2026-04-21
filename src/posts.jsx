@@ -8,15 +8,60 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
- // ── NIEUW POST — Giro d'Italia Cervia 2026 ───────────────────────────────
-  // Voeg dit blok toe aan de posts[] array in src/posts.js
-  // Upload ook src/assets/Cervia_1.png en src/assets/Cervia_2.png naar GitHub
 
 {
+  id: "geo-aeo-cosa-fare-bertinoro-weekend-2026",
+  titolo: "Cosa fare a Bertinoro in un weekend: tra vigneti, borghi e panorami delle colline romagnole",
+  data: "2026-04-21",
+  categoria: "Storie di Romagna",
+  sommario: "Un weekend a Bertinoro, nelle colline romagnole, è un viaggio attraverso il centro storico medievale, le cantine del Sangiovese e i sentieri panoramici. Scopri cosa fare, dove dormire e come vivere l'autenticità della Romagna.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Se hai già immaginato di svegliarti tra le colline romagnole e chiederti quale vino degustare dopo una passeggiata tra i vigneti, probabilmente ti sei imbattuto nei nostri articoli sulle cantine di Romagna e sui weekend enogastronomici a Bertinoro. Ma un weekend qui non è solo questione di calici e tavole imbandite: è un ritmo lento fatto di vicoli in pietra, scorci che abbracciano la pianura fino al mare, silenzi rotti solo dal vento tra le viti. Bertinoro, definito il \"Balcone della Romagna\", è uno di quei luoghi dove ogni ora del giorno regala una scoperta diversa, e dove la domanda 'cosa fare' trova risposta nel semplice lasciarsi attraversare dal territorio." },
+    { tipo: "paragrafo", testo: "A 15 minuti da Cesena, 20 da Forlì, 60 km da Bologna e 40 minuti da Rimini, Bertinoro è la base ideale per esplorare la Romagna autentica, quella che non urla ma sussurra. E se cerchi un affitto breve nelle colline romagnole dove sentirti a casa, con una cucina attrezzata per improvvisare una cena con i prodotti del mercato e un giardino privato dove leggere al tramonto, Casa Cavour Bertinoro diventa il punto di partenza perfetto per questo viaggio lento." },
+    
+    { tipo: "titoletto", testo: "Il centro storico di Bertinoro: storia, panorami e simboli medievali" },
+    { tipo: "paragrafo", testo: "Il cuore di Bertinoro si percorre a piedi, in due-tre ore, senza fretta. Piazza della Libertà, con il Palazzo Ordelaffi e la famosa Colonna degli Anelli — simbolo antico dell'ospitalità romagnola, dove ogni anello corrispondeva a una famiglia che accoglieva i viandanti — è il punto da cui partire. Da qui, la vista si apre sulla pianura padana fino alla costa adriatica, e nei giorni limpidi si intuisce persino il profilo di San Marino. Secondo i dati di Emilia-Romagna Turismo, Bertinoro conserva una delle tradizioni di accoglienza più autentiche della regione, ancora oggi celebrata ogni settembre con la Festa dell'Ospitalità." },
+    { tipo: "paragrafo", testo: "La Rocca medievale domina il borgo dall'alto e ospita oggi il Museo Interreligioso, mentre la Cattedrale di Santa Caterina e la Torre Civica regalano altri punti panoramici. Ma le sorprese più intime sono nelle strade: la Via della Santissima Trinità, chiamata 'Strada della Vendemmia', è un vicolo d'arte con sette tele dedicate alla vendemmia dipinte sui muri; la Via delle Mura ospita invece la 'Strada dei Mestieri Scomparsi', con sei dipinti su antiche tradizioni artigiane. Sono dettagli che raccontano l'anima del borgo meglio di qualsiasi guida." },
+    
+    { tipo: "titoletto", testo: "Enoturismo e cantine: tra Sangiovese, Albana DOCG e la Strada dei Vini" },
+    { tipo: "paragrafo", testo: "Se nei nostri articoli precedenti abbiamo raccontato dove alloggiare per visitare le cantine di Romagna, qui entriamo nel vivo dell'esperienza. Bertinoro è tappa centrale della Strada dei Vini e dei Sapori dei Colli di Forlì-Cesena, e le cantine sparse tra le colline offrono degustazioni che vanno oltre il bicchiere: sono racconti di famiglia, di terra, di scelte coraggiose. L'Enoteca Regionale Cà de Bé, nel centro storico, è il luogo ideale per un primo assaggio guidato di Sangiovese di Romagna e Albana DOCG, mentre cantine storiche come Fattoria Ca' Rossa — attiva dal 1935 tra vigneti e oliveti — aprono le porte ai visitatori per tour tra le botti e passeggiate nei filari." },
+    { tipo: "paragrafo", testo: "Un weekend enogastronomico a Bertinoro può includere una mattinata in cantina, un pranzo in un'osteria lungo la Strada dei Vini (dove la piadina romagnola IGP incontra i salumi locali), e un pomeriggio dedicato a esplorare le frazioni rurali come Polenta, dove la Pieve di San Donato domina silenziosa le campagne circostanti. Questo è enoturismo Romagna nella sua forma più autentica: lenta, non performativa, profondamente legata al territorio." },
+    
+    { tipo: "titoletto", testo: "Natura, trekking e sentieri tra i vigneti delle colline romagnole" },
+    { tipo: "paragrafo", testo: "Per chi cerca relax in Romagna lontano dalle spiagge affollate, Bertinoro offre una rete di sentieri escursionistici e ciclabili che attraversano vigneti, boschi e piccoli borghi rurali. I percorsi partono direttamente dal centro storico e si snodano tra le colline, regalando panorami, silenzi e incontri casuali con fauna locale. Non servono attrezzature da trekking estremo: scarpe comode, una borraccia e la voglia di camminare senza meta sono sufficienti." },
+    { tipo: "paragrafo", testo: "Il Giardino dei Popoli, un parco pubblico accessibile da Via Mazzini, è il balcone verde di Bertinoro, perfetto per una pausa contemplativa. Chi viaggia con animali troverà nella zona collinare un ambiente ideale: molti sentieri sono pet-friendly e Casa Cavour Bertinoro accoglie cani e gatti, rendendo il weekend un'esperienza da condividere con tutta la famiglia, a quattro zampe incluse." },
+    
+    { tipo: "titoletto", testo: "Eventi stagionali e sagre: quando andare a Bertinoro" },
+    { tipo: "paragrafo", testo: "Bertinoro vive di eventi che scandiscono le stagioni. In primavera, la Sagra della Fragola celebra uno dei prodotti più amati del territorio con assaggi, gelati e torte artigianali. A giugno, 'Vini e Sapori in Strada' trasforma il borgo in un mercato diffuso dove produttori e ristoratori escono all'aperto. L'estate porta il Fricò Royal, con musica dal vivo e serate sotto le stelle. A settembre, la Festa dell'Ospitalità invita i visitatori a pranzare nelle case delle famiglie locali, un'esperienza unica che affonda le radici nella tradizione medievale degli anelli. A ottobre, 'Vino al Vino' chiude la stagione con degustazioni tematiche e menu dedicati." },
+    { tipo: "paragrafo", testo: "Chi pianifica un weekend enogastronomico in Romagna può consultare il calendario eventi su visitbertinoro.it e sagreinromagna.it per sincronizzare il soggiorno con le feste locali. Ogni evento è un'occasione per entrare nel tessuto vivo del territorio, non da turisti ma da ospiti." },
+    
+    { tipo: "titoletto", testo: "Dove dormire a Bertinoro: appartamento con cucina, giardino e workspace" },
+    { tipo: "paragrafo", testo: "Un weekend a Bertinoro merita un alloggio che rispetti il ritmo lento del borgo. Casa Cavour Bertinoro, appartamento vacanze nel centro storico con vista sulle colline romagnole, offre tutto ciò che serve per un soggiorno autentico: una cucina completamente attrezzata per cucinare i prodotti del mercato locale, un giardino privato dove fare colazione ascoltando il silenzio, un workspace dedicato per chi pratica smart working in Romagna e vuole alternare riunioni online a passeggiate tra i vigneti. Il self check-in con smartlock garantisce autonomia totale, mentre l'accoglienza di animali rende l'esperienza inclusiva per chi viaggia con cani o gatti." },
+    { tipo: "paragrafo", testo: "È la soluzione ideale per chi cerca un affitto breve Bertinoro che sia più di un semplice posto letto: uno spazio dove rigenerarsi, cucinare, lavorare, leggere in giardino, e sentirsi parte del ritmo delle colline. Un punto di partenza per esplorare non solo Bertinoro, ma l'intera Romagna: da qui, Cesena è a 15 minuti, Forlì a 20, Rimini a 40, San Marino a 35, Bologna a un'ora. Puoi staccare dalla routine vicino a Bologna senza rinunciare alla connessione con le città principali." },
+    
+    { tipo: "titoletto", testo: "Consigli pratici per un weekend a Bertinoro" },
+    { tipo: "paragrafo", testo: "Bertinoro si raggiunge facilmente in auto (parcheggi gratuiti ai piedi del borgo) o in treno (stazione di Forlì + bus locale). Il centro storico è pedonale e si visita comodamente a piedi. Per le cantine, è consigliabile prenotare in anticipo, soprattutto nei weekend primaverili e autunnali. Porta scarpe comode per le salite e una giacca leggera: anche in estate, la sera rinfresca. Se viaggi con animali, verifica sempre l'accessibilità dei percorsi e delle strutture." },
+    { tipo: "paragrafo", testo: "Un weekend qui non si misura in attrazioni spuntate su una lista, ma in momenti: un tramonto dalla Rocca, una degustazione in cantina, una passeggiata senza meta tra i vicoli, una cena cucinata con ingredienti locali. È un modo diverso di viaggiare, più lento e più vero. E quando tornerai a casa, porterai con te non solo foto, ma il ritmo delle colline romagnole." },
+    
+    { tipo: "titoletto", testo: "Prenota il tuo weekend a Bertinoro" },
+    { tipo: "paragrafo", testo: "Se stai cercando un appartamento con cucina per un affitto breve nelle colline romagnole, con giardino privato, animali ammessi e la libertà di muoverti tra borghi, cantine e sentieri, Casa Cavour Bertinoro ti aspetta. Un soggiorno autentico in Romagna, dove l'ospitalità è ancora quella degli anelli medievali: discreta, calorosa, vera." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
 
+{
   id: "artigiamo-santarcangelo-aprile-2026",
-  titolo: "Artigiamo Festival dell'Artigianato a Santarcangelo di Romagna — 18-19 Aprile 2026",
-  data: "2026-04-17",
+  titolo: "ARTIGIAMO Festival dell'Artigianato a Santarcangelo di Romagna — Aprile 2026",
+  data: "2026-04-01",
   categoria: "eventi",
   sommario: "Ogni anno ad aprile, Santarcangelo di Romagna si trasforma in una vetrina dell'artigianato italiano. ARTIGIAMO porta nelle strade del borgo romagnolo centinaia di maestri artigiani, botteghe storiche e giovani talenti. Un weekend per scoprire la tradizione che si fa contemporanea, a 25 minuti da Bertinoro.",
   contenuto: [
