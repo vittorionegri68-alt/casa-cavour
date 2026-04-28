@@ -416,11 +416,10 @@ function Testimonials() {
         </Reveal>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.5px", background: C.border }}>
           {[
-            { q:"Siamo venuti per un weekend e siamo rimasti una settimana. L'appartamento è stupendo e Bertinoro è una scoperta incredibile. Lo abbiamo raccontato a tutti.", n:"Sophie & Marc", o:"Parigi, Francia", s:5 },
-            { q:"Come nomade digitale cercavo WiFi affidabile, spazio per lavorare e bellezza intorno a me. Casa Cavour ha soddisfatto tutto. Il mese più produttivo della mia vita.", n:"James R.", o:"Londra, UK", s:5 },
-            { q:"Non è solo un alloggio — è un'esperienza. I consigli del host ci hanno portato in una cantina di famiglia che non era nemmeno su Google Maps.", n:"Claudia M.", o:"Monaco, Germania", s:5 },
-            { q:"Weekend romantico perfetto. Bertinoro di sera è magica, e avere un appartamento tutto nostro, con la cucina, ha reso tutto ancora più speciale.", n:"Luca & Sara", o:"Milano, Italia", s:5 },
-          ].map(({q,n,o,s}) => (
+            { q:"Un appartamento molto carino, ben curato in un piccolo villaggio in cima alla collina. Ideale per due coppie. Ottimo se si viene per la conferenza annuale CISSR! La cucina è eccellente e ben fornita.", n:"Kate", o:"Baltimore, Maryland", s:5 },
+{ q:"Cesare è un ottimo host, puoi organizzare quasi tutto ciò che desideri con lui, e il posto ha davvero superato le nostre aspettative. Ci siamo trovati benissimo e torneremo sicuramente :)", n:"Blaženka", o:"Croazia", s:5 },
+{ q:"Siamo arrivati a Bertinoro per caso ed è stata una bella sorpresa: un grazioso borgo, molto tranquillo, con una splendida vista fino al mare. Cucina eccellente a prezzi accessibili, tipica ospitalità romagnola. Host molto gentile, sempre presente e rapido nelle risposte; appartamento molto bello e caratteristico, su tre piani con splendide viste sul paese. Davvero soddisfatti del soggiorno.", n:"Maria Ilaria", o:"Italia", s:5 },
+{ q:"Ci siamo sentiti molto a nostro agio nelle piccole case a schiera di Cesare. Tutto ciò di cui avevamo bisogno per il nostro soggiorno di due giorni era disponibile, e ottimi ristoranti erano a due passi. La signora con cui si condivide il cortile è super cordiale. Saremo felici di tornare quando saremo di nuovo in zona.", n:"Laura", o:"Italia", s:5 },].map(({q,n,o,s}) => (
             <Reveal key={n} delay={80}>
               <div style={{ background: C.cardBg, padding: "2.25rem", height: "100%", boxSizing: "border-box", transition: "background 0.3s" }}
                 onMouseEnter={e => e.currentTarget.style.background=C.bg2}
