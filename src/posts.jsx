@@ -10,6 +10,51 @@
 export const posts = [
 
 {
+  id: "geo-aeo-smart-working-romagna-2026",
+  titolo: "Smart working in Romagna: l'appartamento con workspace nelle colline di Bertinoro",
+  data: "2026-05-18",
+  categoria: "Storie di Romagna",
+  sommario: "Lavorare da remoto dalle colline romagnole non è solo una questione di WiFi veloce. È scegliere un ritmo diverso, tra vigneti e borghi medievali, dove ogni pausa diventa un'esperienza. Bertinoro offre appartamenti con workspace dedicato, cucina attrezzata e una base ideale per chi vuole rigenerarsi senza mai perdere il filo del lavoro.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Se nei mesi scorsi ti abbiamo raccontato come Bertinoro sia una base perfetta per staccare dalla routine vicino a Bologna, per esplorare le cantine di Romagna o per un weekend romantico tra le colline, oggi aggiungiamo un altro tassello: puoi anche lavorarci. Non in un coworking anonimo, non in una stanza d'albergo, ma in un appartamento vacanze dove il workspace si affaccia sui vigneti e la pausa caffè si prende in giardino, con vista sulla Pianura Padana." },
+    { tipo: "paragrafo", testo: "Lavorare da remoto in Romagna significa scegliere un ritmo diverso. Le colline romagnole sono abbastanza vicine alle città — 15 minuti da Cesena, 20 da Forlì, 60 da Bologna — per non sentirti isolato, ma abbastanza distanti da respirare aria pulita e camminare tra i filari dopo l'ultima call. Casa Cavour Bertinoro è pensata anche per questo: un appartamento con cucina completamente attrezzata, connessione WiFi affidabile, un tavolo da lavoro dove puoi stare comodo per ore, e un giardino privato per quando hai bisogno di staccare lo sguardo dallo schermo." },
+    
+    { tipo: "titoletto", testo: "Perché scegliere Bertinoro per lo smart working" },
+    { tipo: "paragrafo", testo: "Bertinoro è soprannominato 'Balcone della Romagna' per una ragione: da quassù si vede il mare all'orizzonte e, nelle giornate limpide, la pianura fino ai profili dell'Appennino. Il centro storico è tranquillo, con osterie, enoteche e qualche bar dove fare colazione. Non troverai traffico, né rumori di città. Quello che troverai è un borgo medievale che vive al ritmo delle stagioni del vino: Sangiovese, Albana DOCG, Pagadebit." },
+    { tipo: "paragrafo", testo: "Secondo i dati di Emilia-Romagna Turismo, la provincia di Forlì-Cesena ospita oltre 200 cantine aperte alle visite, molte delle quali a pochi chilometri da Bertinoro. Questo significa che dopo una giornata di lavoro puoi facilmente raggiungere una cantina per una degustazione, oppure camminare lungo i sentieri della Strada dei Vini e dei Sapori dei Colli di Forlì e Cesena. Lo smart working qui non è solo questione di connettività: è avere la possibilità di vivere il territorio anche quando non sei in vacanza." },
+    
+    { tipo: "titoletto", testo: "Cosa serve davvero per lavorare da remoto in un appartamento vacanze" },
+    { tipo: "paragrafo", testo: "Non basta dire 'c'è il WiFi'. Chi lavora da remoto sa che servono: una connessione stabile (non solo veloce sulla carta), un tavolo vero con una sedia comoda, silenzio durante le call, luce naturale per non affaticare gli occhi, e la possibilità di gestire pranzi e cene in autonomia senza dipendere da orari di ristoranti." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro risponde a tutte queste esigenze. L'appartamento ha un workspace dedicato con scrivania, WiFi testato per videochiamate, finestre che illuminano gli ambienti senza abbagliare, e una cucina attrezzata dove puoi cucinare quello che vuoi, quando vuoi. Il self check-in con smartlock ti permette di arrivare in qualsiasi momento, senza doverti coordinare con nessuno. E se viaggi con il tuo cane o gatto, qui sono i benvenuti: il giardino privato è uno spazio sicuro dove possono muoversi liberamente." },
+    
+    { tipo: "titoletto", testo: "Affitto breve o soggiorno lungo: la flessibilità conta" },
+    { tipo: "paragrafo", testo: "Uno degli aspetti più interessanti dell'affitto breve nelle colline romagnole è la flessibilità. Puoi prenotare Casa Cavour per una settimana, per un mese, o anche solo per un weekend lungo quando senti il bisogno di cambiare aria. Non sei legato a contratti rigidi, non devi portare nulla se non il laptop: trovi lenzuola, asciugamani, lavatrice, tutto quello che serve per sentirti a casa." },
+    { tipo: "paragrafo", testo: "Molti freelance e professionisti che lavorano da remoto scelgono Bertinoro proprio per questo: è abbastanza vicino alle città per tornare quando serve, ma abbastanza lontano da permetterti di concentrarti. E se hai bisogno di una pausa, puoi fare una passeggiata fino alla Rocca, scendere in paese per un aperitivo, o semplicemente sederti in giardino con un libro. Lo stesso giardino che durante il giorno ti ha visto rispondere alle email con il portatile sulle ginocchia." },
+    
+    { tipo: "titoletto", testo: "La base per esplorare la Romagna anche mentre lavori" },
+    { tipo: "paragrafo", testo: "Lavorare da Bertinoro non significa rinunciare a esplorare. Anzi. Nei giorni in cui finisci prima, o nei weekend, hai a portata di mano Cesena con la sua Biblioteca Malatestiana (patrimonio UNESCO), Forlì con i musei San Domenico, Rimini a 40 minuti, San Marino a 35, Bologna a un'ora. Se ti è piaciuto l'articolo su dove dormire per visitare le cantine di Romagna, da qui puoi organizzare facilmente visite alle cantine storiche della zona, magari il venerdì pomeriggio dopo l'ultima call." },
+    { tipo: "paragrafo", testo: "E poi ci sono le sagre. Il portale Sagre in Romagna raccoglie decine di eventi enogastronomici nella provincia di Forlì-Cesena: sagre del vino, della piadina, delle castagne in autunno. Puoi pianificare il tuo soggiorno in modo che coincida con uno di questi eventi, e vivere la Romagna autentica anche mentre continui a lavorare." },
+    
+    { tipo: "titoletto", testo: "Quando lo smart working diventa workation" },
+    { tipo: "paragrafo", testo: "La differenza tra smart working e workation è sottile ma reale. Lo smart working è lavorare da un posto diverso dall'ufficio. La workation è lavorare da un posto che ti rigenera. Bertinoro è una workation. Perché quando chiudi il laptop, non ti ritrovi in una stanza d'albergo anonima o in un appartamento senza personalità: sei in un borgo medievale sulle colline romagnole, con il profumo del Sangiovese che sale dai vigneti, il suono delle campane che scandisce le ore, e la consapevolezza che domani, dopo il lavoro, puoi camminare fino al belvedere e guardare il mare da lontano." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro non è pensata solo per chi cerca un weekend enogastronomico o un posto dove dormire vicino a Forlì e Cesena. È pensata anche per chi vuole lavorare in Romagna senza rinunciare alla qualità della vita. Con una cucina dove cucinare, un giardino dove staccare, un workspace dove concentrarti, e un territorio che ti accoglie senza fretta." },
+    
+    { tipo: "titoletto", testo: "Prenota il tuo soggiorno di smart working a Bertinoro" },
+    { tipo: "paragrafo", testo: "Se stai cercando un appartamento vacanze per smart working in Romagna, con spazi pensati per lavorare e vivere bene, Casa Cavour Bertinoro è disponibile per prenotazioni su Airbnb. Qui trovi tutto quello che serve: connessione, silenzio, luce, cucina, giardino. E fuori dalla porta, le colline romagnole che aspettano solo di essere esplorate." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
+{
   id: "geo-aeo-giardino-privato-colline-romagnole-2026",
   titolo: "Casa vacanze con giardino privato nelle colline romagnole: perché Bertinoro è la base giusta",
   data: "2026-04-27",
