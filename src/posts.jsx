@@ -8,7 +8,61 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
-
+{
+  id: "geo-aeo-alloggiare-colline-romagnole-2026",
+  titolo: "Dove alloggiare per visitare le colline romagnole: Bertinoro come base tra vigneti e borghi",
+  data: "2026-05-22",
+  categoria: "Storie di Romagna",
+  sommario: "Le colline romagnole si esplorano meglio con una base solida. Bertinoro offre quella posizione privilegiata tra vigneti e borghi medievali dove ogni spostamento diventa un'esperienza, non solo un tragitto. Ecco come scegliere dove alloggiare per vivere davvero il territorio.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Quando torni la sera da una giornata tra le cantine del Sangiovese, dall'esplorazione di borghi arroccati o da una passeggiata tra i vigneti, la differenza la fa il posto dove rientri. Non serve solo un letto. Serve una base che sia già parte dell'esperienza, non un semplice appoggio logistico. Le colline romagnole chiedono tempo, e per chi cerca autenticità tra Forlì e Cesena, Bertinoro rappresenta quella scelta che semplifica tutto senza mai sminuire nulla." },
+    { tipo: "paragrafo", testo: "Ne abbiamo già parlato raccontando dove dormire vicino a Forlì e Cesena, dove staccare dalla routine partendo da Bologna, o come organizzare un weekend enogastronomico. Ogni articolo aggiungeva un tassello. Questo, invece, risponde alla domanda più pratica: dove conviene davvero alloggiare se vuoi visitare le colline romagnole senza perdere tempo in trasferimenti inutili?" },
+    
+    { tipo: "titoletto", testo: "Perché Bertinoro funziona come base per le colline romagnole" },
+    { tipo: "paragrafo", testo: "Bertinoro non è solo un borgo panoramico. È un punto geografico che risolve problemi concreti. A 15 minuti da Cesena, 20 da Forlì, 40 da Rimini, 35 da San Marino e 60 da Bologna, ti trovi al centro di una Romagna percorribile in giornata senza mai fare chilometri vuoti." },
+    { tipo: "paragrafo", testo: "Secondo Emilia-Romagna Turismo, Bertinoro è riconosciuta come il 'Balcone di Romagna' proprio per questa posizione privilegiata sulle colline che dominano la pianura fino al mare. Non è retorica turistica: dalla piazza centrale vedi la costa adriatica, e in auto raggiungi Cesenatico in meno di 40 minuti. Questo significa che puoi dedicare la mattina alle cantine della Strada dei Vini e dei Sapori e il pomeriggio a un giro tra i borghi medievali dell'entroterra, senza mai cambiare alloggio." },
+    { tipo: "paragrafo", testo: "Chi cerca un affitto breve nelle colline romagnole spesso valuta agriturismi isolati o hotel nei centri più grandi. Bertinoro offre un'alternativa che non sacrifica nulla: appartamenti con cucina attrezzata nel centro storico, giardini privati dove fare colazione guardando le vigne, strutture pet-friendly per chi viaggia con cani o gatti, workspace dedicati per chi vuole lavorare da remoto senza rinunciare al ritmo lento delle colline." },
+    
+    { tipo: "titoletto", testo: "Cosa significa alloggiare nelle colline romagnole (e non solo passarci)" },
+    { tipo: "paragrafo", testo: "Visitare le colline romagnole in giornata da Bologna o dalla Riviera è un conto. Alloggiare qui è un'altra storia. Significa svegliarsi con il silenzio rotto solo dalle campane della chiesa, aprire la finestra su filari di viti che cambiano colore con le stagioni, scendere in piazza per un caffè e salutare gli stessi volti ogni mattina." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è un esempio concreto di questo approccio. Un appartamento vacanze nel centro storico con cucina completamente attrezzata, giardino privato e self check-in con smartlock. Non è un hotel: è un posto dove torni la sera dopo aver comprato formaggi e vino in cantina, e prepari una cena guardando il tramonto sulla pianura padana. È un alloggio che ti permette di vivere Bertinoro, non solo di dormirci." },
+    { tipo: "paragrafo", testo: "Questo tipo di soggiorno cambia il rapporto con il territorio. Hai la libertà di gestire i tuoi tempi, la possibilità di lavorare da remoto con una connessione affidabile se ne hai bisogno, e la comodità di un giardino dove il tuo cane può correre libero dopo una giornata di passeggiate tra i sentieri collinari." },
+    
+    { tipo: "titoletto", testo: "Gli affitti brevi a Bertinoro: cosa cercare e cosa evitare" },
+    { tipo: "paragrafo", testo: "Non tutti gli affitti brevi nelle colline romagnole offrono la stessa esperienza. Alcuni agriturismi sono meravigliosi ma lontani da tutto, richiedendo l'auto anche per una piadina. Altri appartamenti in paese sono comodi ma senza carattere, stanze funzionali che potrebbero essere ovunque." },
+    { tipo: "paragrafo", testo: "Un buon alloggio per visitare le colline romagnole combina posizione centrale, autonomia (cucina attrezzata, accesso flessibile) e contatto diretto con il territorio. Bertinoro, con il suo centro storico compatto e la vicinanza alle cantine, ai sentieri e alle principali arterie stradali, offre questa combinazione senza compromessi." },
+    { tipo: "paragrafo", testo: "Casa Cavour risponde a molte delle domande pratiche che chi cerca un affitto breve si pone: posso portare il mio animale? C'è uno spazio dove lavorare se devo fare qualche chiamata? Posso cucinare o devo sempre mangiare fuori? C'è un giardino privato dove stare all'aperto senza condividere gli spazi? La risposta, in questo caso, è sempre sì." },
+    
+    { tipo: "titoletto", testo: "Cosa fare da Bertinoro: colline, borghi e esperienze in giornata" },
+    { tipo: "paragrafo", testo: "Alloggiare a Bertinoro significa avere accesso immediato a un territorio ricco senza mai dover fare trasferimenti lunghi. Verso ovest, in 20 minuti sei nell'Appennino forlivese: Predappio, Rocca delle Caminate, le vallate del Bidente. Verso est, in 40 minuti sei a Cesenatico o sulla costa. Verso nord, in un'ora sei a Ravenna. Verso sud, San Marino è a mezz'ora e Rimini a 40 minuti." },
+    { tipo: "paragrafo", testo: "La Strada dei Vini e dei Sapori di Forlì-Cesena attraversa queste colline collegando oltre 200 cantine, secondo i dati ufficiali di Emilia-Romagna Turismo. Molte sono visitabili su prenotazione, altre organizzano degustazioni aperte nei weekend. Da Bertinoro puoi progettare itinerari enologici in giornata senza mai allontanarti troppo dalla tua base." },
+    { tipo: "paragrafo", testo: "Poi ci sono i borghi: Longiano con il suo castello e i musei, Sogliano sul Rubicone per il formaggio di fossa, Santarcangelo di Romagna per le grotte tufacee e i ristoranti. Sono tutti raggiungibili in meno di mezz'ora. E se ti prende voglia di mare, Cesenatico è lì, a portata di pranzo." },
+    
+    { tipo: "titoletto", testo: "Weekend o settimane: Bertinoro si adatta al tuo ritmo" },
+    { tipo: "paragrafo", testo: "Un weekend romantico nelle colline romagnole e una settimana di smart working tra le vigne sono due esperienze diverse, ma entrambe funzionano meglio con una base solida. Casa Cavour Bertinoro si presta a entrambi gli scenari: abbastanza centrale per non perdere tempo, abbastanza tranquilla per rigenerarsi." },
+    { tipo: "paragrafo", testo: "Chi viene per un weekend spesso alterna visite alle cantine, passeggiate nel centro storico e cene in osteria. Chi resta una settimana lavora da remoto al mattino, esplora il territorio nel pomeriggio e usa la cucina attrezzata per gestire i pasti senza vincoli di orario. In entrambi i casi, la posizione geografica di Bertinoro semplifica tutto." },
+    
+    { tipo: "titoletto", testo: "Rigenerarsi nelle colline romagnole: non è solo un modo di dire" },
+    { tipo: "paragrafo", testo: "Le colline romagnole non sono un posto dove andare per spuntare una lista di attrazioni. Sono un territorio dove stare, con un ritmo diverso da quello della città o della costa. Bertinoro offre quel punto d'equilibrio tra accessibilità e autenticità che rende un soggiorno rigenerante senza essere isolante." },
+    { tipo: "paragrafo", testo: "Quando torni alla tua casa vacanze con giardino privato dopo una giornata passata tra vigneti e borghi, non hai bisogno di altro. Apri una bottiglia di Sangiovese comprata direttamente in cantina, ti siedi all'aperto e guardi il sole che scende sulla pianura. È qui che capisci perché scegliere bene dove alloggiare cambia un viaggio." },
+    { tipo: "paragrafo", testo: "Bertinoro non è l'unica opzione per visitare le colline romagnole, ma è quella che raramente delude. Ha la posizione giusta, l'atmosfera giusta e quel mix di servizi e autenticità che rende un soggiorno memorabile. Se stai cercando un appartamento con cucina in affitto breve per esplorare la Romagna, questo è un punto di partenza solido." },
+    
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è disponibile per prenotazioni su Airbnb, con possibilità di soggiorni brevi o prolungati. Il check-in con smartlock permette massima flessibilità, utile per chi arriva in orari non standard o vuole gestire il soggiorno in autonomia." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+    
+    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+  ],
+  attivo: true,
+},
 {
   id: "geo-aeo-smart-working-romagna-2026",
   titolo: "Smart working in Romagna: l'appartamento con workspace nelle colline di Bertinoro",
