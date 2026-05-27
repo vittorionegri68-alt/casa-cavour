@@ -472,11 +472,11 @@ function About() {
               Casa Cavour si trova in Via Cavour, nel cuore del centro storico di Bertinoro — borgo medievale sulle colline romagnole nella provincia di Forlì-Cesena, soprannominato il <em>"Balcone della Romagna"</em> per la sua vista panoramica sull'Adriatico.
             </p>
             <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "1.75rem" }}>
-              L'appartamento è stato progettato per chi vuole vivere la Romagna autentica: affitto breve con cucina attrezzata, ideale per coppie in cerca di un weekend romantico, per gli amanti dell'enoturismo e per chi vuole usare Bertinoro come base per esplorare la Romagna, il mare e i borghi medievali dell'Emilia-Romagna. Per scoprire eventi, itinerari e attrazioni del territorio, il portale ufficiale è <a href="https://www.visitbertinoro.it/it/" target="_blank" rel="noopener noreferrer" style={{ color: C.gold, textDecoration: "none" }}>visitbertinoro.it</a>.
+              L'appartamento è stato progettato per chi vuole vivere la Romagna autentica: affitto breve con cucina attrezzata, ideale per coppie in cerca di un weekend romantico, per gli amanti dell'enoturismo e per chi vuole usare Bertinoro come base per esplorare la Romagna, il mare e i borghi medievali dell'Emilia-Romagna.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {[
-                "15 min da Cesena · 20 min da Forlì",
+                "15 min da Cesena · 30 min da Cesenatico",
                 "35 min dalla Repubblica di San Marino",
                 "40 min da Rimini e dalla Riviera Adriatica",
                 "Accesso diretto alla Strada dei Vini e dei Sapori",
@@ -501,9 +501,20 @@ function About() {
 
 function Blog() {
   const [aperto, setAperto] = useState(null);
+  const sectionRef = useRef(null);
   const visibili = posts.filter(p => p.attivo).sort((a, b) => new Date(b.data) - new Date(a.data));
+
+  function chiudi() {
+    setAperto(null);
+    setTimeout(() => {
+      if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 50);
+  }
+
   return (
-    <section id="blog" style={{ background: C.bg2, padding: "7rem 2rem" }}>
+    <section ref={sectionRef} id="blog" style={{ background: C.bg2, padding: "7rem 2rem" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Reveal>
           <div style={{ marginBottom: "3.5rem" }}>
@@ -543,7 +554,7 @@ function Blog() {
           return (
             <Reveal>
               <div style={{ maxWidth: 760, margin: "0 auto" }}>
-                <button onClick={() => setAperto(null)}
+                <button onClick={chiudi}
                   style={{ background: "none", border: `1px solid ${C.border}`, padding: "0.45rem 1rem", fontSize: "0.72rem", color: C.textMid, fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: "2.5rem", transition: "all 0.2s" }}
                   onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textMid; }}>
@@ -597,6 +608,14 @@ function Blog() {
                     onMouseLeave={e => e.currentTarget.style.background = C.gold}>
                     Verifica disponibilita su Airbnb ↗
                   </a>
+                </div>
+                <div style={{ marginTop: "2.5rem", paddingTop: "2rem", borderTop: `1px solid ${C.border}`, display: "flex", justifyContent: "center" }}>
+                  <button onClick={chiudi}
+                    style={{ background: "transparent", border: `1px solid ${C.gold}`, color: C.gold, fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer", padding: "0.65rem 2rem", transition: "all 0.2s" }}
+                    onMouseEnter={e => { e.currentTarget.style.background = C.gold; e.currentTarget.style.color = "#fff"; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.gold; }}>
+                    ← Tutti gli articoli
+                  </button>
                 </div>
               </div>
             </Reveal>
@@ -708,7 +727,7 @@ function Footer() {
   return (
     <footer style={{ background: C.bg3, borderTop: `1px solid ${C.border}`, padding: "4rem 2rem 2rem" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "3rem", marginBottom: "3rem" }} className="footer-grid">
+        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: "3rem", marginBottom: "3rem" }} className="footer-grid">
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.9rem" }}>
               <img src={IMG.bertinoro} alt="Bertinoro" style={{ height: 30, width: 30, objectFit: "contain", filter: "brightness(0) saturate(100%) invert(45%) sepia(60%) saturate(600%) hue-rotate(10deg) brightness(85%)" }} />
@@ -729,20 +748,6 @@ function Footer() {
                 {label}
               </a>
             ))}
-          </div>
-          <div>
-            <div style={{ fontSize: "0.67rem", letterSpacing: "0.18em", textTransform: "uppercase", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", marginBottom: "0.85rem" }}>Host</div>
-            <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.82rem", color: C.textMid, lineHeight: 1.75, marginBottom: "0.65rem" }}>
-              Lucea Collection<br />
-              <a href="mailto:luceacollection@gmail.com" style={{ color: C.textMid, textDecoration: "none" }}>luceacollection@gmail.com</a>
-            </div>
-            <div style={{ marginTop: "1rem", fontSize: "0.67rem", letterSpacing: "0.18em", textTransform: "uppercase", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", marginBottom: "0.75rem" }}>Seguici</div>
-            <div style={{ display: "flex", gap: "0.75rem" }}>
-              <a href="https://www.instagram.com/bnb_bertinoro/" target="_blank" rel="noopener noreferrer" style={{ color: C.textMid, textDecoration: "none", fontSize: "0.83rem", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
-                onMouseEnter={e => e.target.style.color=C.gold} onMouseLeave={e => e.target.style.color=C.textMid}>Instagram</a>
-              <a href="https://www.facebook.com/profile.php?id=61577458010505" target="_blank" rel="noopener noreferrer" style={{ color: C.textMid, textDecoration: "none", fontSize: "0.83rem", fontFamily: "'DM Sans',sans-serif", transition: "color 0.2s" }}
-                onMouseEnter={e => e.target.style.color=C.gold} onMouseLeave={e => e.target.style.color=C.textMid}>Facebook</a>
-            </div>
           </div>
           <div>
             <div style={{ fontSize: "0.67rem", letterSpacing: "0.18em", textTransform: "uppercase", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", marginBottom: "0.85rem" }}>Prenota</div>
