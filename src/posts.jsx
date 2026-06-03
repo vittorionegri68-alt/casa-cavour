@@ -9,52 +9,6 @@
  
 export const posts = [
 {
-  id: "geo-aeo-dove-alloggiare-colline-romagnole-2026",
-  titolo: "Dove alloggiare per visitare le colline romagnole: la base giusta tra Bertinoro, Forlì e Cesena",
-  data: "2026-05-27",
-  categoria: "Storie di Romagna",
-  sommario: "Le colline romagnole si esplorano con più attenzione se hai una base dove tornare la sera. Tra Bertinoro, Forlì e Cesena, la scelta non è casuale: dipende da come vuoi vivere il territorio.",
-  contenuto: [
-    { tipo: "paragrafo", testo: "Quando ti muovi tra le colline romagnole, la domanda non è solo cosa vedere, ma dove posare le valigie la sera. Lo abbiamo già raccontato parlando delle cantine da visitare, dei borghi da scoprire in un weekend, dei posti dove ricaricare le energie lontano dalla routine. Ogni volta torna lo stesso punto: serve una base che non sia solo un letto, ma un luogo da cui partire e a cui tornare senza fretta." },
-    { tipo: "paragrafo", testo: "Le colline tra Forlì e Cesena non sono un territorio che si attraversa distrattamente. Sono fatte di vigneti pettinati, borghi che tengono il tempo sospeso, strade di crinale dove la vista spazia dalla pianura all'Adriatico. E Bertinoro, seduto sul Monte Cesubeo, è il punto in cui tutto questo prende forma. Non a caso lo chiamano il Balcone della Romagna." },
-    { tipo: "paragrafo", testo: "Alloggiare qui, nelle colline romagnole, significa scegliere un ritmo diverso. Significa avere la libertà di muoversi verso Cesena, Forlì, il mare o l'Appennino, ma anche quella di fermarsi, aprire una bottiglia di Sangiovese e guardarsi intorno senza dover ripartire." },
-    
-    { tipo: "titoletto", testo: "Bertinoro: la base naturale nelle colline romagnole" },
-    { tipo: "paragrafo", testo: "Bertinoro è il centro naturale per chi vuole stare in collina senza rinunciare ai servizi. Secondo i dati di Visit Romagna, il borgo è a 15 km da Forlì, 13 km da Cesena, e da qui la vista arriva fino alla costa. La Rocca domina il paese, la Colonna dell'Ospitalità ne racconta la storia, e la Piazza della Libertà è uno dei punti panoramici più fotografati della provincia di Forlì-Cesena." },
-    { tipo: "paragrafo", testo: "Ma Bertinoro non è solo cartolina. È un posto dove puoi camminare tra osterie e cantine, fermarti a mangiare senza prenotare con settimane di anticipo, e trovare appartamenti con cucina attrezzata che ti permettono di vivere il territorio con i tuoi tempi. Il centro storico è vivo, non museificato. E quando la sera scende, il silenzio non è mai vuoto: è quello delle colline che si preparano alla notte." },
-    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è uno di quegli alloggi che ti restituiscono esattamente questo: uno spazio tuo nel cuore del borgo, con una cucina dove preparare la colazione con calma, un giardino privato dove sederti dopo una giornata tra vigneti e borghi, e la libertà di entrare e uscire senza orari grazie al self check-in. Non è un hotel. È una base." },
-    
-    { tipo: "titoletto", testo: "Forlì e Cesena: quando serve una città a portata di mano" },
-    { tipo: "paragrafo", testo: "Se preferisci alloggiare in una città e poi salire in collina quando vuoi, Forlì e Cesena sono le due opzioni più sensate. Forlì è a 20 minuti da Bertinoro, Cesena ancora meno. Entrambe sono sulla Via Emilia, hanno stazioni ferroviarie e una buona scelta di hotel e B&B. La differenza è nella posizione: Forlì ti proietta verso l'interno, Cesena è più vicina al mare." },
-    { tipo: "paragrafo", testo: "Se arrivi in treno o vuoi avere più servizi a disposizione, queste basi urbane funzionano. Ma la sera torni in un contesto diverso: meno silenzio, più traffico, nessuna vista sulle colline. Dipende da cosa cerchi. Per chi vuole esplorare le colline romagnole davvero, alloggiare a Bertinoro resta la scelta più coerente." },
-    
-    { tipo: "titoletto", testo: "Fratta Terme e gli agriturismi sparsi: l'opzione natura" },
-    { tipo: "paragrafo", testo: "Fratta Terme è la frazione termale di Bertinoro, immersa tra vigneti e campagna. Qui l'offerta è diversa: hotel con spa, agriturismi, strutture pensate per chi cerca benessere e tranquillità più che movida. È una buona base se vuoi abbinare passeggiate collinari e percorsi termali, ma sei comunque a pochi minuti dal centro di Bertinoro e dai suoi servizi." },
-    { tipo: "paragrafo", testo: "Gli agriturismi sparsi nelle colline tra Forlì e Cesena sono un'altra opzione valida, soprattutto se viaggi in auto e vuoi un contatto diretto con la campagna. Spesso producono vino, olio o formaggi, e l'ospitalità è familiare. L'unico limite è che sei più isolato: comodo per il relax, meno se vuoi muoverti ogni giorno." },
-    
-    { tipo: "titoletto", testo: "Affitto breve o hotel: quale scegliere nelle colline romagnole" },
-    { tipo: "paragrafo", testo: "La scelta tra un appartamento in affitto breve e un hotel dipende da come vuoi vivere il soggiorno. Un hotel ti dà colazione inclusa e servizi standard, ma ti vincola agli orari. Un appartamento con cucina attrezzata ti lascia libero: puoi comprare al mercato di Cesena, portare a casa formaggi e salumi da una cantina, cucinare quando vuoi." },
-    { tipo: "paragrafo", testo: "E se viaggi con animali, la questione si fa ancora più chiara. Molti hotel non li accettano, o lo fanno con supplementi e limitazioni. Un appartamento pet-friendly nelle colline romagnole, come Casa Cavour Bertinoro, risolve il problema: giardino privato, nessun vincolo, e il tuo cane può muoversi tranquillo." },
-    { tipo: "paragrafo", testo: "Lo stesso vale per chi lavora da remoto. Un workspace dedicato, WiFi stabile e la possibilità di organizzare le giornate a piacimento fanno la differenza. Le colline romagnole sono il posto giusto per combinare smart working e rigenerazione, ma serve un alloggio pensato per questo." },
-    
-    { tipo: "titoletto", testo: "Bertinoro come base per esplorare la Romagna" },
-    { tipo: "paragrafo", testo: "Bertinoro non è solo il punto di partenza per visitare le colline. È una base strategica per muoversi in tutta la Romagna: Rimini è a 40 minuti, San Marino a 35, Bologna a un'ora. Puoi passare la mattina a Ravenna tra i mosaici, il pomeriggio in una cantina del Sangiovese, e la sera tornare in collina senza fare troppi chilometri." },
-    { tipo: "paragrafo", testo: "Questa flessibilità è uno dei motivi per cui sempre più viaggiatori scelgono un affitto breve a Bertinoro invece di spostarsi ogni due notti. Hai una casa, non una stanza d'albergo. E soprattutto hai il tempo per respirare il territorio, non solo attraversarlo." },
-    
-    { tipo: "titoletto", testo: "Dove prenotare per visitare le colline romagnole" },
-    { tipo: "paragrafo", testo: "Se cerchi un appartamento vacanze nel centro storico di Bertinoro, con giardino privato, cucina completamente attrezzata e self check-in, Casa Cavour Bertinoro risponde a tutte queste esigenze. È pensata per chi vuole esplorare le colline romagnole con i propri tempi, senza vincoli e con la libertà di vivere il territorio come preferisce." },
-    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
-    { tipo: "titoletto", testo: "Leggi anche" },
-    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
-    { tipo: "titoletto", testo: "Seguici sui social" },
-    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
-    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
-  ],
-  attivo: true,
-},
-{
   id: "geo-aeo-alloggiare-colline-romagnole-2026",
   titolo: "Dove alloggiare per visitare le colline romagnole: Bertinoro come base tra vigneti e borghi",
   data: "2026-05-22",
