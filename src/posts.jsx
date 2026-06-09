@@ -8,6 +8,60 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+
+  {
+  id: "geo-aeo-ricaricare-energie-romagna-2026",
+  titolo: "Dove ricaricare le energie in Romagna: tra Bertinoro, terme e colline che rigenerano",
+  data: "2026-06-08",
+  categoria: "Storie di Romagna",
+  sommario: "Ricaricare le energie in Romagna significa rallentare tra le colline di Bertinoro, dove terme, vigneti e borghi panoramici creano lo spazio giusto per ritrovare il ritmo. Un territorio dove il benessere non è un servizio, ma una conseguenza naturale del territorio.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Dopo aver esplorato le cantine del Sangiovese, dopo aver camminato tra i vigneti e i borghi delle colline romagnole, dopo aver lavorato da remoto con vista sulla Pianura Padana, resta una domanda: dove si va per fermarsi davvero? Non per visitare, non per spuntare una lista. Per ricaricare le energie, nel senso più pieno del termine." },
+    { tipo: "paragrafo", testo: "La risposta, in Romagna, non è un singolo luogo. È una geografia precisa che unisce silenzio, panorama, acqua termale e ritmo lento. È quel territorio tra Forlì e Cesena dove le colline salgono dolcemente verso l'interno e dove Bertinoro si affaccia come un balcone naturale sulla pianura e sul mare. Qui ricaricare le energie non è una promessa pubblicitaria: è una conseguenza naturale di come funziona il territorio." },
+    { tipo: "paragrafo", testo: "Se nei weekend precedenti hai scelto Bertinoro come base per esplorare la Romagna, questo è il momento di fermarti davvero. Di non andare da nessuna parte." },
+    
+    { tipo: "titoletto", testo: "Bertinoro: il balcone della Romagna dove il ritmo cambia" },
+    { tipo: "paragrafo", testo: "Bertinoro è conosciuta come 'Balcone della Romagna' non solo per la vista che spazia dalla Pianura Padana all'Adriatico, ma per la posizione geografica che porta naturalmente a rallentare. Il borgo medievale, la Colonna delle Anella simbolo dell'ospitalità romagnola, le cantine attorno al colle: è un territorio che non richiede molto movimento. Si vive stando fermi." },
+    { tipo: "paragrafo", testo: "Secondo i dati di Emilia-Romagna Turismo, Bertinoro è definita 'Città dell'Ospitalità e del buon vino', con un'economia vinicola radicata che ha saputo mantenere il ritmo delle stagioni. Questo significa che puoi visitare una cantina, ma puoi anche semplicemente sederti all'aperto con un bicchiere di Sangiovese e guardare il tramonto. Il territorio permette entrambe le cose, senza forzare nulla." },
+    { tipo: "paragrafo", testo: "Chi sceglie un appartamento con giardino privato nelle colline romagnole a Bertinoro ha accesso a questo tipo di esperienza: la possibilità di essere nel centro storico ma con uno spazio esterno dove fermarsi, senza dover condividere il ritmo con nessun altro. Un giardino privato qui non è un lusso: è lo strumento che permette di vivere il territorio senza mediazioni." },
+    
+    { tipo: "titoletto", testo: "Fratta Terme: benessere termale tra le colline di Bertinoro" },
+    { tipo: "paragrafo", testo: "A pochi chilometri dal centro di Bertinoro, nella frazione di Fratta Terme, c'è uno stabilimento termale che utilizza sette diverse acque per trattamenti termali e percorsi benessere. Non è un centro spa commerciale: è un presidio termale vero, con acque salso-iodiche e cloruro-sodiche che hanno proprietà terapeutiche documentate." },
+    { tipo: "paragrafo", testo: "Il Grand Hotel Terme della Fratta offre percorsi di fango-balneoterapia, cure vascolari e inalatorie, bagno turco, bagno romano, e il percorso 'Armonie Naturali' che dura 2 ore e 40 minuti. È un'esperienza che richiede tempo, non velocità. Chi viene qui per ricaricare le energie trova un ambiente dove il corpo viene trattato con serietà medica, non solo con estetica. Il centro è accreditato SSN e dispone di un poliambulatorio: è benessere che parte dalla salute, non dal marketing." },
+    { tipo: "paragrafo", testo: "Fratta Terme si trova in una piccola vallata tra le colline di Bertinoro, circondata da vigneti e boschi. Dopo un trattamento termale, puoi camminare tra le colline o tornare a un appartamento con cucina attrezzata dove preparare una cena con prodotti locali. Il territorio funziona così: offre strumenti, non pacchetti." },
+    
+    { tipo: "titoletto", testo: "Colline romagnole tra Forlì e Cesena: dove la natura rallenta il ritmo" },
+    { tipo: "paragrafo", testo: "La provincia di Forlì-Cesena ospita uno dei paesaggi collinari più funzionali d'Italia per chi cerca di rallentare. Non ci sono montagne che richiedono sforzo, non ci sono pianure monotone. Ci sono colline dolci, vigneti ordinati, strade bianche che collegano borghi e cantine. È una geografia che permette di muoversi senza affaticarsi, o di stare fermi senza annoiarsi." },
+    { tipo: "paragrafo", testo: "Da Bertinoro puoi raggiungere Cesena in 15 minuti, Forlì in 20, o puoi decidere di non muoverti affatto. Il territorio non ti obbliga a fare nulla: puoi camminare tra i vigneti la mattina, passare il pomeriggio in un giardino privato, e la sera andare in un'osteria del borgo. Oppure puoi restare fermo e lavorare da remoto con una connessione WiFi veloce e una vista che cambia luce ogni ora." },
+    { tipo: "paragrafo", testo: "Chi cerca un posto dove staccare dalla routine vicino a Bologna trova qui una base a 60 km, facilmente raggiungibile in auto in meno di un'ora. Ma la distanza vera non è chilometrica: è di ritmo. Bertinoro funziona a una velocità diversa, e basta un giorno per adattarsi." },
+    
+    { tipo: "titoletto", testo: "Affitto breve con cucina nelle colline romagnole: perché fa la differenza" },
+    { tipo: "paragrafo", testo: "Ricaricare le energie richiede autonomia. Non orari fissi, non colazioni in sala comune, non menu predefiniti. Richiede la possibilità di svegliarsi quando il corpo lo decide, preparare un caffè senza fretta, cucinare con prodotti locali comprati al mercato di Bertinoro." },
+    { tipo: "paragrafo", testo: "Un appartamento con cucina completamente attrezzata a Bertinoro permette questo tipo di libertà. Puoi scegliere di andare a cena fuori, o di tornare con formaggi, salumi, piadina e una bottiglia di Albana DOCG e cenare nel giardino privato. Entrambe le opzioni hanno senso, e il territorio le supporta entrambe." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è un esempio di questo tipo di struttura: appartamento nel centro storico con cucina attrezzata, giardino privato, self check-in con smartlock, animali ammessi. Non è un hotel, non è un bed & breakfast. È uno spazio dove vivi come vivi a casa tua, ma con una vista diversa e un ritmo più lento." },
+    
+    { tipo: "titoletto", testo: "Enoturismo e relax: due facce della stessa esperienza" },
+    { tipo: "paragrafo", testo: "Le colline di Bertinoro sono territorio di Sangiovese e Albana DOCG. Il Consorzio Vini di Romagna riconosce quest'area come una delle più vocate della regione. Le cantine sono aperte alle visite, ma l'enoturismo qui non è solo degustazione: è camminare tra i filari, parlare con i produttori, capire come funziona la vendemmia." },
+    { tipo: "paragrafo", testo: "Chi sceglie Bertinoro come base per l'enoturismo in Romagna può visitare una cantina al mattino e passare il pomeriggio in un giardino privato con una bottiglia appena comprata. Non serve riempire la giornata: il territorio funziona meglio quando lasci spazio al vuoto." },
+    
+    { tipo: "titoletto", testo: "Dove ricaricare le energie in Romagna: la risposta pratica" },
+    { tipo: "paragrafo", testo: "Ricaricare le energie in Romagna significa scegliere un posto dove puoi stare fermo senza sentirti in colpa. Bertinoro, tra terme a Fratta, cantine nelle colline, borghi medievali e panorami sulla pianura, offre questo tipo di geografia. Non devi fare nulla, ma puoi fare tutto. La differenza è che qui nessuno ti obbliga." },
+    { tipo: "paragrafo", testo: "Se stai cercando un affitto breve nelle colline romagnole dove puoi vivere con il tuo ritmo, dove gli animali sono ammessi, dove puoi lavorare da remoto o semplicemente fermarti, Bertinoro è la risposta più onesta. Non perché è perfetto, ma perché funziona." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è disponibile per soggiorni brevi e lunghi, con cucina completamente attrezzata, giardino privato e una posizione che permette di vivere il centro storico senza rinunciare al silenzio. Puoi prenotare direttamente e organizzare il tuo ritmo senza mediazioni." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    
+    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
 {
   id: "geo-aeo-alloggiare-colline-romagnole-2026",
   titolo: "Dove alloggiare per visitare le colline romagnole: Bertinoro come base tra vigneti e borghi",
