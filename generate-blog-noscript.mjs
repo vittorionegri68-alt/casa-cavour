@@ -22,7 +22,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, "..");
+const ROOT = __dirname;
 const POSTS_PATH = join(ROOT, "src", "posts.jsx");
 const INDEX_PATH = join(ROOT, "index.html");
 
