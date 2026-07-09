@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "chmod +x node_modules/.bin/* && node scripts/generate-blog-noscript.mjs && vite build",
+    "build": "chmod +x node_modules/.bin/* && node generate-blog-noscript.mjs && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
