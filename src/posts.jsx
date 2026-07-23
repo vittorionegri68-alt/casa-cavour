@@ -9,6 +9,58 @@
  
 export const posts = [
 
+{
+  id: "geo-aeo-weekend-vendemmia-romagna-2026",
+  titolo: "Dove dormire per un weekend di vendemmia in Romagna: Bertinoro tra vigneti e cantine",
+  data: "2026-07-23",
+  categoria: "Storie di Romagna",
+  sommario: "Un weekend di vendemmia nelle colline romagnole di Bertinoro è l'occasione per vivere il territorio dall'interno: camminare tra i filari, degustare Sangiovese e Albana DOCG in cantina, e tornare la sera in un appartamento con cucina attrezzata dove cucinare con i prodotti locali.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Se hai letto il nostro articolo su dove dormire per visitare le cantine di Romagna, sai già che Bertinoro è il cuore dell'enoturismo romagnolo. Ma un weekend di vendemmia è diverso. Non si tratta solo di degustare: si tratta di mettere le mani nell'uva, sentire il profumo del mosto, vedere il lavoro di un anno concentrato in poche settimane decisive." },
+    { tipo: "paragrafo", testo: "A settembre e ottobre, le colline romagnole intorno a Bertinoro si accendono di attività. Le cantine aprono le porte per esperienze dirette tra i filari, molti agriturismi organizzano giornate di raccolta guidata, e l'aria ha quel sapore dolce e denso che anticipa il vino nuovo. Per vivere tutto questo serve una base: un posto dove tornare la sera con le mani ancora sporche di terra, aprire una bottiglia comprata in cantina e sedersi fuori senza fretta." },
+    { tipo: "paragrafo", testo: "Bertinoro è quella base. A 15 minuti da Cesena, 20 da Forlì, 60 da Bologna. Abbastanza vicina a tutto, abbastanza distante dal rumore. E con una tradizione di ospitalità che non è solo folklore: la Colonna delle Anelle in piazza, dove ogni anello corrispondeva a una famiglia pronta ad accogliere i viandanti, è ancora lì." },
+    
+    { tipo: "titoletto", testo: "Vendemmia in Romagna: cosa significa davvero" },
+    { tipo: "paragrafo", testo: "La vendemmia non è una scenografia. È lavoro vero, fatto al mattino presto quando l'uva è ancora fresca di rugiada. Ma molte cantine nelle colline romagnole — soprattutto nella provincia di Forlì-Cesena — hanno capito che far toccare con mano il processo è il modo migliore per raccontare il territorio. Secondo i dati di Emilia-Romagna Turismo, la provincia di Forlì-Cesena ospita oltre 200 cantine aperte alle visite, molte delle quali organizzano esperienze di vendemmia tra fine agosto e ottobre." },
+    { tipo: "paragrafo", testo: "Il Sangiovese di Romagna DOC e l'Albana di Romagna DOCG crescono qui, sulle colline argillose che scendono verso la Pianura Padana. L'Albana è stato il primo vino bianco italiano a ottenere la DOCG, e Bertinoro è uno dei suoi territori simbolo. Camminare tra i filari in questo periodo significa vedere quello che poi si beve: grappoli pronti, casse piene, l'odore dolce del mosto appena pigiato." },
+    
+    { tipo: "titoletto", testo: "Dove alloggiare: affitto breve con cucina nelle colline romagnole" },
+    { tipo: "paragrafo", testo: "Per un weekend di vendemmia serve un alloggio che ti lasci libero. Casa Cavour Bertinoro è un appartamento vacanze nel centro storico di Bertinoro, con cucina completamente attrezzata, giardino privato e tutto quello che serve per vivere il territorio senza dipendere da orari o ristoranti. Self check-in con smartlock, quindi arrivi quando vuoi. Workspace dedicato se devi alternare vendemmia e smart working. Animali ammessi, se il tuo cane o gatto viaggia con te." },
+    { tipo: "paragrafo", testo: "La cucina è il vero punto forte: puoi comprare salumi, formaggi, pane e verdure nei mercati o nelle botteghe del borgo e cucinare quello che trovi. Il giardino privato è il posto giusto per chiudere la giornata con un calice e nessuno intorno. La posizione centrale ti mette a 5 minuti a piedi dalla Piazza della Libertà, il belvedere più famoso della zona, da cui nelle giornate limpide si vede fino al mare." },
+    
+    { tipo: "titoletto", testo: "Le cantine da visitare e le esperienze di vendemmia" },
+    { tipo: "paragrafo", testo: "Le colline di Bertinoro sono piene di cantine familiari e aziende storiche. Molte si trovano lungo la Strada dei Vini e dei Sapori di Forlì-Cesena, un percorso enogastronomico che attraversa borghi, vigneti e luoghi di produzione. Durante la vendemmia, alcune cantine organizzano degustazioni con visita ai vigneti, cene tra i filari, o esperienze di raccolta guidata dove tagli i grappoli, porti le cassette in cantina e segui i primi passi della vinificazione." },
+    { tipo: "paragrafo", testo: "Come abbiamo raccontato nell'articolo su dove alloggiare per un weekend enogastronomico in Romagna, ogni cantina ha una sua personalità. Alcune sono piccole e fanno tutto a mano, altre più strutturate ma sempre radicate nella tradizione. La cosa migliore è pianificare una o due visite al giorno, lasciando il resto del tempo per camminare, mangiare bene, o semplicemente stare fermi." },
+    
+    { tipo: "titoletto", testo: "Cosa fare oltre alla vendemmia: borghi, sagre e relax" },
+    { tipo: "paragrafo", testo: "Un weekend di vendemmia in Romagna non è solo vino. Bertinoro è un borgo medievale con vicoli stretti, osterie autentiche e una storia che si tocca con mano. La Colonna dell'Ospitalità in piazza è il simbolo di una tradizione: ogni anello corrispondeva a una famiglia disposta ad accogliere chi arrivava. È ancora lì, funziona ancora — nel senso che Bertinoro è un posto dove la gente ti parla, ti consiglia, ti fa sentire a casa." },
+    { tipo: "paragrafo", testo: "A settembre e ottobre, le sagre di paese riempiono il calendario. Il portale Sagre in Romagna raccoglie tutti gli eventi della provincia di Forlì-Cesena: feste della vendemmia, sagre del vino novello, mercatini di prodotti locali. È il momento giusto per assaggiare piadina, cappelletti, carni alla griglia e tutto quello che la cucina romagnola sa fare meglio." },
+    { tipo: "paragrafo", testo: "Se vuoi camminare, i sentieri panoramici intorno a Bertinoro attraversano vigneti, calanchi e boschi. Puoi scaricare le tracce dal sito Visit Bertinoro, che raccoglie itinerari a piedi e in bicicletta con mappe e indicazioni. E se vuoi abbinare vendemmia e relax, Fratta Terme — località termale nel comune di Bertinoro — è a pochi minuti, circondata da vigneti." },
+    
+    { tipo: "titoletto", testo: "Quanto tempo serve e come organizzare il weekend" },
+    { tipo: "paragrafo", testo: "Due giorni bastano per vivere un weekend di vendemmia senza correre. Il sabato mattina arrivi, fai il check-in (senza bisogno di incontrarsi: lo smartlock ti lascia entrare quando vuoi), e parti subito per una cantina prenotata in anticipo. Il pomeriggio lo passi a Bertinoro, tra centro storico e belvedere. La sera cucini nell'appartamento con quello che hai comprato durante il giorno, o esci in una delle osterie del borgo." },
+    { tipo: "paragrafo", testo: "La domenica mattina è perfetta per una camminata tra i vigneti o per visitare un'altra cantina. Il pranzo in un agriturismo tra le colline — molte strutture come Agriturismo 7 Colonne o Agriturismo al Colle offrono pranzi tipici romagnoli con prodotti del territorio — poi il rientro. Semplice, senza programmi rigidi. Come abbiamo raccontato nell'articolo su dove staccare dalla routine vicino a Bologna, è proprio questo ritmo lento che fa la differenza." },
+    
+    { tipo: "titoletto", testo: "Perché un appartamento con giardino privato cambia tutto" },
+    { tipo: "paragrafo", testo: "Dopo una giornata tra vigneti, cantine e sentieri, tornare in un appartamento con giardino privato non è un dettaglio. È lo spazio dove fermarti davvero, senza condividere niente con nessuno. Aprire una bottiglia comprata in cantina, sederti fuori, ascoltare il silenzio delle colline. Come raccontavamo nell'articolo su casa vacanze con giardino privato nelle colline romagnole, il giardino cambia il ritmo di un intero viaggio." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è pensata per questo: una base solida da cui esplorare il territorio, ma anche un posto dove stare bene senza uscire. Cucina completamente attrezzata per cucinare con i prodotti locali, workspace dedicato se lavori da remoto, animali ammessi. Tutto pensato per chi viaggia senza fretta e vuole vivere la Romagna come chi ci abita." },
+    
+    { tipo: "titoletto", testo: "Prenota il tuo weekend di vendemmia a Bertinoro" },
+    { tipo: "paragrafo", testo: "Se settembre o ottobre ti chiamano verso le colline romagnole, sai dove andare. Bertinoro è la base giusta per vivere un weekend di vendemmia vero, senza artifici. Casa Cavour ti aspetta con la cucina attrezzata, il giardino privato e tutto lo spazio che serve per rigenerarti tra un calice e l'altro." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    
+    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
   {
   id: "geo-aeo-ricaricare-energie-romagna-2026",
   titolo: "Dove ricaricare le energie in Romagna: tra Bertinoro, terme e colline che rigenerano",
