@@ -8,6 +8,64 @@
 // ─────────────────────────────────────────────────────────────────────────────
  
 export const posts = [
+{
+  id: "geo-aeo-enoturismo-romagna-dove-dormire-2026",
+  titolo: "Enoturismo in Romagna: dove dormire per visitare le cantine tra Bertinoro e le colline di Forlì-Cesena",
+  data: "2026-08-17",
+  categoria: "Storie di Romagna",
+  sommario: "Tra le colline romagnole di Bertinoro, l'enoturismo non è solo visita in cantina. È svegliarsi tra i vigneti, cenare nel borgo e scoprire che la scelta di dove dormire cambia il modo in cui vivi il Sangiovese e l'Albana DOCG.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Nei precedenti articoli abbiamo parlato della Strada dei Vini e delle cantine da visitare in Romagna, dei weekend enogastronomici tra Sangiovese e piadina, del ritmo lento delle colline. Ma c'è una domanda che ricorre sempre: dove dormire per vivere davvero l'enoturismo in Romagna, non solo come turista di passaggio ma come ospite di questo territorio?" },
+    { tipo: "paragrafo", testo: "La risposta non è scontata. Puoi scegliere un hotel sulla costa e risalire ogni giorno verso le colline. Oppure puoi fare quello che fanno gli enoturisti più esperti: piantare la base proprio nel cuore delle vigne, a Bertinoro, e da lì esplorare cantine, borghi e ristoranti senza mai perdere il filo dell'esperienza." },
+    { tipo: "paragrafo", testo: "Secondo i dati di Emilia-Romagna Turismo, la provincia di Forlì-Cesena ospita decine di cantine aperte alle visite, concentrate soprattutto sulle colline tra Bertinoro, Predappio e Mercato Saraceno. Ma è proprio Bertinoro — riconosciuta come Città del Vino e Città dell'Ospitalità — il punto di partenza più strategico per chi vuole vivere l'enoturismo romagnolo in modo autentico." },
+    
+    { tipo: "titoletto", testo: "Perché Bertinoro è la base ideale per l'enoturismo in Romagna" },
+    { tipo: "paragrafo", testo: "Bertinoro non è solo un borgo carino da fotografare. È un centro vivo, dove la viticoltura è parte della quotidianità. Le cantine sono sparse tra via Cellaimo, via Cappuccini, via Palmeggiana: nomi di strade che nascondono tenute storiche, vigneti in quota, degustazioni con vista sulla Pianura Padana fino al mare." },
+    { tipo: "paragrafo", testo: "Dormire a Bertinoro significa trovarti già dentro il paesaggio del Sangiovese e dell'Albana DOCG. La mattina esci, scegli una cantina da visitare — magari quella che hai adocchiato la sera prima dal giardino della tua casa vacanze — e nel pomeriggio torni per un aperitivo in piazza. Nessuna corsa contromano, nessun tragitto inutile. Solo il ritmo giusto per capire davvero cosa significa enoturismo in queste colline." },
+    { tipo: "paragrafo", testo: "Da Bertinoro raggiungi Cesena in 15 minuti, Forlì in 20, Rimini in 40. Ma la vera forza di questa posizione è un'altra: puoi fare base qui e muoverti a raggiera verso altre cantine della provincia, senza mai dover dormire in un posto diverso ogni notte. È la logica dell'affitto breve di qualità: un appartamento con cucina completamente attrezzata diventa il tuo punto fermo, mentre il territorio cambia ogni giorno." },
+    
+    { tipo: "titoletto", testo: "Dove dormire tra i vigneti: le frazioni collinari e gli agriturismi" },
+    { tipo: "paragrafo", testo: "Se vuoi un'esperienza ancora più immersa, le frazioni di Bertinoro — Fratta Terme, Polenta, Santa Maria Nuova — offrono agriturismi e tenute vitivinicole con camere. Alcuni di questi luoghi hanno la cantina a pochi passi dalla porta, altri un giardino privato che guarda direttamente sui filari." },
+    { tipo: "paragrafo", testo: "Questo tipo di alloggio funziona soprattutto per chi viaggia in coppia o con animali ammessi. La formula dell'agriturismo in Romagna non è solo ospitalità rurale: è la possibilità di parlare direttamente con chi produce il vino, di capire come nasce una bottiglia di Sangiovese Superiore, di assaggiare l'olio nuovo a colazione." },
+    { tipo: "paragrafo", testo: "Per chi invece preferisce la libertà di un appartamento indipendente, Casa Cavour Bertinoro — nel centro storico del borgo — offre cucina attrezzata, workspace dedicato per chi lavora da remoto, giardino privato e self check-in con smartlock. È la soluzione per chi vuole vivere Bertinoro come un residente temporaneo, non come un ospite di passaggio." },
+    
+    { tipo: "titoletto", testo: "Le cantine da visitare partendo da Bertinoro" },
+    { tipo: "paragrafo", testo: "Il territorio di Bertinoro e delle colline di Forlì-Cesena è punteggiato da cantine storiche e piccoli produttori. Alcune sono aziende familiari che aprono su prenotazione, altre fanno parte della Strada dei Vini e dei Sapori di Forlì-Cesena e organizzano visite guidate tutto l'anno." },
+    { tipo: "paragrafo", testo: "Tra le esperienze più interessanti, la Riserva Storica dei Sangiovesi di Romagna — aperta in occasione della Giornata Europea dell'Enoturismo — permette di degustare annate storiche del Sangiovese direttamente a Bertinoro. È un'occasione rara, che trasforma la visita in cantina in un vero e proprio viaggio verticale nel tempo del vino romagnolo." },
+    { tipo: "paragrafo", testo: "Altre cantine da segnare: quelle lungo via Loreta a Fratta Terme, quelle in zona Colombarone e Tombetta. Ogni produttore ha una storia diversa, ma il filo comune è sempre lo stesso: il rapporto diretto tra terra, vigna e bottiglia. Qui l'enoturismo non è marketing, è semplicemente il modo in cui si vive." },
+    
+    { tipo: "titoletto", testo: "Eventi enogastronomici: quando venire a Bertinoro" },
+    { tipo: "paragrafo", testo: "Se vuoi vivere l'enoturismo in Romagna in versione festiva, segna in calendario l'evento 'Vini e Sapori in Strada', che ogni anno a giugno trasforma il borgo di Bertinoro in una grande degustazione diffusa. Banchi d'assaggio, piatti tipici, musica dal vivo: è l'occasione per assaggiare più cantine in un solo pomeriggio, direttamente nelle vie del centro storico." },
+    { tipo: "paragrafo", testo: "In autunno, invece, la Giornata Europea dell'Enoturismo porta nelle cantine visite guidate, degustazioni verticali e aperture straordinarie. Bertinoro partecipa con il tour 'Sapere di Vino', che unisce storia del borgo, tradizione dell'ospitalità e cultura del vino. È il momento giusto per chi vuole capire davvero cosa significa Città del Vino, non solo leggerlo su una targa." },
+    
+    { tipo: "titoletto", testo: "Cosa fare oltre alle cantine" },
+    { tipo: "paragrafo", testo: "L'enoturismo in Romagna non si esaurisce con la visita in cantina. A Bertinoro puoi camminare fino alla Colonna delle Anella, simbolo dell'antica tradizione dell'ospitalità, affacciarti dalla piazza panoramica che guarda verso la costa, cenare in una delle osterie del borgo dove il Sangiovese si beve in compagnia, non in silenzio religioso." },
+    { tipo: "paragrafo", testo: "Se viaggi con il cane o il gatto, le colline intorno a Bertinoro offrono sentieri sterrati perfetti per passeggiate tra i vigneti. È un territorio che si presta al ritmo lento, a chi vuole alternare visite strutturate a momenti di puro relax." },
+    { tipo: "paragrafo", testo: "Per chi lavora da remoto, la combinazione workspace dedicato + enoturismo funziona sorprendentemente bene. La mattina chiudi qualche call, il pomeriggio vai in cantina, la sera cucini con i prodotti comprati al mercato. È smart working in Romagna nella sua forma più equilibrata." },
+    
+    { tipo: "titoletto", testo: "Come organizzare il soggiorno" },
+    { tipo: "paragrafo", testo: "Per un weekend enogastronomico, due notti a Bertinoro sono il minimo. Il primo giorno lo dedichi al borgo e a una cantina vicina, il secondo esci a esplorare — magari verso Predappio o verso le colline di Cesena. Se hai più tempo, tre o quattro giorni permettono di aggiungere una tappa sulla costa o una visita a San Marino, che da Bertinoro dista solo 35 minuti." },
+    { tipo: "paragrafo", testo: "La scelta dell'alloggio dipende da cosa cerchi. Se vuoi totale indipendenza, cucina attrezzata e la possibilità di entrare e uscire senza orari, un appartamento nel centro storico è la soluzione migliore. Se invece preferisci il contatto diretto con un produttore, punta sulle tenute vitivinicole che offrono anche camere." },
+    { tipo: "paragrafo", testo: "In entrambi i casi, prenota con anticipo — soprattutto se vieni durante gli eventi del vino o nei weekend di vendemmia. Bertinoro è piccola, e i posti migliori si riempiono in fretta." },
+    
+    { tipo: "titoletto", testo: "Bertinoro come base, non come tappa" },
+    { tipo: "paragrafo", testo: "Quello che rende Bertinoro diversa da altre mete enoturistiche è proprio questo: non è un posto dove passi una notte di corsa. È una base da cui partire, a cui tornare, dove rigenerarti tra una visita e l'altra. Dormire qui cambia il modo in cui vivi l'enoturismo in Romagna, perché ti mette nella condizione di rallentare senza perdere opportunità." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è pensata esattamente per questo tipo di soggiorno: un appartamento nel cuore del borgo, con giardino privato, cucina completa, spazio per lavorare se serve, e la libertà di organizzare le giornate come preferisci. È affitto breve nelle colline romagnole nella sua forma più funzionale e meno invadente." },
+    { tipo: "paragrafo", testo: "Se stai progettando un viaggio tra le cantine di Romagna, la domanda non è solo quali visitare. È anche dove tornare la sera, dove aprire quella bottiglia che hai comprato, dove sederti all'aperto senza fretta. E Bertinoro, per questo, è il posto giusto." },
+    
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota Casa Cavour su Airbnb" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
+    
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+},
 
 {
   id: "geo-aeo-weekend-vendemmia-romagna-2026",
