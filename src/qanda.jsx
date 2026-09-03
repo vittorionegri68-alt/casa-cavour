@@ -29,9 +29,19 @@ export const qanda = [
     risposta: "È la scelta ideale. Sei nel cuore della Romagna del vino e del cibo — a pochi minuti dalle cantine di Predappio, dalle osterie di Bertinoro e dai mercati contadini della zona. La cucina attrezzata completa l'esperienza.",
   },
   {
-    id: "esplorare-romagna",
-    domanda: "Da Casa Cavour posso esplorare tutta la Romagna facilmente?",
-    risposta: "Sì. La posizione di Bertinoro è strategica: Ravenna a 40 km, Rimini a 60 km, San Marino a 50 km, Bologna a 70 km. Casa Cavour è il punto di partenza perfetto per un itinerario che copre mare, colline e città d'arte.",
+    id: "cosa-fare-bertinoro",
+    domanda: "Cosa fare a Bertinoro in un weekend?",
+    risposta: "Il centro storico si visita a piedi in poche ore, tra la Rocca, la Colonna degli Anelli e il belvedere panoramico sulla Pianura Padana. Nei dintorni ci sono le cantine della Strada dei Vini e dei Sapori e i borghi di Polenta, Meldola e Longiano. Casa Cavour è la base pratica per alternare le due cose: cucina attrezzata per portare a casa vino e prodotti locali, e self check-in che lascia liberi gli orari di rientro dopo una cena in osteria o una degustazione.",
+  },
+  {
+    id: "giardino-privato",
+    domanda: "Casa Cavour ha un giardino privato nelle colline romagnole?",
+    risposta: "Sì. Il giardino è privato ed esclusivo dell'appartamento, non condiviso con altre unità, con tavolo e sedie per i pasti all'aperto. È utile per una cena di coppia senza prenotazione, per lasciare libero il cane, o semplicemente per godersi le colline romagnole senza uscire di casa. È a due passi dal centro storico di Bertinoro, quindi non isolato come capita spesso negli agriturismi con più terreno ma meno servizi vicini.",
+  },
+  {
+    id: "animali-ammessi",
+    domanda: "Casa Cavour accetta animali domestici in Romagna?",
+    risposta: "Sì, senza supplemento. Il giardino privato permette al cane di muoversi liberamente, la cucina attrezzata è utile per gestire anche i pasti dell'animale, e il self check-in con smartlock evita l'ansia degli orari rigidi dopo un viaggio in auto. La posizione nel centro storico di Bertinoro permette passeggiate a piedi direttamente dalla porta di casa.",
   },
   {
     id: "staccare-bologna",
@@ -52,10 +62,5 @@ export const qanda = [
     id: "smart-working",
     domanda: "Casa Cavour è adatta per lavorare in smart working qualche giorno?",
     risposta: "Sì. L'appartamento dispone di connessione wifi, spazi confortevoli e una cucina attrezzata per gestire i pasti in autonomia. Lavori con vista sulle colline romagnole e dopo le ore di lavoro hai un territorio straordinario da esplorare.",
-  },
-  {
-    id: "appartamento-cucina",
-    domanda: "A Bertinoro si trova un appartamento con cucina per un affitto breve?",
-    risposta: "Casa Cavour è esattamente questo — un appartamento di charme nel centro storico di Bertinoro con cucina completamente attrezzata, ideale per soggiorni brevi di qualità. Puoi prenotare direttamente su Airbnb.",
   },
 ];
