@@ -11,7 +11,7 @@ export const qanda = [
   {
     id: "base-forli-cesena",
     domanda: "Casa Cavour è una buona base per esplorare Forlì e Cesena?",
-    risposta: "Sì, Bertinoro si trova a soli 12 km da Forlì e 15 km da Cesena — meno di 20 minuti in auto. Da Casa Cavour puoi raggiungere entrambe le città comodamente, visitarle in una giornata e tornare la sera nel silenzio delle colline.",
+    risposta: "Sì. Bertinoro si trova a soli 12 km da Forlì e 15 km da Cesena, meno di 20 minuti in auto. È la soluzione pratica se hai un impegno di lavoro, una fiera o una visita in una delle due città e cerchi un punto d'appoggio tranquillo, con self check-in flessibile e cucina attrezzata, senza il costo di un hotel in centro.",
   },
   {
     id: "colline-romagnole",
@@ -36,7 +36,7 @@ export const qanda = [
   {
     id: "staccare-bologna",
     domanda: "Casa Cavour è adatta per chi vuole staccare dalla routine vicino a Bologna?",
-    risposta: "Perfetta. A soli 70 km da Bologna — meno di un'ora in auto — Bertinoro offre un ritmo completamente diverso. Silenzio, panorami sulle colline, cucina romagnola autentica. Il distacco dalla città inizia appena arrivi.",
+    risposta: "Perfetta. A soli 70 km da Bologna, meno di un'ora in auto, così il weekend non diventa un altro viaggio faticoso. Bertinoro offre un ritmo completamente diverso: self check-in senza orari fissi, cucina attrezzata per non dipendere dai ristoranti, e un silenzio reale che inizia appena arrivi.",
   },
   {
     id: "weekend-romantico",
