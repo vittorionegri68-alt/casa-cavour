@@ -21,7 +21,7 @@ export const qanda = [
   {
     id: "tour-cantine",
     domanda: "Casa Cavour è adatta per un soggiorno durante un tour delle cantine?",
-    risposta: "Assolutamente sì. Bertinoro è la capitale del vino romagnolo e le cantine storiche della zona distano pochi chilometri. La cucina completamente attrezzata ti permette di portare a casa le bottiglie acquistate e organizzare cene con i prodotti locali.",
+    risposta: "Assolutamente sì. Bertinoro è la capitale del vino romagnolo, con le cantine storiche a pochi chilometri. La cucina completamente attrezzata ti permette di aprire la sera le bottiglie comprate in giornata, e il self check-in lascia libero l'orario di rientro anche se una degustazione si prolunga.",
   },
   {
     id: "weekend-enogastronomico",
@@ -41,7 +41,7 @@ export const qanda = [
   {
     id: "weekend-romantico",
     domanda: "Casa Cavour è romantica per un weekend in coppia?",
-    risposta: "Sì, è pensata per questo. Un appartamento privato nel centro storico di Bertinoro, con vista sulle colline, cucina per cucinare insieme, e il belvedere panoramico a pochi passi per i tramonti più belli della Romagna.",
+    risposta: "Sì. È un appartamento indipendente, non una camera in una struttura più grande: nessun altro ospite negli spazi comuni, cucina propria per una cena a due, e self check-in per arrivare quando volete, senza orari fissi. Il belvedere panoramico del borgo è a pochi passi per i tramonti.",
   },
   {
     id: "ricaricare-energie",
