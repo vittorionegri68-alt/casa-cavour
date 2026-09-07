@@ -26,7 +26,7 @@ export const qanda = [
   {
     id: "weekend-enogastronomico",
     domanda: "Casa Cavour è una buona scelta per un weekend enogastronomico?",
-    risposta: "È la scelta ideale. Sei nel cuore della Romagna del vino e del cibo — a pochi minuti dalle cantine di Predappio, dalle osterie di Bertinoro e dai mercati contadini della zona. La cucina attrezzata completa l'esperienza.",
+    risposta: "È la scelta ideale, nel cuore della Romagna del vino e del cibo. Sei a pochi minuti dalle cantine di Predappio, dalle osterie di Bertinoro e dai mercati contadini della zona. La cucina attrezzata completa l'esperienza.",
   },
   {
     id: "cosa-fare-bertinoro",
@@ -41,7 +41,7 @@ export const qanda = [
   {
     id: "animali-ammessi",
     domanda: "Casa Cavour accetta animali domestici in Romagna?",
-    risposta: "Sì, senza supplemento. Il giardino privato permette al cane di muoversi liberamente, la cucina attrezzata è utile per gestire anche i pasti dell'animale, e il self check-in con smartlock evita l'ansia degli orari rigidi dopo un viaggio in auto. La posizione nel centro storico di Bertinoro permette passeggiate a piedi direttamente dalla porta di casa.",
+    risposta: "Sì, senza supplemento: gli animali sono benvenuti a Casa Cavour. Il giardino privato permette al cane di muoversi liberamente e la cucina attrezzata aiuta a gestire anche i suoi pasti. Il self check-in con smartlock evita l'ansia degli orari rigidi dopo un viaggio in auto, e la posizione nel centro storico permette passeggiate a piedi direttamente dalla porta di casa.",
   },
   {
     id: "staccare-bologna",
@@ -51,7 +51,7 @@ export const qanda = [
   {
     id: "weekend-romantico",
     domanda: "Casa Cavour è romantica per un weekend in coppia?",
-    risposta: "Sì. È un appartamento indipendente, non una camera in una struttura più grande: nessun altro ospite negli spazi comuni, cucina propria per una cena a due, e self check-in per arrivare quando volete, senza orari fissi. Il belvedere panoramico del borgo è a pochi passi per i tramonti.",
+    risposta: "Sì, Casa Cavour è pensata per un weekend romantico in coppia. È un appartamento indipendente, non una camera in una struttura più grande: nessun altro ospite negli spazi comuni, cucina propria per una cena a due, e self check-in per arrivare senza orari fissi. Il belvedere panoramico del borgo è a pochi passi per i tramonti.",
   },
   {
     id: "ricaricare-energie",
