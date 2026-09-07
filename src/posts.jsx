@@ -18,6 +18,7 @@ export const posts = [
     { tipo: "paragrafo", testo: "Nei precedenti articoli abbiamo parlato della Strada dei Vini e delle cantine da visitare in Romagna, dei weekend enogastronomici tra Sangiovese e piadina, del ritmo lento delle colline. Ma c'è una domanda che ricorre sempre: dove dormire per vivere davvero l'enoturismo in Romagna, non solo come turista di passaggio ma come ospite di questo territorio?" },
     { tipo: "paragrafo", testo: "La risposta non è scontata. Puoi scegliere un hotel sulla costa e risalire ogni giorno verso le colline. Oppure puoi fare quello che fanno gli enoturisti più esperti: piantare la base proprio nel cuore delle vigne, a Bertinoro, e da lì esplorare cantine, borghi e ristoranti senza mai perdere il filo dell'esperienza." },
     { tipo: "paragrafo", testo: "Secondo i dati di Emilia-Romagna Turismo, la provincia di Forlì-Cesena ospita decine di cantine aperte alle visite, concentrate soprattutto sulle colline tra Bertinoro, Predappio e Mercato Saraceno. Ma è proprio Bertinoro — riconosciuta come Città del Vino e Città dell'Ospitalità — il punto di partenza più strategico per chi vuole vivere l'enoturismo romagnolo in modo autentico." },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "Fonte: Emilia-Romagna Turismo" },
     
     { tipo: "titoletto", testo: "Perché Bertinoro è la base ideale per l'enoturismo in Romagna" },
     { tipo: "paragrafo", testo: "Bertinoro non è solo un borgo carino da fotografare. È un centro vivo, dove la viticoltura è parte della quotidianità. Le cantine sono sparse tra via Cellaimo, via Cappuccini, via Palmeggiana: nomi di strade che nascondono tenute storiche, vigneti in quota, degustazioni con vista sulla Pianura Padana fino al mare." },
@@ -93,7 +94,9 @@ export const posts = [
     { tipo: "titoletto", testo: "Cosa fare oltre alla vendemmia: borghi, sagre e relax" },
     { tipo: "paragrafo", testo: "Un weekend di vendemmia in Romagna non è solo vino. Bertinoro è un borgo medievale con vicoli stretti, osterie autentiche e una storia che si tocca con mano. La Colonna dell'Ospitalità in piazza è il simbolo di una tradizione: ogni anello corrispondeva a una famiglia disposta ad accogliere chi arrivava. È ancora lì, funziona ancora — nel senso che Bertinoro è un posto dove la gente ti parla, ti consiglia, ti fa sentire a casa." },
     { tipo: "paragrafo", testo: "A settembre e ottobre, le sagre di paese riempiono il calendario. Il portale Sagre in Romagna raccoglie tutti gli eventi della provincia di Forlì-Cesena: feste della vendemmia, sagre del vino novello, mercatini di prodotti locali. È il momento giusto per assaggiare piadina, cappelletti, carni alla griglia e tutto quello che la cucina romagnola sa fare meglio." },
+    { tipo: "link", testo: "https://www.sagreinromagna.it/", etichetta: "Fonte: Sagre in Romagna" },
     { tipo: "paragrafo", testo: "Se vuoi camminare, i sentieri panoramici intorno a Bertinoro attraversano vigneti, calanchi e boschi. Puoi scaricare le tracce dal sito Visit Bertinoro, che raccoglie itinerari a piedi e in bicicletta con mappe e indicazioni. E se vuoi abbinare vendemmia e relax, Fratta Terme — località termale nel comune di Bertinoro — è a pochi minuti, circondata da vigneti." },
+    { tipo: "link", testo: "https://www.visitbertinoro.it/", etichetta: "Fonte: Visit Bertinoro" },
     
     { tipo: "titoletto", testo: "Quanto tempo serve e come organizzare il weekend" },
     { tipo: "paragrafo", testo: "Due giorni bastano per vivere un weekend di vendemmia senza correre. Il sabato mattina arrivi, fai il check-in (senza bisogno di incontrarsi: lo smartlock ti lascia entrare quando vuoi), e parti subito per una cantina prenotata in anticipo. Il pomeriggio lo passi a Bertinoro, tra centro storico e belvedere. La sera cucini nell'appartamento con quello che hai comprato durante il giorno, o esci in una delle osterie del borgo." },
@@ -108,7 +111,7 @@ export const posts = [
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
-    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "📍 Fonte: inEmiliaRomagna / Emilia-Romagna Turismo" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
@@ -161,7 +164,7 @@ export const posts = [
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
-    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "📍 Fonte: inEmiliaRomagna / Emilia-Romagna Turismo" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
@@ -185,6 +188,7 @@ export const posts = [
     { tipo: "titoletto", testo: "Perché Bertinoro funziona come base per le colline romagnole" },
     { tipo: "paragrafo", testo: "Bertinoro non è solo un borgo panoramico. È un punto geografico che risolve problemi concreti. A 15 minuti da Cesena, 20 da Forlì, 40 da Rimini, 35 da San Marino e 60 da Bologna, ti trovi al centro di una Romagna percorribile in giornata senza mai fare chilometri vuoti." },
     { tipo: "paragrafo", testo: "Secondo Emilia-Romagna Turismo, Bertinoro è riconosciuta come il 'Balcone di Romagna' proprio per questa posizione privilegiata sulle colline che dominano la pianura fino al mare. Non è retorica turistica: dalla piazza centrale vedi la costa adriatica, e in auto raggiungi Cesenatico in meno di 40 minuti. Questo significa che puoi dedicare la mattina alle cantine della Strada dei Vini e dei Sapori e il pomeriggio a un giro tra i borghi medievali dell'entroterra, senza mai cambiare alloggio." },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "Fonte: Emilia-Romagna Turismo" },
     { tipo: "paragrafo", testo: "Chi cerca un affitto breve nelle colline romagnole spesso valuta agriturismi isolati o hotel nei centri più grandi. Bertinoro offre un'alternativa che non sacrifica nulla: appartamenti con cucina attrezzata nel centro storico, giardini privati dove fare colazione guardando le vigne, strutture pet-friendly per chi viaggia con cani o gatti, workspace dedicati per chi vuole lavorare da remoto senza rinunciare al ritmo lento delle colline." },
     
     { tipo: "titoletto", testo: "Cosa significa alloggiare nelle colline romagnole (e non solo passarci)" },
@@ -223,7 +227,7 @@ export const posts = [
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
     
-    { tipo: "paragrafo", testo: "📍 Fonte: @inemiliaromagna / emiliaromagnaturismo.it" },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "📍 Fonte: inEmiliaRomagna / Emilia-Romagna Turismo" },
   ],
   attivo: true,
 },
@@ -252,6 +256,7 @@ export const posts = [
     { tipo: "titoletto", testo: "La base per esplorare la Romagna anche mentre lavori" },
     { tipo: "paragrafo", testo: "Lavorare da Bertinoro non significa rinunciare a esplorare. Anzi. Nei giorni in cui finisci prima, o nei weekend, hai a portata di mano Cesena con la sua Biblioteca Malatestiana (patrimonio UNESCO), Forlì con i musei San Domenico, Rimini a 40 minuti, San Marino a 35, Bologna a un'ora. Se ti è piaciuto l'articolo su dove dormire per visitare le cantine di Romagna, da qui puoi organizzare facilmente visite alle cantine storiche della zona, magari il venerdì pomeriggio dopo l'ultima call." },
     { tipo: "paragrafo", testo: "E poi ci sono le sagre. Il portale Sagre in Romagna raccoglie decine di eventi enogastronomici nella provincia di Forlì-Cesena: sagre del vino, della piadina, delle castagne in autunno. Puoi pianificare il tuo soggiorno in modo che coincida con uno di questi eventi, e vivere la Romagna autentica anche mentre continui a lavorare." },
+    { tipo: "link", testo: "https://www.sagreinromagna.it/", etichetta: "Fonte: Sagre in Romagna" },
     
     { tipo: "titoletto", testo: "Quando lo smart working diventa workation" },
     { tipo: "paragrafo", testo: "La differenza tra smart working e workation è sottile ma reale. Lo smart working è lavorare da un posto diverso dall'ufficio. La workation è lavorare da un posto che ti rigenera. Bertinoro è una workation. Perché quando chiudi il laptop, non ti ritrovi in una stanza d'albergo anonima o in un appartamento senza personalità: sei in un borgo medievale sulle colline romagnole, con il profumo del Sangiovese che sale dai vigneti, il suono delle campane che scandisce le ore, e la consapevolezza che domani, dopo il lavoro, puoi camminare fino al belvedere e guardare il mare da lontano." },
@@ -284,6 +289,7 @@ export const posts = [
     { tipo: "titoletto", testo: "Le colline romagnole: un territorio da vivere con lentezza" },
     { tipo: "paragrafo", testo: "La provincia di Forlì-Cesena ospita uno dei paesaggi più autentici dell'Emilia-Romagna: colline dolci coperte di vigneti, borghi medievali ancora abitati, strade bianche che salgono tra oliveti e cipressi. Bertinoro ne è il cuore pulsante — a 15 minuti da Cesena, 20 da Forlì, 40 da Rimini, 35 da San Marino, 60 da Bologna — e offre un panorama sulla Pianura Padana e sulla costa adriatica che ha guadagnato al paese il soprannome di 'Balcone della Romagna'." },
     { tipo: "paragrafo", testo: "Secondo il portale Emilia-Romagna Turismo, la provincia di Forlì-Cesena è una delle mete in più rapida crescita per il turismo lento: ciclovie, sentieri tra i vigneti, sagre di paese e percorsi enologici attirano ogni anno un numero crescente di viaggiatori che cercano qualcosa di diverso dalla Riviera Adriatica." },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "Fonte: Emilia-Romagna Turismo" },
     { tipo: "titoletto", testo: "Perché scegliere un affitto breve con giardino privato" },
     { tipo: "paragrafo", testo: "Un appartamento vacanze nelle colline romagnole con giardino privato risponde a un'esigenza semplice ma concreta: avere uno spazio tutto tuo, fuori dalle mura, dove il tempo rallenta. È la differenza tra un soggiorno e un'esperienza." },
     { tipo: "paragrafo", testo: "Per le coppie in cerca di un weekend romantico, il giardino diventa il posto dove la cena si prolunga sotto le stelle. Per chi viaggia con animali — e le colline romagnole sono un terreno ideale per lunghe passeggiate con il cane — avere uno spazio verde privato fa cadere uno dei principali ostacoli nella scelta dell'alloggio. Per chi lavora da remoto e vuole conciliare smart working e rigenerazione, il giardino è l'ufficio più bello che si possa trovare." },
@@ -325,6 +331,7 @@ export const posts = [
 
     { tipo: "titoletto", testo: "Perché scegliere le colline romagnole per un soggiorno pet-friendly" },
     { tipo: "paragrafo", testo: "Le colline di Bertinoro, con i loro vigneti di Sangiovese e Albana DOCG, offrono un ambiente naturalmente adatto agli animali domestici. I sentieri di trekking che partono dal centro storico attraversano campagne, boschi e piccoli borghi rurali come Polenta, dove la Pieve di San Donato domina silenziosa i campi circostanti. Non servono lunghi spostamenti in auto: molte passeggiate iniziano direttamente dal centro del borgo, e i percorsi sono accessibili anche per cani di tutte le taglie. Secondo i dati di Emilia-Romagna Turismo, la provincia di Forlì-Cesena vanta oltre 150 km di sentieri segnalati tra le colline, molti dei quali pet-friendly e ben mantenuti." },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "Fonte: Emilia-Romagna Turismo" },
     { tipo: "paragrafo", testo: "Ma non è solo una questione di spazi verdi. Bertinoro, definito «il Balcone di Romagna» per i suoi panorami che spaziano dalla Pianura Padana all'Adriatico, mantiene un carattere autentico dove gli animali non sono un'eccezione, ma parte della quotidianità. Passeggiare con il cane tra le vie del centro storico, fermarsi in una bottega artigianale o sedersi in un angolo tranquillo del Giardino dei Popoli è normale, senza l'ansia di doversi giustificare o nascondere. Questa naturalezza si ritrova anche nelle strutture ricettive, dove l'accoglienza pet-friendly non è uno slogan, ma una prassi consolidata." },
 
     { tipo: "titoletto", testo: "Dove dormire in Romagna con animali ammessi: le opzioni a Bertinoro e dintorni" },
@@ -341,6 +348,7 @@ export const posts = [
 
     { tipo: "titoletto", testo: "Bertinoro come base per esplorare la Romagna pet-friendly" },
     { tipo: "paragrafo", testo: "Bertinoro non è solo una destinazione in sé, ma una base strategica per esplorare tutta la Romagna con il tuo animale. A 15 minuti trovi Cesena, con il suo centro storico e la Biblioteca Malatestiana, Patrimonio UNESCO; a 20 minuti Forlì, con Piazza Saffi e i musei cittadini. Rimini, con le sue spiagge dog-friendly, è a 40 minuti, mentre San Marino dista 35 minuti. Bologna, per chi cerca una fuga dalla routine vicino alla città, è a 60 km, circa un'ora di auto. Secondo Visit Bertinoro, il borgo mantiene una posizione centrale rispetto ai principali itinerari turistici della Romagna, pur conservando il carattere tranquillo delle colline — un equilibrio raro." },
+    { tipo: "link", testo: "https://www.visitbertinoro.it/", etichetta: "Fonte: Visit Bertinoro" },
     { tipo: "paragrafo", testo: "Per chi ha letto il nostro articolo su dove staccare dalla routine vicino a Bologna, aggiungere l'elemento pet-friendly rende l'esperienza ancora più completa: non devi lasciare il cane a casa, non devi rinunciare alla qualità del soggiorno. Puoi rigenerarti nelle colline romagnole, visitare cantine, scoprire borghi medievali e condividere tutto con il tuo animale, senza compromessi." },
 
     { tipo: "titoletto", testo: "Consigli pratici per un soggiorno pet-friendly a Bertinoro" },
@@ -375,6 +383,7 @@ export const posts = [
     
     { tipo: "titoletto", testo: "Il centro storico di Bertinoro: storia, panorami e simboli medievali" },
     { tipo: "paragrafo", testo: "Il cuore di Bertinoro si percorre a piedi, in due-tre ore, senza fretta. Piazza della Libertà, con il Palazzo Ordelaffi e la famosa Colonna degli Anelli — simbolo antico dell'ospitalità romagnola, dove ogni anello corrispondeva a una famiglia che accoglieva i viandanti — è il punto da cui partire. Da qui, la vista si apre sulla pianura padana fino alla costa adriatica, e nei giorni limpidi si intuisce persino il profilo di San Marino. Secondo i dati di Emilia-Romagna Turismo, Bertinoro conserva una delle tradizioni di accoglienza più autentiche della regione, ancora oggi celebrata ogni settembre con la Festa dell'Ospitalità." },
+    { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "Fonte: Emilia-Romagna Turismo" },
     { tipo: "paragrafo", testo: "La Rocca medievale domina il borgo dall'alto e ospita oggi il Museo Interreligioso, mentre la Cattedrale di Santa Caterina e la Torre Civica regalano altri punti panoramici. Ma le sorprese più intime sono nelle strade: la Via della Santissima Trinità, chiamata 'Strada della Vendemmia', è un vicolo d'arte con sette tele dedicate alla vendemmia dipinte sui muri; la Via delle Mura ospita invece la 'Strada dei Mestieri Scomparsi', con sei dipinti su antiche tradizioni artigiane. Sono dettagli che raccontano l'anima del borgo meglio di qualsiasi guida." },
     
     { tipo: "titoletto", testo: "Enoturismo e cantine: tra Sangiovese, Albana DOCG e la Strada dei Vini" },
@@ -388,6 +397,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Eventi stagionali e sagre: quando andare a Bertinoro" },
     { tipo: "paragrafo", testo: "Bertinoro vive di eventi che scandiscono le stagioni. In primavera, la Sagra della Fragola celebra uno dei prodotti più amati del territorio con assaggi, gelati e torte artigianali. A giugno, 'Vini e Sapori in Strada' trasforma il borgo in un mercato diffuso dove produttori e ristoratori escono all'aperto. L'estate porta il Fricò Royal, con musica dal vivo e serate sotto le stelle. A settembre, la Festa dell'Ospitalità invita i visitatori a pranzare nelle case delle famiglie locali, un'esperienza unica che affonda le radici nella tradizione medievale degli anelli. A ottobre, 'Vino al Vino' chiude la stagione con degustazioni tematiche e menu dedicati." },
     { tipo: "paragrafo", testo: "Chi pianifica un weekend enogastronomico in Romagna può consultare il calendario eventi su visitbertinoro.it e sagreinromagna.it per sincronizzare il soggiorno con le feste locali. Ogni evento è un'occasione per entrare nel tessuto vivo del territorio, non da turisti ma da ospiti." },
+    { tipo: "link", testo: "https://www.visitbertinoro.it/", etichetta: "Visit Bertinoro" },
+    { tipo: "link", testo: "https://www.sagreinromagna.it/", etichetta: "Sagre in Romagna" },
 
     { tipo: "titoletto", testo: "Per chi organizza un weekend a Bertinoro, enogastronomico o esplorativo" },
     { tipo: "paragrafo", testo: "Chi pianifica un weekend a Bertinoro, che sia dedicato alle cantine e alla piadina o più genericamente a cosa fare nel borgo, di solito ha bisogno delle stesse due cose: un alloggio dove conservare e cucinare quello che si compra durante il giorno (vino, formaggi, salumi), e la libertà di rientrare senza vincoli di orario dopo una cena in osteria o una degustazione che si prolunga." },
@@ -430,6 +441,7 @@ export const posts = [
     { tipo: "paragrafo", testo: "Santarcangelo dista 35 minuti in auto da Bertinoro, dove Casa Cavour offre un appartamento con cucina attrezzata ideale come base per esplorare la Romagna. Il borgo è piccolo e si visita a piedi in 2-3 ore. Parcheggi segnalati lungo via Trasversale Marecchia e via del Mare, a circa 5-10 minuti a piedi dal centro storico. Il festival apre sabato e domenica dalle 10 alle 19. Consiglio: arrivare al mattino per evitare la folla del pomeriggio. Se rimani fino al tramonto, sali alla Rocca Malatestiana — la vista sulle colline romagnole fino all'Adriatico è notevole. L'ingresso alla rocca è gratuito." },
     { tipo: "titoletto", testo: "Cosa vedere oltre al festival" },
     { tipo: "paragrafo", testo: "Santarcangelo ha una vita oltre ARTIGIAMO. Le grotte tufacee — antichi ipogei scavati nel tufo — sono visitabili su prenotazione (info su visitbertinoro.it). Il centro è ricco di botteghe artigiane aperte tutto l'anno: cartolerie con carta fatta a mano, laboratori di ceramica, piccole gallerie d'arte. Se cerchi qualcosa di più intimo della riviera romagnola, questa zona offre ritmi più lenti e una tradizione artigianale ancora viva. Da qui è facile raggiungere Rimini (15 minuti), Cesena (20 minuti) o le cantine della Strada dei Vini e dei Sapori per un'esperienza di enoturismo completa. Secondo i dati ufficiali del turismo regionale, la Romagna ha superato nel 2025 i livelli pre-Covid, con una crescita trainata proprio dal turismo di prossimità e dagli eventi culturali diffusi come ARTIGIAMO." },
+    { tipo: "link", testo: "https://www.visitbertinoro.it/", etichetta: "Fonte: Visit Bertinoro" },
   ],
   attivo: true,
 },
@@ -643,7 +655,7 @@ export const posts = [
       },
       {
         tipo: "paragrafo",
-        testo: "Le colline romagnole si risvegliano. I vicoli di Bertinoro, Longiano e Verucchio si riempiono di luce primaverile. Temperature mite, niente code, e finalmente riesci a parlare con chi ci vive davvero."
+        testo: "Le colline romagnole si risvegliano. I vicoli di Bertinoro, Longiano e Verucchio si riempiono di luce primaverile. Temperature miti, niente code, e finalmente riesci a parlare con chi ci vive davvero."
       },
       {
         tipo: "titoletto",
@@ -684,7 +696,7 @@ export const posts = [
       },
       {
         tipo: "paragrafo",
-        testo: "ogni settimana pubblichiamo sui nostri social madia informazioni Culturali culinarie e turistiche della Romagna"
+        testo: "ogni settimana pubblichiamo sui nostri social media informazioni Culturali culinarie e turistiche della Romagna"
       },
      {
         tipo: "link",
@@ -756,55 +768,71 @@ export const posts = [
   },
   {
     id: "5-cose-da-fare-bertinoro",
-    titolo: "5 cose da fare a Bertinoro in un weekend",
+    titolo: "Bertinoro in un weekend: la checklist pratica delle 5 tappe",
     data: "2025-03-10",
-    categoria: "Guida locale",
-    sommario: "Bertinoro non è solo il Balcone della Romagna — è un borgo medievale ricco di esperienze autentiche. Ecco 5 cose da non perdere durante il tuo soggiorno.",
+    categoria: "Guida pratica",
+    sommario: "Le 5 tappe essenziali per un weekend a Bertinoro con tempi di percorrenza, orari consigliati e cosa prenotare in anticipo. La versione pratica, in checklist, per organizzare la visita senza sorprese.",
     contenuto: [
       {
         tipo: "paragrafo",
-        testo: "Bertinoro è uno di quei luoghi che sorprende sempre. A soli 15 minuti da Cesena, questo borgo medievale arroccato sulle colline romagnole offre panorami mozzafiato sull'Adriatico e un'atmosfera autentica lontana dal turismo di massa."
+        testo: "Cinque tappe, un centro storico percorribile interamente a piedi, nessuna auto necessaria una volta parcheggiata. Ecco come organizzarle in ordine, con tempi di percorrenza e indicazioni pratiche."
       },
       {
         tipo: "titoletto",
-        testo: "1. Passeggia per il centro storico"
+        testo: "1. Centro storico e Colonna dell'Ospitalità"
       },
       {
         tipo: "paragrafo",
-        testo: "Le stradine del centro storico di Bertinoro sono un labirinto affascinante di vicoli medievali, palazzi storici e scorci panoramici. La Colonna dell'Ospitalità — un anello di ferro dove i visitatori venivano invitati a legare il proprio cavallo e diventare ospiti dei bertinoresi — è il simbolo del famoso spirito accogliente della città."
+        testo: "Punto di partenza: Piazza della Libertà. Visita libera, nessuna prenotazione. Tempo consigliato: 30-40 minuti. Momento migliore: mattina presto o tardo pomeriggio, quando i vicoli sono meno affollati."
       },
       {
         tipo: "titoletto",
-        testo: "2. Visita la Rocca Albornoziana"
+        testo: "2. Rocca Albornoziana"
       },
       {
         tipo: "paragrafo",
-        testo: "La Rocca domina il borgo dall'alto e ospita oggi il Centro Residenziale Universitario di Bertinoro. Vale la pena salire per ammirare la vista a 360 gradi sulle colline romagnole fino all'Adriatico. Nelle giornate limpide si intravedono persino le Alpi."
+        testo: "A 5-10 minuti a piedi dal centro, in salita. Ingresso libero agli spazi esterni. Tempo consigliato: 20-30 minuti. Nelle giornate limpide la vista arriva fino all'Adriatico."
       },
       {
         tipo: "titoletto",
-        testo: "3. Fai un wine tour tra le cantine locali"
+        testo: "3. Wine tour in una cantina locale"
       },
       {
         tipo: "paragrafo",
-        testo: "La zona di Bertinoro è famosa per l'Albana di Romagna DOCG — il primo vino bianco italiano a ottenere la denominazione di origine controllata e garantita. A soli 10 minuti in auto si trovano alcune delle cantine storiche più belle della regione. Molte offrono degustazioni su prenotazione."
+        testo: "A circa 10 minuti in auto dal centro. Prenotazione consigliata con qualche giorno di anticipo, obbligatoria nei weekend di alta stagione. Durata media della visita con degustazione: 1-2 ore."
       },
       {
         tipo: "titoletto",
-        testo: "4. Assapora la cucina romagnola autentica"
+        testo: "4. Pranzo o cena in un'osteria del borgo"
       },
       {
         tipo: "paragrafo",
-        testo: "Piadina, tagliatelle al ragù, passatelli in brodo, squacquerone. Bertinoro ha una manciata di osterie e trattorie dove i locali mangiano da generazioni. Chiedete a chi vi ospita dove vanno i bertinoresi veri — non finire in un posto per turisti."
+        testo: "Nel centro storico, raggiungibile a piedi da qualsiasi punto di Bertinoro. Prenotazione non necessaria nei giorni feriali, consigliata il sabato sera. Budget indicativo: 25-35€ a persona per un pasto completo con vino."
       },
       {
         tipo: "titoletto",
-        testo: "5. Ammira il tramonto dal belvedere"
+        testo: "5. Tramonto al belvedere"
       },
       {
         tipo: "paragrafo",
-        testo: "Il belvedere panoramico di Bertinoro è uno dei più belli della Romagna. Al tramonto, quando la luce dora le colline e il mare Adriatico brilla all'orizzonte, capisci perché questo borgo viene chiamato il Balcone della Romagna. Portati una bottiglia di Sangiovese locale e goditi lo spettacolo."
-      }
+        testo: "A pochi minuti a piedi dalla piazza principale. Nessuna prenotazione, nessun costo. Arriva 20-30 minuti prima dell'orario del tramonto per trovare posto nei weekend di alta stagione."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Come organizzare le 5 tappe in una giornata"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Sequenza consigliata: mattina centro storico e Rocca, primo pomeriggio cantina, tardo pomeriggio rientro in paese, sera cena e infine tramonto al belvedere. In totale, mezza giornata piena è sufficiente per le 5 tappe con calma."
+      },
+      { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota Casa Cavour su Airbnb" },
+      { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
+      {
+        tipo: "titoletto",
+        testo: "Seguici sui social"
+      },
+      { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+      { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
     ],
     attivo: true,
   },
@@ -856,47 +884,52 @@ export const posts = [
   },
   {
     id: "bertinoro-weekend-romantico",
-    titolo: "Perché Bertinoro è il posto perfetto per un weekend romantico",
+    titolo: "Weekend romantico a Bertinoro: la checklist per organizzarlo in 48 ore",
     data: "2025-03-25",
-    categoria: "Ispirazione",
-    sommario: "Colline dorate, tramonti sull'Adriatico, vino locale e un appartamento di design solo per voi. Scopri perché Bertinoro è la meta romantica perfetta in Romagna.",
+    categoria: "Guida pratica",
+    sommario: "Cosa prenotare, quanto budget mettere in conto e come scandire le 48 ore di un weekend romantico a Bertinoro. La versione pratica, in punti, per non lasciare nulla al caso.",
     contenuto: [
       {
         tipo: "paragrafo",
-        testo: "Stai cercando una fuga romantica lontana dal caos delle città, ma non vuoi rinunciare al comfort e alla bellezza? Bertinoro, il Balcone della Romagna, è la risposta. Un borgo medievale sulle colline romagnole che combina paesaggi straordinari, cucina eccellente e un ritmo di vita lento e autentico."
+        testo: "Un weekend romantico a Bertinoro si organizza bene con poche decisioni prese in anticipo. Ecco cosa prenotare, quanto tenere da parte e come scandire le due giornate."
       },
       {
         tipo: "titoletto",
-        testo: "Un appartamento tutto per voi"
+        testo: "Cosa prenotare con anticipo"
       },
       {
         tipo: "paragrafo",
-        testo: "A differenza di un hotel, un appartamento come Casa Cavour vi dà la libertà di vivere il borgo come veri locali. Fare la spesa al mercato mattutino, cucinare con i prodotti freschi della zona, aprire una bottiglia di Albana al tramonto sul belvedere. Intimità e autenticità che nessun hotel può offrire."
+        testo: "L'alloggio, per primo: nei weekend di alta stagione i posti nel centro storico si esauriscono in fretta. Una cena in osteria per il sabato sera, se preferite non improvvisare. Una degustazione in cantina, se rientra nei piani: molte richiedono conferma entro 24-48 ore."
       },
       {
         tipo: "titoletto",
-        testo: "Il tramonto piu bello della Romagna"
+        testo: "Budget indicativo per due notti"
       },
       {
         tipo: "paragrafo",
-        testo: "Il belvedere panoramico di Bertinoro offre uno dei tramonti piu spettacolari della regione. Quando il sole scende dietro le colline e il mare Adriatico si tinge di arancione all'orizzonte, il momento diventa magico. Portatevi un bicchiere di Sangiovese e godetevi lo spettacolo insieme."
+        testo: "Alloggio: a partire da 85€ a notte, tariffe aggiornate su Airbnb. Cena in osteria: 25-35€ a persona. Degustazione in cantina con visita: 15-25€ a persona. Colazione e pranzi, se cucinati in autonomia con prodotti del mercato locale, restano contenuti."
+      },
+      { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Tariffe aggiornate su Airbnb" },
+      {
+        tipo: "titoletto",
+        testo: "Cosa portare"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Scarpe comode per i vicoli in salita del centro storico. Una giacca leggera anche in estate, la sera sulle colline rinfresca. Il telefono carico per il tramonto al belvedere, il momento più fotografato del weekend."
       },
       {
         tipo: "titoletto",
-        testo: "Cene indimenticabili"
+        testo: "Timeline delle 48 ore"
       },
       {
         tipo: "paragrafo",
-        testo: "La cucina romagnola è fatta per essere condivisa. Tagliatelle al ragu tirate a mano, piadina calda con squacquerone e rucola, passatelli in brodo, costine di maiale alla brace. Le trattorie di Bertinoro e dintorni sono luoghi dove il tempo si ferma e ogni pasto diventa un ricordo."
+        testo: "Sabato mattina: arrivo e sistemazione, self check-in senza vincoli di orario. Primo pomeriggio: passeggiata nel centro storico. Tardo pomeriggio: cantina o tempo libero. Sera: cena in osteria seguita dal tramonto al belvedere. Domenica mattina: seconda cantina o passeggiata tra i vigneti. Primo pomeriggio: rientro, con tempo per un ultimo giro in piazza."
       },
-      {
-        tipo: "titoletto",
-        testo: "Un wine tour tra i vigneti"
-      },
-      {
-        tipo: "paragrafo",
-        testo: "A 10 minuti da Bertinoro si trovano alcune delle cantine piu caratteristiche della Romagna. Un pomeriggio tra i filari, con degustazione di Albana DOCG e Sangiovese, e uno dei modi piu romantici per scoprire il territorio. Molte cantine accettano visite su prenotazione — chiedete a noi per i contatti giusti."
-      }
+      { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
+      { tipo: "titoletto", testo: "Seguici sui social" },
+      { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+      { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
     ],
     attivo: true,
   },
