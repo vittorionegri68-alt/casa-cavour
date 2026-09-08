@@ -37,6 +37,13 @@ const OUT_DIR = join(ROOT, "public", "post");
 
 const SITE_URL = "https://www.casa-cavour.com";
 const INSTAGRAM_URL = "https://www.instagram.com/bnb_bertinoro/";
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61577458010505";
+
+function isSocialBlock(b) {
+  if (b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "seguici sui social") return true;
+  if (b.tipo === "link" && (b.testo.includes("instagram.com") || b.testo.includes("facebook.com"))) return true;
+  return false;
+}
 
 function escapeHtml(str) {
   return String(str)
@@ -113,7 +120,7 @@ function renderPage(post) {
   const description = post.sommario;
   const dateIso = new Date(post.data).toISOString();
 
-  const bodyBlocks = post.contenuto.map(renderContentBlock).filter(Boolean).join("\n");
+  const bodyBlocks = post.contenuto.filter((b) => !isSocialBlock(b)).map(renderContentBlock).filter(Boolean).join("\n");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -137,6 +144,7 @@ function renderPage(post) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeAttr(description)}" />
     <link rel="canonical" href="${escapeAttr(url)}" />
@@ -168,9 +176,11 @@ function renderPage(post) {
       h2{font-family:Georgia,serif;font-size:1.35rem;margin:2rem 0 0.6rem;}
       p{color:var(--textMid);font-size:0.98rem;margin-bottom:1.1rem;}
       .btn-link{display:inline-block;color:var(--gold);border:1.5px solid var(--gold);padding:0.55rem 1.1rem;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;margin:0.25rem 0.5rem 0.25rem 0;}
-      .ig-cta{margin-top:3rem;padding:2rem;background:#fff;border-left:3px solid var(--gold);text-align:center;}
-      .ig-cta p{color:var(--text);font-family:Georgia,serif;font-style:italic;margin-bottom:1rem;}
-      .ig-cta a{display:inline-block;background:var(--gold);color:#fff;padding:0.7rem 1.5rem;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;}
+      .ig-cta{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
+      .ig-cta p{color:var(--textMid);font-size:0.92rem;margin-bottom:1rem;}
+      .ig-cta-icons{display:flex;justify-content:center;gap:1rem;}
+      .ig-cta-icons a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;color:var(--gold);text-decoration:none;transition:background 0.2s;}
+      .ig-cta-icons a:hover{background:rgba(160,120,42,0.1);}
       footer{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
       footer a{color:var(--gold);text-decoration:none;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
     </style>
@@ -185,7 +195,14 @@ function renderPage(post) {
 ${bodyBlocks}
       <div class="ig-cta">
         <p>Seguici su Instagram per non perderti i nuovi contenuti su Bertinoro e le colline romagnole.</p>
-        <a href="${INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer">📸 Seguici @bnb_bertinoro ↗</a>
+        <div class="ig-cta-icons">
+          <a href="${INSTAGRAM_URL}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="${FACEBOOK_URL}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M15 3h-2.5C10 3 8.5 4.6 8.5 7.2V10H6v3.2h2.5V21h3.3v-7.8h2.6l.5-3.2h-3.1V7.5c0-.9.3-1.5 1.6-1.5H15V3z"/></svg>
+          </a>
+        </div>
       </div>
       <footer><a href="${SITE_URL}/">Casa Cavour Bertinoro — Torna alla home</a></footer>
     </div>
