@@ -519,7 +519,7 @@ function Blog() {
     const url = `https://www.casa-cavour.com/post/${slugify(post.id)}.html`;
     if (navigator.share) {
       try {
-        await navigator.share({ title: post.titolo, text: `${post.sommario}\n\n${url}`, url });
+        await navigator.share({ title: post.titolo, text: `${post.sommario}\n\n${url}` });
         return;
       } catch {
         // utente ha annullato la condivisione nativa, nessuna azione necessaria
