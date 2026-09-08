@@ -519,7 +519,7 @@ function Blog() {
     const url = `https://www.casa-cavour.com/post/${slugify(post.id)}.html`;
     if (navigator.share) {
       try {
-        await navigator.share({ title: post.titolo, text: post.sommario, url });
+        await navigator.share({ title: post.titolo, text: `${post.sommario}\n\n${url}`, url });
         return;
       } catch {
         // utente ha annullato la condivisione nativa, nessuna azione necessaria
@@ -797,6 +797,20 @@ function Footer() {
               Airbnb ↗
             </a>
             <div style={{ marginTop: "1.25rem", fontFamily: "'DM Sans',sans-serif", fontSize: "0.74rem", color: C.textSoft, lineHeight: 1.7 }}>Disponibile su Airbnb.<br />Fino a 4 ospiti.</div>
+            <div style={{ display: "flex", gap: "0.6rem", marginTop: "1rem" }}>
+              <a href="https://www.instagram.com/bnb_bertinoro/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 34, height: 34, borderRadius: "50%", border: `1.5px solid ${C.border}`, color: C.textSoft, transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textSoft; }}>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61577458010505" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 34, height: 34, borderRadius: "50%", border: `1.5px solid ${C.border}`, color: C.textSoft, transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textSoft; }}>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M15 3h-2.5C10 3 8.5 4.6 8.5 7.2V10H6v3.2h2.5V21h3.3v-7.8h2.6l.5-3.2h-3.1V7.5c0-.9.3-1.5 1.6-1.5H15V3z" /></svg>
+              </a>
+            </div>
             <a
               href="https://search.google.com/local/writereview?placeid=ChIJv7pX_ManLBMRfb0j1GUxPbs"
               target="_blank"
