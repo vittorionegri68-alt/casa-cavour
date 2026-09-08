@@ -45,6 +45,31 @@ function isSocialBlock(b) {
   return false;
 }
 
+function isBlogHomeLink(b) {
+  return b.tipo === "link" && b.testo.includes("casa-cavour.com/#blog");
+}
+
+// posts.jsx contiene tipicamente due link verso #blog per articolo (uno prima
+// di "Leggi anche", uno subito dopo, quest'ultimo senza etichetta quindi
+// renderizzato come URL grezzo): risultato duplicato e poco leggibile sulla
+// pagina statica. Qui vengono rimossi entrambi e reinserito un solo link con
+// etichetta corretta, subito dopo il paragrafo di "Leggi anche" quando
+// presente, altrimenti in coda al contenuto.
+function buildContenuto(post) {
+  const filtered = post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
+  const linkBlogHome = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Scopri altri articoli sul territorio" };
+
+  const idx = filtered.findIndex((b) => b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "leggi anche");
+  if (idx === -1) {
+    filtered.push(linkBlogHome);
+    return filtered;
+  }
+  let insertAt = idx + 1;
+  if (filtered[insertAt] && filtered[insertAt].tipo === "paragrafo") insertAt++;
+  filtered.splice(insertAt, 0, linkBlogHome);
+  return filtered;
+}
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -120,7 +145,7 @@ function renderPage(post) {
   const description = post.sommario;
   const dateIso = new Date(post.data).toISOString();
 
-  const bodyBlocks = post.contenuto.filter((b) => !isSocialBlock(b)).map(renderContentBlock).filter(Boolean).join("\n");
+  const bodyBlocks = buildContenuto(post).map(renderContentBlock).filter(Boolean).join("\n");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -167,8 +192,10 @@ function renderPage(post) {
       *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
       body{background:var(--bg);color:var(--text);font-family:'DM Sans',Arial,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;}
       .wrap{max-width:720px;margin:0 auto;padding:3rem 1.5rem 5rem;}
-      .top-nav{font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2.5rem;}
+      .top-nav{font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
       .top-nav a{color:var(--gold);text-decoration:none;font-weight:700;}
+      .share-btn{background:none;border:1px solid var(--border);color:var(--textMid);font-family:inherit;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.45rem 1rem;cursor:pointer;}
+      .share-btn:hover{border-color:var(--gold);color:var(--gold);}
       .cat{display:inline-block;font-size:0.68rem;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;border:1px solid var(--border);padding:0.2rem 0.6rem;margin-right:0.75rem;}
       time{font-size:0.75rem;color:var(--textSoft);}
       h1{font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.15;margin:1rem 0;}
@@ -187,7 +214,10 @@ function renderPage(post) {
   </head>
   <body>
     <div class="wrap">
-      <div class="top-nav"><a href="${SITE_URL}/#blog">← Torna al sito Casa Cavour</a></div>
+      <div class="top-nav">
+        <a href="${SITE_URL}/#blog">← Torna al sito Casa Cavour</a>
+        <button type="button" class="share-btn" id="share-btn">Condividi ↗</button>
+      </div>
       <span class="cat">${escapeHtml(post.categoria)}</span>
       <time datetime="${escapeAttr(post.data)}">${escapeHtml(formatDate(post.data))}</time>
       <h1>${escapeHtml(post.titolo)}</h1>
@@ -206,6 +236,33 @@ ${bodyBlocks}
       </div>
       <footer><a href="${SITE_URL}/">Casa Cavour Bertinoro — Torna alla home</a></footer>
     </div>
+    <script>
+      (function () {
+        var btn = document.getElementById("share-btn");
+        if (!btn) return;
+        var url = ${JSON.stringify(url)};
+        var title = ${JSON.stringify(post.titolo)};
+        var text = ${JSON.stringify(post.sommario)};
+        var defaultLabel = btn.textContent;
+        btn.addEventListener("click", async function () {
+          // url incluso anche in "text": alcuni client (es. app email) leggono
+          // solo il campo text e ignorano url, altrimenti il link non
+          // arriverebbe nel corpo del messaggio.
+          var shareData = { title: title, text: text + "\\n\\n" + url, url: url };
+          if (navigator.share) {
+            try { await navigator.share(shareData); } catch (e) {}
+            return;
+          }
+          try {
+            await navigator.clipboard.writeText(url);
+            btn.textContent = "Link copiato ✓";
+            setTimeout(function () { btn.textContent = defaultLabel; }, 2000);
+          } catch (e) {
+            window.prompt("Copia il link dell'articolo:", url);
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
 `;
