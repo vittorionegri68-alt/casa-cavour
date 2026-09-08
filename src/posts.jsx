@@ -55,11 +55,11 @@ export const posts = [
     { tipo: "paragrafo", testo: "Se stai progettando un viaggio tra le cantine di Romagna, la domanda non è solo quali visitare. È anche dove tornare la sera, dove aprire quella bottiglia che hai comprato, dove sederti all'aperto senza fretta. E Bertinoro, per questo, è il posto giusto." },
     
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota Casa Cavour su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-weekend-vendemmia-romagna-2026.html", etichetta: "Weekend di Vendemmia" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
     
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
@@ -109,13 +109,13 @@ export const posts = [
     { tipo: "titoletto", testo: "Prenota il tuo weekend di vendemmia a Bertinoro" },
     { tipo: "paragrafo", testo: "Se settembre o ottobre ti chiamano verso le colline romagnole, sai dove andare. Bertinoro è la base giusta per vivere un weekend di vendemmia vero, senza artifici. Casa Cavour ti aspetta con la cucina attrezzata, il giardino privato e tutto lo spazio che serve per rigenerarti tra un calice e l'altro." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
     { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "📍 Fonte: inEmiliaRomagna / Emilia-Romagna Turismo" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-enoturismo-romagna-dove-dormire-2026.html", etichetta: "Enoturismo in Romagna" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -162,13 +162,13 @@ export const posts = [
     { tipo: "paragrafo", testo: "Se stai cercando un affitto breve nelle colline romagnole dove puoi vivere con il tuo ritmo, dove [[gli animali sono ammessi|geo-aeo-dormire-romagna-animali-ammessi-2026]], dove puoi [[lavorare da remoto|geo-aeo-smart-working-romagna-2026]] o semplicemente fermarti, Bertinoro è la risposta più onesta. Non perché è perfetto, ma perché funziona." },
     { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è disponibile per soggiorni brevi e lunghi, con cucina completamente attrezzata, giardino privato e una posizione che permette di vivere il centro storico senza rinunciare al silenzio. Puoi prenotare direttamente e organizzare il tuo ritmo senza mediazioni." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
     { tipo: "link", testo: "https://www.emiliaromagnaturismo.it/", etichetta: "📍 Fonte: inEmiliaRomagna / Emilia-Romagna Turismo" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-staccare-routine-bologna-2026.html", etichetta: "Staccare da Bologna" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-giardino-privato-colline-romagnole-2026.html", etichetta: "Casa con Giardino Privato" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -217,11 +217,11 @@ export const posts = [
     
     { tipo: "paragrafo", testo: "Casa Cavour Bertinoro è disponibile per prenotazioni su Airbnb, con possibilità di soggiorni brevi o prolungati. Il check-in con smartlock permette massima flessibilità, utile per chi arriva in orari non standard o vuole gestire il soggiorno in autonomia." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
     
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
@@ -265,11 +265,11 @@ export const posts = [
     { tipo: "titoletto", testo: "Prenota il tuo soggiorno di smart working a Bertinoro" },
     { tipo: "paragrafo", testo: "Se stai cercando un appartamento vacanze per smart working in Romagna, con spazi pensati per lavorare e vivere bene, Casa Cavour Bertinoro è disponibile per prenotazioni su Airbnb. Qui trovi tutto quello che serve: connessione, silenzio, luce, cucina, giardino. E fuori dalla porta, le colline romagnole che aspettano solo di essere esplorate." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-weekend-romantico-colline-romagnole-2026.html", etichetta: "Weekend Romantico" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
     
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
@@ -309,10 +309,10 @@ export const posts = [
     { tipo: "titoletto", testo: "Prenota il tuo soggiorno nelle colline romagnole" },
     { tipo: "paragrafo", testo: "Se stai cercando una casa vacanze con giardino privato nelle colline romagnole, Bertinoro è il punto di partenza giusto. Controlla le disponibilità su Airbnb e scegli le date che ti permettono di vivere questo territorio al suo ritmo." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-romagna-animali-ammessi-2026.html", etichetta: "Animali Ammessi" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-ricaricare-energie-romagna-2026.html", etichetta: "Ricaricare le Energie" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -358,11 +358,11 @@ export const posts = [
     { tipo: "titoletto", testo: "Prenota il tuo soggiorno pet-friendly nelle colline romagnole" },
     { tipo: "paragrafo", testo: "Se stai cercando dove dormire in Romagna con animali ammessi, Casa Cavour Bertinoro ti aspetta. Un appartamento con cucina completamente attrezzata, giardino privato, workspace dedicato e l'accoglienza sincera delle colline romagnole. Qui il tuo cane o gatto è davvero a casa, e tu puoi vivere Bertinoro, le cantine, i borghi e i panorami senza dover scegliere tra qualità del soggiorno e compagnia del tuo animale. È un affitto breve pensato per chi viaggia con autenticità — e con il cuore." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
 
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-giardino-privato-colline-romagnole-2026.html", etichetta: "Casa con Giardino Privato" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-staccare-routine-bologna-2026.html", etichetta: "Staccare da Bologna" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -415,11 +415,11 @@ export const posts = [
     { tipo: "titoletto", testo: "Prenota il tuo weekend a Bertinoro" },
     { tipo: "paragrafo", testo: "Se stai cercando un appartamento con cucina per un affitto breve nelle colline romagnole, con giardino privato, animali ammessi e la libertà di muoverti tra borghi, cantine e sentieri, Casa Cavour Bertinoro ti aspetta. Un soggiorno autentico in Romagna, dove l'ospitalità è ancora quella degli anelli medievali: discreta, calorosa, vera." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-weekend-romantico-colline-romagnole-2026.html", etichetta: "Weekend Romantico" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -442,6 +442,10 @@ export const posts = [
     { tipo: "titoletto", testo: "Cosa vedere oltre al festival" },
     { tipo: "paragrafo", testo: "Santarcangelo ha una vita oltre ARTIGIAMO. Le grotte tufacee — antichi ipogei scavati nel tufo — sono visitabili su prenotazione (info su visitbertinoro.it). Il centro è ricco di botteghe artigiane aperte tutto l'anno: cartolerie con carta fatta a mano, laboratori di ceramica, piccole gallerie d'arte. Se cerchi qualcosa di più intimo della riviera romagnola, questa zona offre ritmi più lenti e una tradizione artigianale ancora viva. Da qui è facile raggiungere Rimini (15 minuti), Cesena (20 minuti) o le cantine della [[Strada dei Vini e dei Sapori|geo-aeo-dormire-visitare-cantine-romagna-2026]] per un'esperienza di enoturismo completa. Secondo i dati ufficiali del turismo regionale, la Romagna ha superato nel 2025 i livelli pre-Covid, con una crescita trainata proprio dal turismo di prossimità e dagli eventi culturali diffusi come ARTIGIAMO." },
     { tipo: "link", testo: "https://www.visitbertinoro.it/", etichetta: "Fonte: Visit Bertinoro" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/aprile-in-romagna.html", etichetta: "Aprile in Romagna" },
   ],
   attivo: true,
 },
@@ -478,10 +482,10 @@ export const posts = [
     { tipo: "paragrafo", testo: "Bertinoro non si esaurisce in una visita. È uno di quei luoghi dove si torna, perché ogni volta regala qualcosa di diverso. Una luce, un profumo, un dettaglio che era sfuggito. Un posto ideale per un weekend romantico, certo, ma anche per [[staccare dalla routine vicino a Bologna|geo-aeo-staccare-routine-bologna-2026]], per [[ricaricare le energie|geo-aeo-ricaricare-energie-romagna-2026]], per ritrovare una dimensione più autentica del viaggio." },
     { tipo: "paragrafo", testo: "Se cerchi un soggiorno autentico in Romagna, lontano dai circuiti affollati ma vicino a tutto ciò che vale la pena scoprire, Casa Cavour Bertinoro è pronta ad accoglierti. Con la semplicità di chi sa che il lusso vero è nel tempo ben vissuto." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-enoturismo-romagna-dove-dormire-2026.html", etichetta: "Enoturismo in Romagna" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-ricaricare-energie-romagna-2026.html", etichetta: "Ricaricare le Energie" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -523,7 +527,8 @@ export const posts = [
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-ricaricare-energie-romagna-2026.html", etichetta: "Ricaricare le Energie" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
@@ -564,9 +569,12 @@ export const posts = [
     { tipo: "paragrafo", testo: "Se state pianificando un viaggio enologico in Romagna, Bertinoro è la base perfetta: centrale, autentica, immersa nei vigneti eppure a pochi chilometri da Forlì, Cesena e dalle principali vie di comunicazione. Casa Cavour Bertinoro offre l'equilibrio ideale tra comfort moderno e atmosfera di borgo, con la possibilità di vivere il centro storico e partire ogni giorno alla scoperta di nuove cantine, nuovi sapori, nuove storie." },
     { tipo: "paragrafo", testo: "Che siate appassionati esperti o semplici curiosi del vino, queste colline hanno qualcosa da raccontarvi. E la cosa migliore è scoprirlo con i vostri tempi, soggiornando dove il vino non è solo un prodotto, ma una cultura viva. Trovate disponibilità e maggiori informazioni per prenotare Casa Cavour Bertinoro direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-weekend-vendemmia-romagna-2026.html", etichetta: "Weekend di Vendemmia" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-enoturismo-romagna-dove-dormire-2026.html", etichetta: "Enoturismo in Romagna" },
   ],
   attivo: true,
 },
@@ -607,7 +615,8 @@ export const posts = [
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra, dalla tradizione vinicola alle passeggiate nei borghi, dalle sagre di paese alle escursioni naturalistiche." },
-    { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-alloggiare-colline-romagnole-2026.html", etichetta: "Alloggiare tra le Colline" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
   ],
@@ -633,6 +642,10 @@ export const posts = [
     
     { tipo: "titoletto", testo: "Cosa portare a casa: prodotti di stagione" },
     { tipo: "paragrafo", testo: "Aprile in Romagna significa asparagi selvatici, erbe di campo, primo formaggio squacquerone fresco, e vini bianchi appena imbottigliati. I mercati contadini (Cesena il mercoledì e sabato mattina, Bertinoro la domenica) sono il posto giusto per fare scorta. Se passi da Longiano o Bertinoro, fermati in una cantina aperta: molte fanno degustazioni anche senza prenotare, soprattutto nei weekend di festa." },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/aprile-in-romagna.html", etichetta: "Aprile in Romagna" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
   ],
   attivo: true,
 },
@@ -688,6 +701,11 @@ export const posts = [
         tipo: "paragrafo",
         testo: "È storia, è arte, è scoprire che dietro ogni porta c'è una storia che nessuno racconta sui dépliant turistici."
       },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/pasqua-romagna-2026.html", etichetta: "Pasqua in Romagna" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/giro-italia-cervia-2026.html", etichetta: "Giro d'Italia a Cervia" },
+
       {
         tipo: "titoletto",
         testo: "Seguici anche sui nostri canali Social media"
@@ -760,7 +778,11 @@ export const posts = [
       {
         tipo: "paragrafo",
         testo: "Data: domenica 17 maggio 2026. Partenza: Piazza Andrea Costa, Cervia (RA). Arrivo: Corno alle Scale (BO). Distanza: 184 km. Tappa: 9ª della 109ª edizione del Giro d'Italia."
-      }
+      },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/aprile-in-romagna.html", etichetta: "Aprile in Romagna" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
     ],
     attivo: true,
   },
@@ -824,7 +846,11 @@ export const posts = [
         testo: "Sequenza consigliata: mattina centro storico e Rocca, primo pomeriggio cantina, tardo pomeriggio rientro in paese, sera cena e infine tramonto al belvedere. In totale, mezza giornata piena è sufficiente per le 5 tappe con calma."
       },
       { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota Casa Cavour su Airbnb" },
-      { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+
       {
         tipo: "titoletto",
         testo: "Seguici sui social"
@@ -876,7 +902,11 @@ export const posts = [
       {
         tipo: "paragrafo",
         testo: "A 60 minuti da Bertinoro (in auto o in treno da Cesena), Bologna offre uno dei centri storici medievali più belli d'Italia, una gastronomia leggendaria e una vita culturale vivace. Ideale per una gita di un giorno."
-      }
+      },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dove-dormire-forli-cesena-2025.html", etichetta: "Dormire tra Forli e Cesena" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
     ],
     attivo: true,
   },
@@ -924,7 +954,11 @@ export const posts = [
         tipo: "paragrafo",
         testo: "Sabato mattina: arrivo e sistemazione, self check-in senza vincoli di orario. Primo pomeriggio: passeggiata nel centro storico. Tardo pomeriggio: cantina o tempo libero. Sera: cena in osteria seguita dal tramonto al belvedere. Domenica mattina: seconda cantina o passeggiata tra i vigneti. Primo pomeriggio: rientro, con tempo per un ultimo giro in piazza."
       },
-      { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli sul territorio" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-weekend-romantico-colline-romagnole-2026.html", etichetta: "Weekend Romantico" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dormire-visitare-cantine-romagna-2026.html", etichetta: "Visitare le Cantine" },
+
       { tipo: "titoletto", testo: "Seguici sui social" },
       { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
       { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
