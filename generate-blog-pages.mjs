@@ -24,6 +24,18 @@
 // rimossi), invece di usare l'id grezzo: un id non conforme come
 // "Aprile in Romagna" produrrebbe altrimenti un URL non valido
 // (/post/Aprile in Romagna.html). Il campo id originale non viene toccato.
+//
+// Link interni tra articoli: dentro il campo "testo" di un blocco paragrafo
+// in posts.jsx, la sintassi [[etichetta visibile|id-articolo-target]] genera
+// un link <a> verso la pagina statica dell'articolo target, sempre con
+// target="_blank" (si apre in una nuova scheda). L'id è quello grezzo del
+// post (lo stesso usato come chiave "id" in posts.jsx), non lo slug: se
+// l'id punta a un articolo inesistente o non attivo, la build fallisce con
+// un errore esplicito invece di generare un link rotto in silenzio. Questa
+// sintassi vive solo qui e in questo script: il rendering React live
+// (src/App.jsx) e il noscript per crawler (generate-blog-noscript.mjs) non
+// la interpretano ancora, quindi al momento i link interni compaiono solo
+// sulle pagine statiche /post/.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { readFileSync, writeFileSync, copyFileSync, unlinkSync, mkdirSync, readdirSync } from "node:fs";
@@ -83,6 +95,36 @@ function escapeAttr(str) {
   return escapeHtml(str);
 }
 
+// Sintassi per i link interni tra articoli, usata dentro il campo "testo" dei
+// blocchi paragrafo in posts.jsx: [[etichetta visibile|id-articolo-target]].
+// L'id è quello grezzo del post in posts.jsx (non lo slug), così il riferimento
+// resta leggibile e stabile anche se lo slug cambia forma in futuro. idToSlug
+// viene costruito in main() dopo l'assegnazione degli slug a tutti gli articoli
+// attivi, e passato a valle fino a questa funzione.
+const INTERNAL_LINK_RE = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
+
+function renderParagraphWithLinks(testo, idToSlug) {
+  let result = "";
+  let lastIndex = 0;
+  let match;
+  INTERNAL_LINK_RE.lastIndex = 0;
+  while ((match = INTERNAL_LINK_RE.exec(testo)) !== null) {
+    const [full, label, targetId] = match;
+    result += escapeHtml(testo.slice(lastIndex, match.index));
+    const slug = idToSlug.get(targetId);
+    if (!slug) {
+      throw new Error(
+        `generate-blog-pages: link interno verso id "${targetId}" non trovato tra gli articoli attivi (etichetta: "${label}"). Correggere l'id in posts.jsx.`
+      );
+    }
+    const href = `${SITE_URL}/post/${slug}.html`;
+    result += `<a class="inline-link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+    lastIndex = INTERNAL_LINK_RE.lastIndex;
+  }
+  result += escapeHtml(testo.slice(lastIndex));
+  return result;
+}
+
 function slugify(id) {
   return String(id)
     .normalize("NFD")
@@ -116,9 +158,9 @@ async function loadPosts() {
   }
 }
 
-function renderContentBlock(b) {
+function renderContentBlock(b, idToSlug) {
   if (b.tipo === "paragrafo") {
-    return `      <p>${escapeHtml(b.testo)}</p>`;
+    return `      <p>${renderParagraphWithLinks(b.testo, idToSlug)}</p>`;
   }
   if (b.tipo === "titoletto") {
     return `      <h2>${escapeHtml(b.testo)}</h2>`;
@@ -138,14 +180,17 @@ function renderContentBlock(b) {
   return null;
 }
 
-function renderPage(post) {
+function renderPage(post, idToSlug) {
   const slug = post.slug;
   const url = `${SITE_URL}/post/${slug}.html`;
   const title = `${post.titolo} | Casa Cavour Bertinoro`;
   const description = post.sommario;
   const dateIso = new Date(post.data).toISOString();
 
-  const bodyBlocks = buildContenuto(post).map(renderContentBlock).filter(Boolean).join("\n");
+  const bodyBlocks = buildContenuto(post)
+    .map((b) => renderContentBlock(b, idToSlug))
+    .filter(Boolean)
+    .join("\n");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -203,6 +248,8 @@ function renderPage(post) {
       h2{font-family:Georgia,serif;font-size:1.35rem;margin:2rem 0 0.6rem;}
       p{color:var(--textMid);font-size:0.98rem;margin-bottom:1.1rem;}
       .btn-link{display:inline-block;color:var(--gold);border:1.5px solid var(--gold);padding:0.55rem 1.1rem;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;margin:0.25rem 0.5rem 0.25rem 0;}
+      .inline-link{color:var(--gold);text-decoration:underline;text-decoration-color:rgba(160,120,42,0.4);text-underline-offset:2px;}
+      .inline-link:hover{text-decoration-color:var(--gold);}
       .ig-cta{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
       .ig-cta p{color:var(--textMid);font-size:0.92rem;margin-bottom:1rem;}
       .ig-cta-icons{display:flex;justify-content:center;gap:1rem;}
@@ -293,6 +340,12 @@ async function main() {
     p.slug = slug;
   }
 
+  // Mappa id (chiave grezza in posts.jsx) -> slug (nome file pubblico), usata
+  // per risolvere i link interni [[etichetta|id]] dentro i paragrafi. Include
+  // solo gli articoli attivi: un link verso un articolo disattivato deve
+  // fallire la build, non produrre un link rotto silenzioso.
+  const idToSlug = new Map(visibili.map((p) => [p.id, p.slug]));
+
   mkdirSync(OUT_DIR, { recursive: true });
 
   // Rimuove pagine orfane (articoli disattivati o rinominati) prima di rigenerare,
@@ -305,7 +358,7 @@ async function main() {
   }
 
   for (const post of visibili) {
-    const html = renderPage(post);
+    const html = renderPage(post, idToSlug);
     writeFileSync(join(OUT_DIR, `${post.slug}.html`), html, "utf8");
   }
 
