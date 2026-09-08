@@ -519,11 +519,10 @@ export const posts = [
     
     { tipo: "titoletto", testo: "Staccare vicino Bologna non è solo possibile, è necessario" },
     { tipo: "paragrafo", testo: "Le colline di Bertinoro non offrono attrazioni chiassose o programmi serrati. Offrono spazio, silenzio, panorami che cambiano con la luce del giorno e la possibilità di rallentare senza sensi di colpa. A un'ora da Bologna, è il rifugio ideale per chi cerca una pausa autentica, fatta di passeggiate, vino, terme e tramonti che non si dimenticano. Casa Cavour Bertinoro ti aspetta per vivere questa esperienza con calma, proprio nel cuore del borgo." },
-    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823" },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
-    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
@@ -608,7 +607,6 @@ export const posts = [
     { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "titoletto", testo: "Leggi anche" },
     { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra, dalla tradizione vinicola alle passeggiate nei borghi, dalle sagre di paese alle escursioni naturalistiche." },
-    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
     { tipo: "link", testo: "https://www.casa-cavour.com/#blog", etichetta: "Scopri altri articoli" },
     { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
     { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
