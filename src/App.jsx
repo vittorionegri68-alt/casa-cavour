@@ -499,10 +499,41 @@ function About() {
   );
 }
 
+function slugify(id) {
+  return String(id)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function Blog() {
   const [aperto, setAperto] = useState(null);
+  const [condiviso, setCondiviso] = useState(null);
   const sectionRef = useRef(null);
   const visibili = posts.filter(p => p.attivo).sort((a, b) => new Date(b.data) - new Date(a.data));
+
+  async function condividi(post) {
+    const url = `https://www.casa-cavour.com/post/${slugify(post.id)}.html`;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: post.titolo, text: post.sommario, url });
+        return;
+      } catch {
+        // utente ha annullato la condivisione nativa, nessuna azione necessaria
+        return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setCondiviso(post.id);
+      setTimeout(() => setCondiviso(null), 2000);
+    } catch {
+      window.prompt("Copia il link dell'articolo:", url);
+    }
+  }
 
   function chiudi() {
     setAperto(null);
@@ -554,12 +585,20 @@ function Blog() {
           return (
             <Reveal>
               <div style={{ maxWidth: 760, margin: "0 auto" }}>
-                <button onClick={chiudi}
-                  style={{ background: "none", border: `1px solid ${C.border}`, padding: "0.45rem 1rem", fontSize: "0.72rem", color: C.textMid, fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: "2.5rem", transition: "all 0.2s" }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textMid; }}>
-                  ← Tutti gli articoli
-                </button>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", marginBottom: "2.5rem", flexWrap: "wrap" }}>
+                  <button onClick={chiudi}
+                    style={{ background: "none", border: `1px solid ${C.border}`, padding: "0.45rem 1rem", fontSize: "0.72rem", color: C.textMid, fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", transition: "all 0.2s" }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textMid; }}>
+                    ← Tutti gli articoli
+                  </button>
+                  <button onClick={() => condividi(post)}
+                    style={{ background: "none", border: `1px solid ${C.border}`, padding: "0.45rem 1rem", fontSize: "0.72rem", color: C.textMid, fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", transition: "all 0.2s" }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textMid; }}>
+                    {condiviso === post.id ? "Link copiato ✓" : "Condividi ↗"}
+                  </button>
+                </div>
                 <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "1.25rem" }}>
                   <span style={{ fontSize: "0.62rem", letterSpacing: "0.18em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", border: `1px solid ${C.border}`, padding: "0.2rem 0.6rem" }}>{post.categoria}</span>
                   <span style={{ fontSize: "0.68rem", color: C.textSoft, fontFamily: "'DM Sans',sans-serif" }}>{new Date(post.data).toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" })}</span>

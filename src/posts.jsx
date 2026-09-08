@@ -641,7 +641,7 @@ export const posts = [
   {
     id: "Aprile in Romagna",
     titolo: "Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva.",
-    data: "2026-04-1",
+    data: "2026-04-01",
     categoria: "Eventi",
     sommario: "Hai mai pensato che i borghi medievali fossero musei all'aperto da vedere solo d'estate?",
     contenuto: [
