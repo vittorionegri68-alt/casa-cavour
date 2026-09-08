@@ -31,11 +31,20 @@
 // target="_blank" (si apre in una nuova scheda). L'id è quello grezzo del
 // post (lo stesso usato come chiave "id" in posts.jsx), non lo slug: se
 // l'id punta a un articolo inesistente o non attivo, la build fallisce con
-// un errore esplicito invece di generare un link rotto in silenzio. Questa
-// sintassi vive solo qui e in questo script: il rendering React live
-// (src/App.jsx) e il noscript per crawler (generate-blog-noscript.mjs) non
-// la interpretano ancora, quindi al momento i link interni compaiono solo
-// sulle pagine statiche /post/.
+// un errore esplicito invece di generare un link rotto in silenzio. La stessa
+// sintassi è interpretata anche dal rendering React live (src/App.jsx,
+// funzione renderTestoConLink), così i link interni compaiono in modo
+// identico sia sulle pagine statiche /post/ sia nel blog dal vivo. Il
+// noscript per crawler (generate-blog-noscript.mjs) non la interpreta
+// ancora: mostrerebbe il markup grezzo se qualcuno lo aprisse a mano, ma non
+// è un problema per i motori di ricerca, che leggono solo il testo.
+//
+// Sezione "Leggi anche": il link generico verso #blog che posts.jsx mette
+// dopo il paragrafo "Leggi anche" viene sostituito con un link per ciascun
+// articolo che il post cita come link interno nel proprio testo (fino a 3),
+// etichettato con il titolo reale dell'articolo target. Se il post non cita
+// nessun altro articolo, resta il bottone generico verso #blog. Vedi
+// estraiIdCorrelati() e buildContenuto().
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { readFileSync, writeFileSync, copyFileSync, unlinkSync, mkdirSync, readdirSync } from "node:fs";
@@ -61,24 +70,58 @@ function isBlogHomeLink(b) {
   return b.tipo === "link" && b.testo.includes("casa-cavour.com/#blog");
 }
 
+// Estrae, in ordine di prima comparsa, gli id degli articoli citati come link
+// interni [[etichetta|id]] dentro i paragrafi di un post: sono gli articoli
+// che il testo stesso indica come collegati, quindi la fonte più affidabile
+// per "Leggi anche" (non un elenco arbitrario).
+const INTERNAL_LINK_SCAN_RE = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
+function estraiIdCorrelati(post) {
+  const ids = [];
+  for (const b of post.contenuto) {
+    if (b.tipo !== "paragrafo") continue;
+    INTERNAL_LINK_SCAN_RE.lastIndex = 0;
+    let match;
+    while ((match = INTERNAL_LINK_SCAN_RE.exec(b.testo)) !== null) {
+      const targetId = match[2];
+      if (targetId !== post.id && !ids.includes(targetId)) ids.push(targetId);
+    }
+  }
+  return ids;
+}
+
+const MAX_CORRELATI = 3;
+
 // posts.jsx contiene tipicamente due link verso #blog per articolo (uno prima
 // di "Leggi anche", uno subito dopo, quest'ultimo senza etichetta quindi
 // renderizzato come URL grezzo): risultato duplicato e poco leggibile sulla
-// pagina statica. Qui vengono rimossi entrambi e reinserito un solo link con
-// etichetta corretta, subito dopo il paragrafo di "Leggi anche" quando
-// presente, altrimenti in coda al contenuto.
-function buildContenuto(post) {
+// pagina statica. Qui vengono rimossi entrambi. Al loro posto, subito dopo il
+// paragrafo di "Leggi anche" quando presente (altrimenti in coda al
+// contenuto), viene inserito un link per ciascun articolo effettivamente
+// citato come link interno nel corpo del post (fino a MAX_CORRELATI), con
+// l'etichetta del titolo reale dell'articolo target. Se il post non cita
+// nessun altro articolo, si ricade sul bottone generico verso #blog: meglio
+// un rimando alla lista completa che nessun rimando.
+function buildContenuto(post, idToSlug, idToPost) {
   const filtered = post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
-  const linkBlogHome = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Scopri altri articoli sul territorio" };
+
+  const idCorrelati = estraiIdCorrelati(post).slice(0, MAX_CORRELATI);
+  const linkCorrelati = idCorrelati.map((id) => ({
+    tipo: "link",
+    testo: `${SITE_URL}/post/${idToSlug.get(id)}.html`,
+    etichetta: idToPost.get(id).titolo,
+  }));
+  const linkDaInserire = linkCorrelati.length > 0
+    ? linkCorrelati
+    : [{ tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Scopri altri articoli sul territorio" }];
 
   const idx = filtered.findIndex((b) => b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "leggi anche");
   if (idx === -1) {
-    filtered.push(linkBlogHome);
+    filtered.push(...linkDaInserire);
     return filtered;
   }
   let insertAt = idx + 1;
   if (filtered[insertAt] && filtered[insertAt].tipo === "paragrafo") insertAt++;
-  filtered.splice(insertAt, 0, linkBlogHome);
+  filtered.splice(insertAt, 0, ...linkDaInserire);
   return filtered;
 }
 
@@ -180,14 +223,14 @@ function renderContentBlock(b, idToSlug) {
   return null;
 }
 
-function renderPage(post, idToSlug) {
+function renderPage(post, idToSlug, idToPost) {
   const slug = post.slug;
   const url = `${SITE_URL}/post/${slug}.html`;
   const title = `${post.titolo} | Casa Cavour Bertinoro`;
   const description = post.sommario;
   const dateIso = new Date(post.data).toISOString();
 
-  const bodyBlocks = buildContenuto(post)
+  const bodyBlocks = buildContenuto(post, idToSlug, idToPost)
     .map((b) => renderContentBlock(b, idToSlug))
     .filter(Boolean)
     .join("\n");
@@ -345,6 +388,7 @@ async function main() {
   // solo gli articoli attivi: un link verso un articolo disattivato deve
   // fallire la build, non produrre un link rotto silenzioso.
   const idToSlug = new Map(visibili.map((p) => [p.id, p.slug]));
+  const idToPost = new Map(visibili.map((p) => [p.id, p]));
 
   mkdirSync(OUT_DIR, { recursive: true });
 
@@ -358,7 +402,7 @@ async function main() {
   }
 
   for (const post of visibili) {
-    const html = renderPage(post, idToSlug);
+    const html = renderPage(post, idToSlug, idToPost);
     writeFileSync(join(OUT_DIR, `${post.slug}.html`), html, "utf8");
   }
 
