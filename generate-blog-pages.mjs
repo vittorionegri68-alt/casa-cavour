@@ -70,58 +70,39 @@ function isBlogHomeLink(b) {
   return b.tipo === "link" && b.testo.includes("casa-cavour.com/#blog");
 }
 
-// Estrae, in ordine di prima comparsa, gli id degli articoli citati come link
-// interni [[etichetta|id]] dentro i paragrafi di un post: sono gli articoli
-// che il testo stesso indica come collegati, quindi la fonte più affidabile
-// per "Leggi anche" (non un elenco arbitrario).
-const INTERNAL_LINK_SCAN_RE = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
-function estraiIdCorrelati(post) {
-  const ids = [];
-  for (const b of post.contenuto) {
-    if (b.tipo !== "paragrafo") continue;
-    INTERNAL_LINK_SCAN_RE.lastIndex = 0;
-    let match;
-    while ((match = INTERNAL_LINK_SCAN_RE.exec(b.testo)) !== null) {
-      const targetId = match[2];
-      if (targetId !== post.id && !ids.includes(targetId)) ids.push(targetId);
-    }
-  }
-  return ids;
-}
+// I link "Leggi anche" (1-2 per articolo, verso articoli realmente correlati,
+// con etichetta breve sull'argomento trattato) sono ora scritti a mano
+// direttamente in posts.jsx, subito dopo il paragrafo "Leggi anche". Questo
+// script non li genera più automaticamente: li lascia passare così come sono,
+// identici sia qui che nel rendering React live, perché vivono nel contenuto
+// condiviso invece che in una trasformazione separata per ciascuna superficie.
+//
+// L'unico intervento di questa funzione è una rete di sicurezza: se un
+// articolo (oggi o in futuro) non ha nessun link dopo "Leggi anche" — perché
+// non esiste ancora una correlazione sensata da scrivere a mano — viene
+// inserito un singolo bottone "Tutti gli articoli" verso #blog, con la stessa
+// etichetta del bottone "← Tutti gli articoli" già usato nel blog live quando
+// si chiude un articolo aperto. Meglio un rimando alla lista completa che
+// nessun rimando. Qualunque link verso #blog scritto per errore altrove nel
+// contenuto viene comunque rimosso, per evitare doppioni con questo fallback.
+const FALLBACK_TUTTI_GLI_ARTICOLI = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Tutti gli articoli" };
 
-const MAX_CORRELATI = 3;
-
-// posts.jsx contiene tipicamente due link verso #blog per articolo (uno prima
-// di "Leggi anche", uno subito dopo, quest'ultimo senza etichetta quindi
-// renderizzato come URL grezzo): risultato duplicato e poco leggibile sulla
-// pagina statica. Qui vengono rimossi entrambi. Al loro posto, subito dopo il
-// paragrafo di "Leggi anche" quando presente (altrimenti in coda al
-// contenuto), viene inserito un link per ciascun articolo effettivamente
-// citato come link interno nel corpo del post (fino a MAX_CORRELATI), con
-// l'etichetta del titolo reale dell'articolo target. Se il post non cita
-// nessun altro articolo, si ricade sul bottone generico verso #blog: meglio
-// un rimando alla lista completa che nessun rimando.
-function buildContenuto(post, idToSlug, idToPost) {
+function buildContenuto(post) {
   const filtered = post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
-
-  const idCorrelati = estraiIdCorrelati(post).slice(0, MAX_CORRELATI);
-  const linkCorrelati = idCorrelati.map((id) => ({
-    tipo: "link",
-    testo: `${SITE_URL}/post/${idToSlug.get(id)}.html`,
-    etichetta: idToPost.get(id).titolo,
-  }));
-  const linkDaInserire = linkCorrelati.length > 0
-    ? linkCorrelati
-    : [{ tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Scopri altri articoli sul territorio" }];
 
   const idx = filtered.findIndex((b) => b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "leggi anche");
   if (idx === -1) {
-    filtered.push(...linkDaInserire);
+    // Nessuna sezione "Leggi anche": non se ne inventa una qui, si segue lo
+    // stesso fallback in coda al contenuto.
+    filtered.push(FALLBACK_TUTTI_GLI_ARTICOLI);
     return filtered;
   }
-  let insertAt = idx + 1;
-  if (filtered[insertAt] && filtered[insertAt].tipo === "paragrafo") insertAt++;
-  filtered.splice(insertAt, 0, ...linkDaInserire);
+  let cursor = idx + 1;
+  if (filtered[cursor] && filtered[cursor].tipo === "paragrafo") cursor++;
+  const haLinkCorrelati = filtered[cursor] && filtered[cursor].tipo === "link";
+  if (!haLinkCorrelati) {
+    filtered.splice(cursor, 0, FALLBACK_TUTTI_GLI_ARTICOLI);
+  }
   return filtered;
 }
 
