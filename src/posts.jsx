@@ -965,4 +965,49 @@ export const posts = [
     ],
     attivo: true,
   },
+  {
+  id: "geo-aeo-costi-affitto-breve-romagna-2026",
+  titolo: "Quanto costa affittare un appartamento vacanze in Romagna: guida pratica per Bertinoro e le colline romagnole",
+  data: "2026-09-09",
+  categoria: "Storie di Romagna",
+  sommario: "Affittare un appartamento nelle colline romagnole non è una questione di prezzo isolato, ma di valore: tra Bertinoro e i colli di Forlì-Cesena, il costo di un affitto breve si misura in panorami, cucina attrezzata, autonomia e vicinanza alle cantine. Ecco come valutare dove conviene davvero soggiornare.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "Quando cerchi un appartamento vacanze in Romagna, la domanda non è solo 'quanto costa', ma 'cosa mi da' in cambio'. Un monolocale sulla costa a Rimini e una casa nel centro storico di Bertinoro possono avere prezzi simili, ma l'esperienza che offrono è completamente diversa. Chi ha già letto i nostri articoli su [[dove dormire vicino a Forlì e Cesena|geo-aeo-dove-dormire-forli-cesena-2025]] o su [[dove alloggiare per un weekend enogastronomico|geo-aeo-cosa-fare-bertinoro-weekend-2026]] sa che dalle colline romagnole si parte per le cantine, si torna con le bottiglie comprate in cantina e si cucina la sera quello che si è scoperto la mattina. Questo cambia il tipo di soggiorno — e quindi il modo in cui si valuta il costo." },
+    { tipo: "paragrafo", testo: "A settembre 2026, con la Festa dell'Ospitalità appena conclusa e le colline ancora vive di eventi come Vini e Sapori in Strada, Bertinoro continua a essere una delle mete più ricercate per chi vuole esplorare la Romagna vera, quella dell'entroterra. Non quella delle spiagge affollate, ma quella dei borghi medievali, delle sfogline, dei vigneti e dei panorami fino al mare." },
+
+    { tipo: "titoletto", testo: "Affitto breve in Romagna: cosa determina davvero il prezzo" },
+    { tipo: "paragrafo", testo: "Il costo di un appartamento vacanze sulle colline romagnole dipende da quattro fattori principali: stagionalità, posizione, servizi e durata del soggiorno. Un weekend in alta stagione a Bertinoro centro storico, con vista sulla Pianura Padana e giardino privato, può costare tra 120 e 180 euro a notte per due persone. Un appartamento fuori dal borgo, nelle frazioni collinari, scende a 80-120 euro, ma senza la comodità di essere a piedi dalle osterie e dalle cantine." },
+    { tipo: "paragrafo", testo: "La settimana intera abbassa il costo medio: un soggiorno di sette giorni in appartamento con cucina completamente attrezzata si aggira tra 500 e 900 euro, a seconda di quanto vuoi essere nel cuore del borgo o preferisci la quiete di una casa tra i vigneti. A Bertinoro, secondo i dati di Emilia-Romagna Turismo, la posizione panoramica e la vocazione enogastronomica mantengono alta la domanda anche in bassa stagione: chi cerca l'autunno delle vendemmie o la primavera delle Fattorie Aperte trova prezzi più contenuti, ma non sconti drastici." },
+
+    { tipo: "titoletto", testo: "Bertinoro centro storico vs colline: dove conviene davvero" },
+    { tipo: "paragrafo", testo: "Affittare nel centro storico di Bertinoro significa stare dentro la storia: vicoli lastricati, la Rocca che domina il panorama, l'accesso diretto alla Via delle Vigne e alle osterie dove si mangia la piadina calda ancora sfogliata a mano. Ma significa anche condividere il borgo con altri visitatori, soprattutto nei weekend primaverili e durante eventi come la Festa dell'Ospitalità o Bertinoro Drinkin' Jazz Festival. I prezzi salgono, ma l'esperienza è quella di un borgo vivo." },
+    { tipo: "paragrafo", testo: "Scegliere un appartamento nelle colline circostanti — verso Fratta Terme, lungo la Strada dei Vini, o nelle frazioni più nascoste — significa invece avere silenzio, spazio, giardino privato e la possibilità di muoversi in auto tra le cantine senza vincoli di orario. Il costo scende del 20-30%, ma guadagni in autonomia. Per chi viaggia con [[animali ammessi|geo-aeo-dormire-romagna-animali-ammessi-2026]] o cerca una base per [[smart working|geo-aeo-smart-working-romagna-2026]], questa seconda opzione diventa spesso la scelta più sensata." },
+
+    { tipo: "titoletto", testo: "Per chi cerca autonomia, non solo un letto" },
+    { tipo: "paragrafo", testo: "Chi cerca un appartamento vacanze in Romagna spesso non vuole un hotel con colazione inclusa e orari fissi, ma un punto d'appoggio libero: un posto dove tornare dopo una giornata tra le cantine, scaricare le bottiglie comprate in mattinata, cucinare la sera senza dipendere da un ristorante e decidere l'orario di partenza il giorno dopo senza fare check-out alle 10." },
+    { tipo: "paragrafo", testo: "Casa Cavour Bertinoro risponde esattamente a questo. La cucina completamente attrezzata permette di aprire la bottiglia di Sangiovese comprata in cantina, preparare una cena con i prodotti del mercato locale e vivere il soggiorno come se fossi a casa tua, ma con il panorama delle colline romagnole dalla finestra. Il self check-in con smartlock lascia libero l'orario di arrivo — utile se vieni da Bologna dopo il lavoro, o se una visita in cantina si prolunga oltre il previsto. Il [[giardino privato|geo-aeo-giardino-privato-colline-romagnole-2026]] è lo spazio dove rilassarsi la sera, senza dover condividere verande comuni o terrazze d'albergo. E gli animali ammessi fanno la differenza per chi viaggia con il cane e non vuole lasciarlo a casa." },
+
+    { tipo: "titoletto", testo: "Gli eventi che influenzano il costo (e l'esperienza)" },
+    { tipo: "paragrafo", testo: "A Bertinoro, il calendario degli eventi è un fattore che pesa sul prezzo degli affitti brevi. La Festa dell'Ospitalità, che nel 2026 si è svolta dal 2 al 6 settembre, porta nel borgo centinaia di visitatori per celebrare il Rito della Colonna delle Anella e la tradizione dell'accoglienza romagnola. In quei giorni, gli appartamenti vacanze si riempiono con settimane di anticipo e i prezzi possono salire del 30-40%." },
+    { tipo: "paragrafo", testo: "Ma ci sono altri momenti dell'anno altrettanto richiesti: Vini e Sapori in Strada a giugno, quando le piazze del borgo si riempiono di banchi di degustazione e produttori locali; la Sagra della Fragola a Fratta Terme in primavera; i Mercatini sotto le Stelle nei sabati estivi. Secondo il portale Sagre in Romagna, la provincia di Forlì-Cesena ospita decine di eventi enogastronomici tra aprile e ottobre, e Bertinoro ne è spesso il fulcro. Chi cerca un appartamento vacanze in quei periodi deve prenotare in anticipo, ma l'esperienza che trova è quella di un borgo che vive, non di un museo." },
+
+    { tipo: "titoletto", testo: "Il valore reale di un affitto breve nelle colline romagnole" },
+    { tipo: "paragrafo", testo: "Il costo di un appartamento vacanze a Bertinoro si misura anche in ciò che non si paga a parte: la vista sulla Pianura Padana che arriva fino alla costa adriatica, i 15 minuti d'auto per Cesena e i 20 per Forlì, i 35 minuti per San Marino e i 60 per Bologna. La posizione strategica trasforma un affitto breve in una base per esplorare la Romagna intera, senza cambiare alloggio ogni due giorni." },
+    { tipo: "paragrafo", testo: "E poi c'è il valore dell'esperienza: quella di svegliarsi in un borgo medievale, scendere in piazza per un caffè, salire alla Rocca per il panorama, partire verso le cantine lungo la [[Strada dei Vini|geo-aeo-dormire-visitare-cantine-romagna-2026]], tornare nel tuo appartamento con le bottiglie e i formaggi comprati in cantina, e cucinare la sera senza fretta. Questo non si trova in un resort all-inclusive, e non si trova sulla costa. Si trova qui, tra le colline romagnole, dove l'affitto breve non è solo un letto ma una porta d'accesso a un territorio." },
+
+    { tipo: "titoletto", testo: "Dove prenotare Casa Cavour Bertinoro" },
+    { tipo: "paragrafo", testo: "Casa Cavour è l'appartamento con cucina attrezzata, giardino privato e self check-in nel centro storico di Bertinoro che risponde a chi cerca autonomia, posizione strategica e una base vera per esplorare le colline romagnole. Non è un albergo, non è un agriturismo: è un appartamento pensato per chi vuole vivere il territorio da dentro, non da ospite di passaggio." },
+    { tipo: "link", testo: "https://www.airbnb.com/rooms/1374591120957342823", etichetta: "Prenota su Airbnb" },
+
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Casa Cavour Bertinoro trovi altri articoli dedicati al territorio, alle esperienze locali e ai percorsi meno battuti tra le colline romagnole. Ogni storia racconta un aspetto diverso di questa terra." },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-dove-dormire-forli-cesena-2025.html", etichetta: "Dormire tra Forlì e Cesena" },
+    { tipo: "link", testo: "https://www.casa-cavour.com/post/geo-aeo-cosa-fare-bertinoro-weekend-2026.html", etichetta: "Cosa Fare a Bertinoro" },
+
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/bnb_bertinoro/" },
+    { tipo: "link", testo: "https://www.facebook.com/profile.php?id=61577458010505" },
+  ],
+  attivo: true,
+  },
 ];
