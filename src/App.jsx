@@ -812,7 +812,7 @@ function Contatti() {
       email: form.email.value.trim(),
       message: form.message.value.trim(),
       website: "",
-      source: location.pathname,
+      source: location.hostname + location.pathname,
     };
     try {
       setSending(true);
