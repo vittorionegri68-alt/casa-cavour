@@ -798,6 +798,96 @@ function FinalCTA() {
   );
 }
 
+function Contatti() {
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    if (form.website.value) { setSent(true); return; } // honeypot: bot, finge successo
+    const payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+      website: "",
+      source: location.pathname,
+    };
+    try {
+      setSending(true);
+      setError(false);
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("bad status");
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
+  }
+
+  const inputStyle = {
+    width: "100%",
+    padding: "0.85rem 1rem",
+    fontFamily: "'DM Sans',sans-serif",
+    fontSize: "0.9rem",
+    color: C.text,
+    background: "#fff",
+    border: `1.5px solid ${C.border}`,
+    outline: "none",
+    transition: "border-color 0.2s",
+  };
+
+  return (
+    <section id="contatti" style={{ background: C.bg2, padding: "7rem 2rem" }}>
+      <div style={{ maxWidth: 640, margin: "0 auto" }}>
+        <Reveal>
+          <div style={{ fontSize: "0.67rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", marginBottom: "1.1rem", display: "flex", alignItems: "center", gap: "0.65rem" }}>
+            <span style={{ width: 26, height: 1, background: C.gold, display: "inline-block" }} /> Contatti
+          </div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "clamp(1.8rem,3.5vw,3rem)", color: C.text, fontWeight: 700, lineHeight: 1.1, marginBottom: "1rem", letterSpacing: "-0.02em" }}>
+            Una domanda prima<br /><span style={{ color: C.gold, fontStyle: "italic" }}>di prenotare?</span>
+          </h2>
+          <p style={{ fontSize: "0.94rem", color: C.textMid, lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif", marginBottom: "2.2rem" }}>
+            Scrivici per disponibilità, richieste particolari o qualsiasi altra informazione. Rispondiamo di solito entro poche ore.
+          </p>
+
+          {sent ? (
+            <div style={{ padding: "1.5rem", background: "#fff", border: `1.5px solid ${C.gold}`, fontFamily: "'DM Sans',sans-serif", fontSize: "0.92rem", color: C.text }}>
+              Messaggio inviato. Ti risponderemo il prima possibile.
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
+              <input type="text" name="name" placeholder="Nome" required style={inputStyle} />
+              <input type="email" name="email" placeholder="Email" required style={inputStyle} />
+              <textarea name="message" placeholder="Messaggio" rows={4} required style={{ ...inputStyle, resize: "vertical" }} />
+              <button type="submit" disabled={sending}
+                style={{ alignSelf: "flex-start", background: C.gold, color: "#fff", padding: "0.95rem 2.2rem", fontSize: "0.8rem", fontWeight: 800, letterSpacing: "0.13em", textTransform: "uppercase", border: "none", cursor: sending ? "default" : "pointer", opacity: sending ? 0.7 : 1, fontFamily: "'DM Sans',sans-serif", transition: "all 0.25s" }}
+                onMouseEnter={e => { if (!sending) e.currentTarget.style.background = "#8a6520"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = C.gold; }}>
+                {sending ? "Invio in corso…" : "Invia messaggio"}
+              </button>
+              {error && (
+                <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.82rem", color: "#b4453a" }}>
+                  Non siamo riusciti a inviare il messaggio. Riprova, oppure scrivici su Instagram.
+                </div>
+              )}
+            </form>
+          )}
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer style={{ background: C.bg3, borderTop: `1px solid ${C.border}`, padding: "4rem 2rem 2rem" }}>
@@ -817,7 +907,7 @@ function Footer() {
           </div>
           <div>
             <div style={{ fontSize: "0.67rem", letterSpacing: "0.18em", textTransform: "uppercase", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", marginBottom: "0.85rem" }}>Naviga</div>
-            {[["Appartamento","appartamento"],["Posizione","posizione"],["Esperienze","esperienze"],["Testimonianze","testimonianze"],["Blog","blog"],["Domande","qa"]].map(([label, anchor]) => (
+            {[["Appartamento","appartamento"],["Posizione","posizione"],["Esperienze","esperienze"],["Testimonianze","testimonianze"],["Blog","blog"],["Domande","qa"],["Contatti","contatti"]].map(([label, anchor]) => (
               <a key={anchor} href={`#${anchor}`} style={{ display: "block", color: C.textMid, textDecoration: "none", fontSize: "0.83rem", fontFamily: "'DM Sans',sans-serif", marginBottom: "0.5rem", transition: "color 0.2s" }}
                 onMouseEnter={e => e.target.style.color=C.gold} onMouseLeave={e => e.target.style.color=C.textMid}>
                 {label}
@@ -895,6 +985,7 @@ export default function App() {
       <About />
       <Blog />
       <QA />
+      <Contatti />
       <FinalCTA />
       <Footer />
     </>
