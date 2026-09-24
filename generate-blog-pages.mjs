@@ -305,7 +305,7 @@ ${bodyBlocks}
           </a>
         </div>
       </div>
-      <footer><a href="${SITE_URL}/">Casa Cavour Bertinoro — Torna alla home</a></footer>
+      <footer><a href="${SITE_URL}/">Casa Cavour Bertinoro. Torna alla home</a></footer>
     </div>
     <script>
       (function () {
