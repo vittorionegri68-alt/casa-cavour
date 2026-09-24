@@ -41,7 +41,7 @@ export const qanda = [
   {
     id: "animali-ammessi",
     domanda: "Casa Cavour accetta animali domestici in Romagna?",
-    risposta: "Sì, senza supplemento: gli animali sono benvenuti a Casa Cavour. Il giardino privato permette al cane di muoversi liberamente e la cucina attrezzata aiuta a gestire anche i suoi pasti. Il self check-in con smartlock evita l'ansia degli orari rigidi dopo un viaggio in auto, e la posizione nel centro storico permette passeggiate a piedi direttamente dalla porta di casa.",
+    risposta: "Sì, senza supplemento: gli animali sono benvenuti a Casa Cavour. Il giardino privato permette al cane di muoversi liberamente e la cucina attrezzata aiuta a gestire anche i suoi pasti. Il self check-in con cassetta portachiavi a codice evita l'ansia degli orari rigidi dopo un viaggio in auto, e la posizione nel centro storico permette passeggiate a piedi direttamente dalla porta di casa.",
   },
   {
     id: "staccare-bologna",
