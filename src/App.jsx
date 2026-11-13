@@ -189,7 +189,7 @@ function Hero() {
               </a>
             </div>
             <div style={{ opacity: loaded?1:0, transition: "opacity 0.8s ease 0.78s", display: "flex", gap: "2rem", marginTop: "2.5rem", paddingTop: "1.75rem", borderTop: `1px solid ${C.border}`, flexWrap: "wrap" }}>
-              {[["★★★★★","Rating Airbnb"],["4","Ospiti max"],["15 min","da Cesena"],["60 min","da Bologna"]].map(([v,l]) => (
+              {[["2","Camere da letto"],["4","Ospiti max"],["15 min","da Cesena"],["60 min","da Bologna"]].map(([v,l]) => (
                 <div key={l}>
                   <div style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1.3rem", color: C.gold, fontWeight: 700 }}>{v}</div>
                   <div style={{ fontSize: "0.66rem", color: C.textSoft, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", marginTop: 2 }}>{l}</div>
@@ -964,7 +964,7 @@ function Footer() {
           </div>
         </div>
         <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
-          <div style={{ fontSize: "0.72rem", color: C.textSoft, fontFamily: "'DM Sans',sans-serif" }}>© {new Date().getFullYear()} Casa Cavour · Bertinoro · Tutti i diritti riservati</div>
+          <div style={{ fontSize: "0.72rem", color: C.textSoft, fontFamily: "'DM Sans',sans-serif" }}>© {new Date().getFullYear()} Casa Cavour · Bertinoro · CIN IT040003C28FEZ8O7L · Tutti i diritti riservati</div>
           <a href="/privacy.html" style={{ fontSize: "0.72rem", color: C.textSoft, fontFamily: "'DM Sans',sans-serif", textDecoration: "none", transition: "color 0.2s" }}
             onMouseEnter={e => e.target.style.color=C.gold} onMouseLeave={e => e.target.style.color=C.textSoft}>
             Privacy Policy
