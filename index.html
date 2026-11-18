@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO meta tags -->
-    <meta name="description" content="Casa Cavour — Appartamento vacanze con cucina nel centro storico di Bertinoro (FC). Base per weekend romantico e enoturismo in Romagna. 15 minuti da Cesena." />
+    <meta name="description" content="Casa Cavour, appartamento vacanze con cucina nel centro storico di Bertinoro (FC), a 15 minuti da Cesena. Base per enoturismo in Romagna." />
     <meta name="keywords" content="casa vacanze Bertinoro, affitti brevi Bertinoro, appartamento cucina Bertinoro, affitto breve colline romagnole, casa vacanze Romagna, weekend romantico Romagna, enoturismo cantine Romagna, Bertinoro affitto, colline romagnole alloggio, affitto breve Forlì-Cesena, base per esplorare la Romagna, staccare dalla routine vicino Bologna, Casa Cavour Bertinoro" />
 
     <!-- Favicon -->
@@ -370,7 +370,6 @@
     <noscript>
       <main>
         <article>
-          <h1>Casa Cavour — Appartamento Vacanze Bertinoro, Colline Romagnole</h1>
           <p>Casa Cavour è un appartamento vacanze con cucina completamente attrezzata nel centro storico di Bertinoro, borgo medievale sulle colline romagnole nella provincia di Forlì-Cesena. Soprannominato il Balcone della Romagna per la vista panoramica sulla Pianura Padana e sulla costa adriatica, è la base ideale per coppie e viaggiatori che vogliono scoprire la Romagna autentica: cantine, borghi medievali, Sangiovese, Piadina Romagnola.</p>
           <p>Indirizzo: Via Cavour 44, Bertinoro (FC). A 15 minuti da Cesena, 20 minuti da Forlì, 40 minuti da Rimini, 35 minuti da San Marino, 60 minuti da Bologna. Appartamento di 100 mq, fino a 4 ospiti. Check-in ore 16:00, check-out ore 10:00. A partire da 95€ a notte, <a href="https://www.airbnb.com/rooms/1374591120957342823" target="_blank" rel="noopener noreferrer">tariffe aggiornate su Airbnb</a>.</p>
           <p>Codice Identificativo Nazionale (CIN): IT040003C28FEZ8O7L</p>
@@ -983,7 +982,10 @@
       </main>
     </noscript>
 
-    <div id="root"></div>
+    <!-- H1 della home per i crawler che non eseguono JavaScript (Bingbot, OAI-SearchBot).
+         Sta dentro #root, quindi React lo sostituisce al mount: nessun H1 duplicato
+         e nessun cambiamento visivo per gli utenti. -->
+    <div id="root"><h1 style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">Casa Cavour: Appartamento Vacanze a Bertinoro, Colline Romagnole</h1></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
