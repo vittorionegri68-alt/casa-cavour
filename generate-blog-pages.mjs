@@ -45,6 +45,11 @@
 // etichettato con il titolo reale dell'articolo target. Se il post non cita
 // nessun altro articolo, resta il bottone generico verso #blog. Vedi
 // estraiIdCorrelati() e buildContenuto().
+// v3 (19/11/2026): hreflang sulle pagine articolo e nella sitemap, tramite la
+// mappa ALTERNATES dello standard references/blog-geo.md v1.3. La
+// corrispondenza tra gli id delle tre lingue e' stata ricavata dalla data di
+// pubblicazione, identica nelle tre lingue, e verificata titolo per titolo.
+//
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { readFileSync, writeFileSync, copyFileSync, unlinkSync, mkdirSync, readdirSync } from "node:fs";
@@ -57,6 +62,94 @@ const POSTS_PATH = join(ROOT, "src", "posts.jsx");
 const OUT_DIR = join(ROOT, "public", "post");
 
 const SITE_URL = "https://www.casa-cavour.com";
+
+const LANG = "it";
+
+// Siti multilingua: lo stesso articolo negli altri repo lingua.
+// sites: lingua -> dominio. posts: id di questo repo -> { lingua: id altrove }.
+// Standard references/blog-geo.md v1.3 della skill master-website-generator.
+const ALTERNATES = {
+  xDefault: "it",
+  sites: {
+    it: "https://www.casa-cavour.com",
+    en: "https://en.casa-cavour.com",
+    nl: "https://nl.casa-cavour.com",
+  },
+  posts: {
+      "geo-aeo-enoturismo-romagna-dove-dormire-2026": {
+          "en": "geo-aeo-wine-tourism-romagna-where-stay-2026-en",
+          "nl": "geo-aeo-wijntoerisme-romagna-verblijf-2026-nl"
+      },
+      "geo-aeo-weekend-vendemmia-romagna-2026": {
+          "en": "geo-aeo-weekend-vendemmia-romagna-2026-en",
+          "nl": "geo-aeo-oogstweekend-romagna-2026-nl"
+      },
+      "geo-aeo-ricaricare-energie-romagna-2026": {
+          "en": "geo-aeo-recharge-romagna-2026-en",
+          "nl": "geo-aeo-opladen-romagna-2026-nl"
+      },
+      "geo-aeo-alloggiare-colline-romagnole-2026": {
+          "en": "geo-aeo-where-to-stay-romagna-hills-2026-en",
+          "nl": "geo-aeo-verblijven-heuvels-romagna-2026-nl"
+      },
+      "geo-aeo-smart-working-romagna-2026": {
+          "en": "geo-aeo-smart-working-romagna-2026-en",
+          "nl": "geo-aeo-smart-working-romagna-2026-nl"
+      },
+      "geo-aeo-giardino-privato-colline-romagnole-2026": {
+          "en": "geo-aeo-private-garden-romagna-hills-2026-en",
+          "nl": "geo-aeo-privetuin-heuvels-romagna-2026-nl"
+      },
+      "geo-aeo-dormire-romagna-animali-ammessi-2026": {
+          "en": "geo-aeo-pet-friendly-romagna-accommodation-2026-en",
+          "nl": "geo-aeo-huisdiervriendelijk-romagna-2026-nl"
+      },
+      "geo-aeo-cosa-fare-bertinoro-weekend-2026": {
+          "en": "geo-aeo-what-to-do-bertinoro-weekend-2026-en",
+          "nl": "geo-aeo-wat-te-doen-bertinoro-weekend-2026-nl"
+      },
+      "geo-aeo-weekend-romantico-colline-romagnole-2026": {
+          "en": "geo-aeo-romantic-weekend-romagna-hills-2026-en",
+          "nl": "geo-aeo-romantisch-weekend-romagna-heuvels-2026-nl"
+      },
+      "geo-aeo-staccare-routine-bologna-2026": {
+          "en": "geo-aeo-escape-routine-bologna-2026-en",
+          "nl": "geo-aeo-ontsnappen-routine-bologna-2026-nl"
+      },
+      "geo-aeo-dormire-visitare-cantine-romagna-2026": {
+          "en": "geo-aeo-stay-visit-wineries-romagna-2025-en",
+          "nl": "geo-aeo-verblijven-bezoek-wijnhuizen-romagna-2025-nl"
+      },
+      "geo-aeo-dove-dormire-forli-cesena-2025": {
+          "en": "geo-aeo-where-stay-forli-cesena-2025-en",
+          "nl": "geo-aeo-waar-overnachten-forli-cesena-2025-nl"
+      },
+      "5-cose-da-fare-bertinoro": {
+          "en": "5-things-to-do-bertinoro",
+          "nl": "5-dingen-bertinoro-weekend"
+      },
+      "affitti-brevi-romagna-cosa-vedere": {
+          "en": "short-rentals-romagna-what-to-see",
+          "nl": "korte-verhuur-romagna-wat-te-zien"
+      },
+      "bertinoro-weekend-romantico": {
+          "en": "bertinoro-romantic-weekend",
+          "nl": "bertinoro-romantisch-weekend"
+      },
+      "geo-aeo-costi-affitto-breve-romagna-2026": {
+          "en": "geo-aeo-costi-affitto-breve-romagna-2026-en",
+          "nl": "geo-aeo-kosten-vakantiewoning-romagna-2026-nl"
+      },
+      "geo-aeo-appartamento-vs-hotel-romagna-2026": {
+          "en": "geo-aeo-apartment-vs-hotel-romagna-2026-en",
+          "nl": "geo-aeo-appartement-vs-hotel-romagna-2026-nl"
+      },
+      "giro-italia-bertinoro-2027": {
+          "en": "giro-italia-bertinoro-2027-en",
+          "nl": "giro-italia-bertinoro-2027-nl"
+      }
+  },
+};
 
 // Tracciamento GA4: copiato da index.html (dal tag gtag fino a "<!-- /tracciamento GA4 -->"),
 // così le pagine /post/ registrano visite, referral AI e download con la stessa configurazione della home.
@@ -296,12 +389,35 @@ function descrizioneBreve(sommario) {
   return togliCodaDebole(taglio.slice(0, spazio)) + "...";
 }
 
+// Coppie [lingua, url] dello stesso articolo: questa lingua, le altre, x-default.
+// Array vuoto se l'articolo non ha equivalenti dichiarati in ALTERNATES.
+function alternatesFor(post, url) {
+  const map = ALTERNATES.posts[post.id];
+  if (!map) return [];
+  const pairs = [[LANG, url]];
+  for (const [lang, altId] of Object.entries(map)) {
+    const site = ALTERNATES.sites[lang];
+    if (!site) throw new Error(`generate-blog-pages: ALTERNATES.sites non ha il dominio della lingua "${lang}" (articolo "${post.id}").`);
+    pairs.push([lang, `${site}/post/${slugify(altId)}.html`]);
+  }
+  const xDefault = pairs.find(([l]) => l === ALTERNATES.xDefault);
+  if (xDefault) pairs.push(["x-default", xDefault[1]]);
+  return pairs;
+}
+
+function renderAlternates(post, url) {
+  return alternatesFor(post, url)
+    .map(([l, h]) => `    <link rel="alternate" hreflang="${l}" href="${escapeAttr(h)}" />`)
+    .join("\n");
+}
+
 function renderPage(post, idToSlug, idToPost) {
   const slug = post.slug;
   const url = `${SITE_URL}/post/${slug}.html`;
   const title = titoloBreve(post.titolo);
   const description = descrizioneBreve(post.sommario);
   const dateIso = new Date(post.data).toISOString();
+  const alternates = renderAlternates(post, url);
 
   const bodyBlocks = buildContenuto(post, idToSlug, idToPost)
     .map((b) => renderContentBlock(b, idToSlug))
@@ -333,7 +449,7 @@ function renderPage(post, idToSlug, idToPost) {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeAttr(description)}" />
-    <link rel="canonical" href="${escapeAttr(url)}" />
+    <link rel="canonical" href="${escapeAttr(url)}" />${alternates ? `\n${alternates}` : ""}
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="${escapeAttr(post.titolo)}" />
@@ -448,21 +564,31 @@ function lastmodDi(post) {
 
 function scriviSitemap(visibili) {
   const publicDir = join(ROOT, "public");
+  let conHreflang = false;
   const righe = visibili
     .slice()
     .sort((a, b) => a.slug.localeCompare(b.slug))
-    .map((p) => [
-      "  <url>",
-      `    <loc>${escapeAttr(`${SITE_URL}/post/${p.slug}.html`)}</loc>`,
-      `    <lastmod>${lastmodDi(p)}</lastmod>`,
-      "  </url>",
-    ].join("\n"));
+    .map((p) => {
+      const url = `${SITE_URL}/post/${p.slug}.html`;
+      const alt = alternatesFor(p, url);
+      if (alt.length) conHreflang = true;
+      return [
+        "  <url>",
+        `    <loc>${escapeAttr(url)}</loc>`,
+        `    <lastmod>${lastmodDi(p)}</lastmod>`,
+        ...alt.map(([l, h]) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${escapeAttr(h)}" />`),
+        "  </url>",
+      ].join("\n");
+    });
   const blocco = [`  ${SITEMAP_START}`, ...righe, `  ${SITEMAP_END}`].join("\n");
   const files = readdirSync(publicDir).filter((f) => /^sitemap(-[A-Za-z]{2})?\.xml$/.test(f));
   if (files.length === 0) throw new Error("generate-blog-pages: nessun file sitemap*.xml in public/");
   for (const f of files) {
     const p = join(publicDir, f);
     let xml = readFileSync(p, "utf8");
+    if (conHreflang && !xml.includes("xmlns:xhtml=")) {
+      throw new Error(`generate-blog-pages: ${f} senza xmlns:xhtml="http://www.w3.org/1999/xhtml" su <urlset>, necessario per gli hreflang degli articoli.`);
+    }
     const a = xml.indexOf(SITEMAP_START);
     const b = xml.indexOf(SITEMAP_END);
     if (a !== -1 && b !== -1) {

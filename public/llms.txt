@@ -1,6 +1,6 @@
 # Casa Cavour Bertinoro
 
-> Appartamento vacanze con cucina completamente attrezzata nel centro storico di Bertinoro, colline romagnole (FC). Il Balcone della Romagna — base ideale per weekend romantici, enoturismo e soggiorni autentici in Romagna.
+> Appartamento vacanze con cucina completamente attrezzata nel centro storico di Bertinoro, colline romagnole (FC). Il Balcone della Romagna, base ideale per weekend romantici, enoturismo e soggiorni autentici in Romagna.
 
 ## Property
 
@@ -37,17 +37,19 @@
 - Workspace dedicato con WiFi
 - Self check-in con cassetta portachiavi a codice
 - Aria condizionata e riscaldamento
-- Fino a 4 ospiti — check-in ore 16:00, check-out ore 10:00
+- Fino a 4 ospiti, check-in ore 16:00, check-out ore 10:00
 - CIN: IT040003C28FEZ8O7L
 
 ## AI Permissions
 
 Questo sito autorizza l'accesso ai crawler AI per indicizzazione e citazione.
 
-User-agent: GPTBot — allowed
-User-agent: OAI-SearchBot — allowed
-User-agent: ClaudeBot — allowed
-User-agent: anthropic-ai — allowed
-User-agent: PerplexityBot — allowed
-User-agent: Bingbot — allowed
-User-agent: CCBot — allowed
+User-agent: GPTBot - allowed
+User-agent: OAI-SearchBot - allowed
+User-agent: ClaudeBot - allowed
+User-agent: Claude-SearchBot - allowed
+User-agent: Claude-User - allowed
+User-agent: PerplexityBot - allowed
+User-agent: Perplexity-User - allowed
+User-agent: Bingbot - allowed
+User-agent: CCBot - allowed

@@ -864,7 +864,7 @@ export const posts = [
     titolo: "Affitti brevi in Romagna: cosa vedere nei dintorni di Cesena",
     data: "2025-03-18",
     categoria: "Territorio",
-    sommario: "Scegliere un affitto breve nella zona di Cesena significa avere accesso a mare, colline, borghi medievali e ottimo cibo — tutto a portata di auto. Ecco la nostra guida.",
+    sommario: "Scegliere un affitto breve nella zona di Cesena significa avere accesso a mare, colline, borghi medievali e ottimo cibo, tutto a portata di auto. Ecco la nostra guida.",
     contenuto: [
       {
         tipo: "paragrafo",
